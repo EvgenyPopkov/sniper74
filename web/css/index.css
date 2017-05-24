@@ -1,0 +1,60 @@
+.we .index-we,
+.we .index-we > h1,
+.we .index-we > h3{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.site-index{
+  background-color: #f8f8f8;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.we .index-we{
+  text-align: center;
+  color: #222;
+}
+
+.we .index-we > h3{
+  padding-top: 60px;
+  padding-bottom: 10px;
+  opacity: 0.5;
+  font-size: 1.8rem;
+  line-height: 1.667;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+}
+
+.we hr{
+  margin-bottom: 60px;
+}
+
+.we > .row{
+  margin-top: 0;
+}
+
+.we p{
+  text-align: center;
+  padding: 10px 100px;
+  font-size: 18px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.we .stroke{
+  color: #222;
+  font-size: 2rem;
+  border: 3px solid #222;
+}
+
+.we img{
+  height: 500px;
+  width: 750px;
+  opacity: 0.9;
+  padding-top: 60px;
+}
