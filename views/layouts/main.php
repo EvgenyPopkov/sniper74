@@ -25,40 +25,44 @@ AppAsset::register($this);
 
 <div class="wrap">
 
-      <header>
-          <?php
-          NavBar::begin([
-              'brandLabel' => Html::img('@web/images/logo.png', ['alt'=>Yii::$app->name]),
-              'brandUrl' => ['/site/index'],
-              'options' => [
-                  'class' => 'navbar-scroll navbar-inverse navbar-fixed-top',
-              ],
-          ]);
-          ?>
-          <?php
-          echo Nav::widget([
-              'options' => ['class' => 'navbar-nav navbar-right'],
-              'items' => [
-                  ['label' => 'ГЛАВНАЯ', 'url' => ['/site/index']],
-                  ['label' => 'О НАС', 'url' => ['/pages/about'], 'id' => 'l'],
-                  ['label' => 'КОНТАКТЫ', 'url' => ['/pages/contact']],
-                  Yii::$app->user->isGuest ? (
-                    ['label' => 'ВОЙТИ', 'url' => ['/pages/login']]
-                  ) : (
-                      '<li>'
-                      . Html::beginForm(['/pages/logout'], 'post')
-                      . Html::submitButton(
-                          'Logout (' . Yii::$app->user->identity->username . ')',
-                          ['class' => 'btn btn-link logout logout-noscroll']
-                      )
-                      . Html::endForm()
-                      . '</li>'
-                  )
-              ],
-          ]);
-          NavBar::end();
-          ?>
-      </header>
+  <header>
+      <?php
+        NavBar::begin([
+            'brandLabel' => Html::img('@web/images/logo.png', ['alt'=>Yii::$app->name]),
+            'brandUrl' => ['/site/index'],
+            'options' => [
+                'class' => 'navbar-inverse navbar-fixed-top navbar-scroll',
+            ],
+        ]);
+      ?>
+
+      <?php
+        $items[] = ['label' => 'ГЛАВНАЯ', 'url' => ['/site/index'], 'id' => 'l'];
+        $items[] = ['label' => 'О НАС', 'url' => ['/site/about'], 'id' => 'l'];
+        $items[] = ['label' => 'КОНТАКТЫ', 'url' => ['/pages/contact']];
+
+        if(Yii::$app->user->isGuest){
+          $items[]=['label' => 'ВОЙТИ', 'url' => ['/auth/login']];
+        }
+        else{
+          $items[]=['label' => Yii::$app->user->identity->email, 'url' => ['/auth/logout']];
+          $items[]='<li>'
+          . Html::beginForm(['/auth/logout'], 'post')
+          . Html::submitButton(
+              'ВЫХОД',
+              ['class' => 'btn logout-scroll logout']
+          )
+          . Html::endForm()
+          . '</li>';
+        }
+
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => $items]
+          );
+        NavBar::end();
+      ?>
+  </header>
 
     <div class="container">
         <?= Breadcrumbs::widget([
@@ -68,11 +72,70 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+<footer>
+  <div class="container-fluid">
+    <div class="row sniper">
+      <div class="col-lg-4 col-lg-4 col-md-4">
+        <h3>
+          <img class='lazy' data-original="/images/logo.png" alt="logo"/>
+          <span class="color-green">SNIPER</span>
+        </h3>
+        <p>Хоккейный центр Sniper</p>
+        <p>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          &ensp;г.Челябинск ул.Новороссийская д.8
+        </p>
+        <p>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          &ensp;+7 (919) 336-44-63
+        </p>
+        <p>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          &ensp;popkovsignal18@mail.ru
+        </p>
+      </div>
+      <div class="col-lg-4 col-lg-4 col-md-4">
+        <h3 class="footer-h">
+          <span>Социальные сети</span>
+        </h3>
+        <hr/>
+        <a href="https://vk.com/sniper174" target="_blank"><p>Вконтаке</p></a>
+        <a href="https://www.instagram.com/sniper.ru" target="_blank"><p>Instagram</p></a>
+        <a href="https://www.instagram.com/sniper.ru" target="_blank"><p>Youtube</p></a>
+        <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>" title="">Напишите нам</a>
+      </div>
+      <div class="col-lg-4 col-lg-4 col-md-4">
+        <h3 class="footer-h">
+          <span>Карта сайта</span>
+        </h3>
+        <hr/>
+        <div class="row site-map">
+          <div class="col-lg-6 col-lg-6 col-md-6 copy-left">
+            <a href="/site/index"><p>Главная</p></a>
+            <a href="/site/index"><p>Главная</p></a>
+            <a href="/site/index"><p>Главная</p></a>
+          </div>
+          <div class="col-lg-6 col-lg-6 col-md-6 copy-right">
+            <a href="/site/index"><p>Главная</p></a>
+            <a href="/site/index"><p>Главная</p></a>
+            <a href="/site/index"><p>Главная</p></a>
+          </div>
+        </div>
+        <a class="stroke" href="/pages/contact" title="">Записаться на тренировку</a>
+      </div>
+    </div>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+      <div class="row copy">
+        <div class="col-lg-6 col-lg-6 col-md-6 col-sm-6 copy-left">
+          <p>&copy; Хоккейный центр Sniper <?= date('Y') ?></p>
+        </div>
+        <div class="col-lg-6 col-lg-6 col-md-6 col-sm-6 copy-right">
+          <p class="dev">
+            Сайт разработан <span class="color-green">Evgeny Popkov</span>
+            <a href="https://vk.com/evgenypopkov" target="_blank"><img class='lazy' data-original="/images/vk.png" alt="vk"></a>
+          </p>
+        </div>
+      </div>
     </div>
 </footer>
 
