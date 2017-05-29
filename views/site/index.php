@@ -3,46 +3,43 @@
 use yii\helpers\Html;
 
 $this->title = 'Sniper Хоккейный центр';
-$this->params['address'] = $model->address;
-$this->params['phone'] = $model->phone;
-$this->params['email'] = $model->email;
-$this->params['vk'] = $model->vk;
-$this->params['instagram'] = $model->instagram;
-$this->params['youtube'] = $model->youtube;
+$this->registerCssFile('@web/css/index.css', ['depends' => ['app\assets\AppAsset']]);
+$this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],'main');
 ?>
 
 <div class="market-landing">
-<div class="landing-info">
-  <h5>Добро пожаловать</h5>
-  <h5>В центр подготовки хоккеистов <span class="color-green">Sniper</span></h5><br/>
-  <h1><span>Мы подготавливаем хоккеистов</span></h1>
-  <h1><span class="color-green">любого</span> возраста и уровня подготовки</h1>
-  <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>" title="">Свяжитесь с нами</a>
+  <div class="landing-info">
+    <h5>Добро пожаловать</h5>
+    <h5>В центр подготовки хоккеистов <span class="color-green">Sniper</span></h5><br/>
+    <h1><span>Мы подготавливаем хоккеистов</span></h1>
+    <h1><span class="color-green">любого</span> возраста и уровня подготовки</h1>
+    <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>" title="">Свяжитесь с нами</a>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
+      <phone>&emsp;<?= Html::encode($model->phone) ?></phone>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <a href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>"><button class="btn">Записаться на тренировку</button></a>
+    </div>
+    <div class="col-lg-4 col-md-4 social">
+      <a href="<?= Html::encode($model->vk) ?>" target="_blank">
+        <img class='lazy' data-original="/images/vk.png" alt="vk"/>
+      </a>
+      <b>&emsp;</b>
+      <a href="<?= Html::encode($model->instagram) ?>" target="_blank">
+        <img class='lazy' data-original="/images/instagram.png" alt="instagram"/>
+      </a>
+      <b>&emsp;</b>
+      <a href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>">
+        <img class='lazy' data-original="/images/message.png" alt="message"/>
+      </a>
+    </div>
+  </div>
 </div>
 
-<div class="row">
-  <div class="col-lg-4 col-md-4">
-    <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-    <phone>&emsp;<?= Html::encode($model->phone) ?></phone>
-  </div>
-  <div class="col-lg-4 col-md-4">
-    <a href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>"><button class="btn">Записаться на тренировку</button></a>
-  </div>
-  <div class="col-lg-4 col-md-4 social">
-    <a href="<?= Html::encode($model->vk) ?>" target="_blank">
-      <img class='lazy' data-original="/images/vk.png" alt="vk"/>
-    </a>
-    <b>&emsp;</b>
-    <a href="<?= Html::encode($model->instagram) ?>" target="_blank">
-      <img class='lazy' data-original="/images/instagram.png" alt="instagram"/>
-    </a>
-    <b>&emsp;</b>
-    <a href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>">
-      <img class='lazy' data-original="/images/message.png" alt="message"/>
-    </a>
-  </div>
-</div>
-</div>
 <div class="site-index">
 
   <div class="row we">
@@ -58,8 +55,8 @@ $this->params['youtube'] = $model->youtube;
       <hr/>
       <p>
         Мы занимаемся подготовкой хоккеистов любого возраста и любого уровня подготовки.
-        У нас Ваш ребенок научиться правильно кататься на коньках, улучшит технику владения шайбой,
-        научиться точно и сильно выполнять кистевые броски и щелчки.
+        Вы научитесь правильно кататься на коньках, улучшите технику владения шайбой,
+        научитесь точно и сильно выполнять кистевые броски и щелчки.
         Наш центр обеспечен современным оборудованием и тренерским составом, члены которого
         имееют многолетний хоккейный профессиональный опыт.
       </p>
@@ -69,7 +66,6 @@ $this->params['youtube'] = $model->youtube;
     <div class="col-lg-3 col-md-3">
       <img data-original="/images/index-we-right.jpg" alt="sniper hockey center" class="lazy img-right">
     </div>
-
   </div>
 
   <div class="row training">
@@ -77,19 +73,23 @@ $this->params['youtube'] = $model->youtube;
     <hr/>
 
     <div class="col-lg-4 col-md-4">
+
       <div class="dribbling">
+        <img class='lazy' data-original="/images/dribbling.jpg" alt="владение шайбой">
           <a href="#"><h3>Дриблинг</h3></a>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4">
       <div class="skating">
+          <img class='lazy' data-original="/images/skating.jpg" alt="владение шайбой">
         <a href="#"><h3>Катание</h3></a>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4">
       <div class="shot">
+          <img class='lazy' data-original="/images/shot.jpg" alt="владение шайбой">
         <a href="#"><h3>Броски</h3></a>
       </div>
     </div>

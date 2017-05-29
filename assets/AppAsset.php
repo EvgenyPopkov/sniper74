@@ -11,13 +11,10 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'font-awesome/css/font-awesome.min.css',
-        'css/site.css',
+        'css/layout.css',
     ];
     public $js = [
         'js/lazyload.js',
-    ];
-    public $jsOptions =[
-        'position' => View::POS_BEGIN
     ];
     public $depends = [
         'yii\web\YiiAsset',

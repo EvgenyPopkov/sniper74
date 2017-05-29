@@ -1,0 +1,307 @@
+div.site-about{
+	width: 100vw;
+	height: auto;
+	min-height: 720px;
+	display: table;
+	position: relative;
+}
+
+div.about-head{
+  text-align: center;
+  color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  opacity: 0.8;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+div.about-head > h1{
+  color: #f8f8f8;
+  font-size: 8rem;
+  font-family: 'Neucha', cursive;
+  line-height: 1.334;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.about-we{
+  text-align: center;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+div.about-we > div.row{
+  margin-top: 0;
+  padding-top: 70px;
+  text-align: center;
+}
+
+div.about-we > div.row > h2{
+  font-size: 38px;
+}
+
+div.about-info{
+  margin: 50px 0 90px 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div.about-info > p{
+  color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  font-size: 24px;
+}
+
+div.about-contact{
+  background-color: #222;
+  border: 2px solid #05bca9;
+  border-radius: 30px;
+  margin: 80px 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+div.about-contact button{
+  margin: 30px auto;
+  background-color: #05bca9;
+  color: #222;
+}
+
+div.about-contact button:hover{
+  transform: none;
+  color: #f8f8f8;
+}
+
+div.about-contact phone{
+  font-size: 26px;
+  color: #f8f8f8;
+}
+
+div.about-training{
+  color: #222;
+  background-color: #d4d4d4;
+  margin: 0;
+  text-align: center;
+  padding: 70px 0;
+}
+
+div.about-training > h2{
+  margin: 0;
+  font-size: 38px;
+}
+
+div.about-training h3{
+  font-size: 30px;
+  color: #05bca9;
+  padding: 20px 0;
+}
+
+div.about-training h4{
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 50vh;
+}
+
+div.about-training img{
+  width: 200px;
+  height: 190px;
+  margin-top: 30px;
+}
+
+div.about-training h3:hover{
+  text-decoration: underline;
+}
+
+div.about-training p{
+  padding: 0 50px;
+  text-align: center;
+}
+
+.rounded {
+  counter-reset: li;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.rounded li {
+  position: relative;
+  display: block;
+  padding: .4em .4em .6em 9em;
+  margin: .5em 0;
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+  border-radius: .3em;
+  font-size: 16px;
+}
+
+.rounded li:before {
+  content: "";
+  position: absolute;
+  left: 5.5em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #05bca9;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid #f8f8f8;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+
+hr.hr-training{
+  border: 1px solid #05bca9;
+  width: 80%;
+}
+
+p.about-training-head{
+  font-size: 18px;
+  margin: 10px;
+}
+
+h5{
+  font-size: 18px;
+  padding-top: 10px;
+  margin-top: 30px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  div.about-head > h1{
+    font-size: 3.5rem;
+  }
+
+	div.about-we > div.row > h2{
+	  font-size: 26px;
+	}
+
+  div.about-info > p{
+    font-size: 18px;
+  }
+
+  div.about-contact phone{
+    font-size: 20px;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-contact{
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-info > p{
+    padding-bottom: 5px;
+  }
+
+	.rounded li {
+    padding: .4em .4em .6em 30vw;
+    font-size: 16px;
+  }
+
+  .rounded li:before {
+    left: 20vw;
+  }
+
+  div.about-training img{
+    width: 300px;
+    height: 270px;
+  }
+
+	div.about-training h4{
+	  padding: 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.site-about > div.about-head > h1{
+    font-size: 5rem;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-info > p{
+    font-size: 18px;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-contact phone{
+    font-size: 20px;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-contact{
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-info > p{
+    padding-bottom: 5px;
+  }
+
+	.rounded li {
+    padding: .4em .4em .6em 40vw;
+    font-size: 20px;
+  }
+
+  .rounded li:before {
+    left: 35vw;
+  }
+
+  div.about-training img{
+    width: 400px;
+    height: 360px;
+  }
+
+	div.about-training h4{
+	  padding: 10px 20vh;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  div.site-about > div.about-head > h1{
+    font-size: 6rem;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-info > p{
+    font-size: 18px;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-contact phone{
+    font-size: 20px;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-contact img{
+    width: 32px;
+    height: 32px;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-contact button{
+    font-size: 14px;
+  }
+
+  .rounded li {
+    padding: .4em .4em .6em 40vw;
+    font-size: 20px;
+  }
+
+  .rounded li:before {
+    left: 35vw;
+  }
+
+  div.about-training img{
+    width: 400px;
+    height: 360px;
+  }
+
+	div.about-training h4{
+	  padding: 10px 20vh;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  div.site-about > div.about-we > div.row > div.about-info > p{
+    font-size: 20px;
+  }
+
+  div.site-about > div.about-we > div.row > div.about-contact phone{
+    font-size: 24px;
+  }
+}

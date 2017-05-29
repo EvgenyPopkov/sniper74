@@ -1,13 +1,10 @@
 <?php
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\models\LoginForm */
-
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Вход - Sniper Хоккейный центр';
+$this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset']],'login');
 ?>
 <div class="auth-login">
 

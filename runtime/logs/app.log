@@ -16340,3 +16340,1761 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2017-05-29 10:22:57 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/contact". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/contact', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 10:22:57 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '43a4fd86de388ad730a543a44ccd2ce314dc1b152d9aa0208762d67f25b41213a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Smr0bwBG5qxTTQxcP9f9yWKQ_1g-11ID\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/auth/login'
+    'HTTP_COOKIE' => '_csrf=43a4fd86de388ad730a543a44ccd2ce314dc1b152d9aa0208762d67f25b41213a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Smr0bwBG5qxTTQxcP9f9yWKQ_1g-11ID%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '2487'
+    'REDIRECT_URL' => '/pages/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496042576.999
+    'REQUEST_TIME' => 1496042576
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 11:45:00 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "vjhj". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('vjhj', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 11:45:00 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Mobile Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '4184'
+    'REDIRECT_URL' => '/vjhj'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/vjhj'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496047500.883
+    'REQUEST_TIME' => 1496047500
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 11:45:10 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexgf in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexgf', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexgf', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 11:45:10 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Mobile Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '4203'
+    'REDIRECT_URL' => '/site/indexgf'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexgf'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496047510.743
+    'REQUEST_TIME' => 1496047510
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 11:46:32 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexutyu in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexutyu', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexutyu', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 11:46:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '43a4fd86de388ad730a543a44ccd2ce314dc1b152d9aa0208762d67f25b41213a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Smr0bwBG5qxTTQxcP9f9yWKQ_1g-11ID\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=43a4fd86de388ad730a543a44ccd2ce314dc1b152d9aa0208762d67f25b41213a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Smr0bwBG5qxTTQxcP9f9yWKQ_1g-11ID%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '4316'
+    'REDIRECT_URL' => '/site/indexutyu'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexutyu'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496047592.365
+    'REQUEST_TIME' => 1496047592
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 11:52:25 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexutyu in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexutyu', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexutyu', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 11:52:25 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '43a4fd86de388ad730a543a44ccd2ce314dc1b152d9aa0208762d67f25b41213a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Smr0bwBG5qxTTQxcP9f9yWKQ_1g-11ID\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=43a4fd86de388ad730a543a44ccd2ce314dc1b152d9aa0208762d67f25b41213a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Smr0bwBG5qxTTQxcP9f9yWKQ_1g-11ID%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '4790'
+    'REDIRECT_URL' => '/site/indexutyu'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexutyu'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496047945.536
+    'REQUEST_TIME' => 1496047945
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 11:52:41 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexutyu in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexutyu', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexutyu', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 11:52:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '43a4fd86de388ad730a543a44ccd2ce314dc1b152d9aa0208762d67f25b41213a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Smr0bwBG5qxTTQxcP9f9yWKQ_1g-11ID\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=43a4fd86de388ad730a543a44ccd2ce314dc1b152d9aa0208762d67f25b41213a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Smr0bwBG5qxTTQxcP9f9yWKQ_1g-11ID%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '4819'
+    'REDIRECT_URL' => '/site/indexutyu'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexutyu'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496047961.482
+    'REQUEST_TIME' => 1496047961
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 11:52:50 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexgf in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexgf', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexgf', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 11:52:50 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Mobile Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '4836'
+    'REDIRECT_URL' => '/site/indexgf'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexgf'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496047970.514
+    'REQUEST_TIME' => 1496047970
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 11:55:41 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/contact". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/contact', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 11:55:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/about'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '4954'
+    'REDIRECT_URL' => '/pages/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496048141.343
+    'REQUEST_TIME' => 1496048141
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 11:58:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/contact". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/contact', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 11:58:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/about'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '5251'
+    'REDIRECT_URL' => '/pages/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496048324.392
+    'REQUEST_TIME' => 1496048324
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 13:20:42 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexhfg in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexhfg', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexhfg', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 13:20:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6155'
+    'REDIRECT_URL' => '/site/indexhfg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexhfg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496053242.229
+    'REQUEST_TIME' => 1496053242
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 13:21:41 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexfg in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexfg', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexfg', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 13:21:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6180'
+    'REDIRECT_URL' => '/site/indexfg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexfg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496053300.982
+    'REQUEST_TIME' => 1496053300
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 13:22:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexfg in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexfg', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexfg', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 13:22:29 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6188'
+    'REDIRECT_URL' => '/site/indexfg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexfg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496053349.269
+    'REQUEST_TIME' => 1496053349
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 13:23:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexfg in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexfg', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexfg', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 13:23:29 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6190'
+    'REDIRECT_URL' => '/site/indexfg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexfg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496053409.22
+    'REQUEST_TIME' => 1496053409
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 13:23:58 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/indexfg in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('indexfg', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/indexfg', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 13:23:58 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6193'
+    'REDIRECT_URL' => '/site/indexfg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/indexfg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496053438.258
+    'REQUEST_TIME' => 1496053438
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 14:14:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/training". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/training', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 14:14:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'TlhQc0dHaG4taGI6BS1bIHoeBksJICcNFBcgJCR.IlwjIiUsDwBdXQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/index'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6554'
+    'REDIRECT_URL' => '/pages/training'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/training'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496056484.155
+    'REQUEST_TIME' => 1496056484
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 14:14:55 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/training". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/training', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 14:14:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'WFE2TlVGbkk7YQQHFyxdB2wXYHYbISEqAh5GGTZ/JHs1K0MRHQFbeg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/index'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6560'
+    'REDIRECT_URL' => '/pages/training'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/training'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496056495.253
+    'REQUEST_TIME' => 1496056495
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 14:20:53 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/carousel.html". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/carousel....', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 14:20:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'QnNJdUhSZDkhQ3s8CjhXd3Y1H00GNStaGDw5IitrLgsvCTwqABVRCg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/index'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6673'
+    'REDIRECT_URL' => '/pages/carousel.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/carousel.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496056853.822
+    'REQUEST_TIME' => 1496056853
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 14:21:08 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/carousel.html". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/carousel....', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 14:21:08 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eVNDZnJ3SlYaY3EvMB15GE0VFV48EAU1IxwzMRFOAGQUKTY5OjB/ZQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/index'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6679'
+    'REDIRECT_URL' => '/pages/carousel.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/carousel.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496056868.451
+    'REQUEST_TIME' => 1496056868
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 14:21:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/carousel.html". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/carousel....', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 14:21:49 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VEVMM1l6ZUo3dX56GxBWBGADGgsXHSopDgo8ZDpDL3g5PzlsET1QeQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/index'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6686'
+    'REDIRECT_URL' => '/pages/carousel.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/carousel.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496056909.558
+    'REQUEST_TIME' => 1496056909
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 14:21:52 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/carousel.html". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/carousel....', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 14:21:52 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'QjlTLVdBeC0hCWFkFStLY3Z/BRUZJjdOGHYjejR4Mh8vQyZyHwZNHg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/index'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '6690'
+    'REDIRECT_URL' => '/pages/carousel.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/carousel.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496056912.9
+    'REQUEST_TIME' => 1496056912
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 15:45:43 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "bower". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('bower', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('bower', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\OpenServer\domains\sniper74.ru\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "bower". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('bower', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\OpenServer\domains\sniper74.ru\yii(20): yii\base\Application->run()
+#3 {main}
+2017-05-29 15:45:43 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '98x10000 (98x26)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\popko\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'EVGENY-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040632'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '161206'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A046E'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x002705EA'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '9992'
+    'ConEmuPrompt0' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$G'
+    'ConEmuPrompt3' => '$E[m$S$E]9;12$E\\'
+    'ConEmuServerPID' => '3040'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'FSHARPINSTALLDIR' => 'C:\\Program Files (x86)\\Microsoft SDKs\\F#\\4.1\\Framework\\v4.0\\'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\popko\\AppData\\Local'
+    'LOGONSERVER' => '\\\\EVGENY-PC'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\openserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\openserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\openserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\openserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\openserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\popko\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu\\ConEmu\\Scripts;C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$G$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\PowerShell\\Modules\\;C:\\Program Files\\WindowsPowerShell\\Modules\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\ResourceManager\\AzureResourceManager\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\ServiceManagement\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\Storage\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'EVGENY-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'EVGENY-PC'
+    'USERNAME' => 'popko'
+    'USERPROFILE' => 'C:\\Users\\popko'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1496061943.1166
+    'REQUEST_TIME' => 1496061943
+    'argv' => [
+        0 => 'yii'
+        1 => 'bower'
+        2 => 'install'
+        3 => 'waitForImages'
+    ]
+    'argc' => 4
+]
+2017-05-29 15:51:23 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/contact". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/contact', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 15:51:23 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/about'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '10760'
+    'REDIRECT_URL' => '/pages/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496062283.173
+    'REQUEST_TIME' => 1496062283
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 21:42:23 [127.0.0.1][-][-][error][Error] Error: Call to undefined method Yii::app() in C:\OpenServer\domains\sniper74.ru\controllers\SiteController.php:32
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionIndex()
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#4 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/index', Array)
+#5 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2017-05-29 21:42:23 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/about'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '37353'
+    'REDIRECT_URL' => '/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496083343.055
+    'REQUEST_TIME' => 1496083343
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 21:42:42 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\db\Connection::getStats() in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\controllers\SiteController.php(32): yii\base\Component->__call('getStats', Array)
+#1 [internal function]: app\controllers\SiteController->actionIndex()
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/index', Array)
+#6 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-05-29 21:42:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/about'
+    'HTTP_COOKIE' => '_csrf=f81101baa61edc73f1ef0dfd33634c7fc3265251937729ece0361eb57e9dd367a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c02IBj3N4FV8NgOcZOpWc9J2mzu_HG53%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '37363'
+    'REDIRECT_URL' => '/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496083362.544
+    'REQUEST_TIME' => 1496083362
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 23:32:34 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/contact". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/contact', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 23:32:34 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sniper74.ru/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '41274'
+    'REDIRECT_URL' => '/pages/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496089954.324
+    'REQUEST_TIME' => 1496089954
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 23:32:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "pages/contact". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pages/contact', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 23:32:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://sniper74.ru/site/about'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '41279'
+    'REDIRECT_URL' => '/pages/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pages/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496089964.816
+    'REQUEST_TIME' => 1496089964
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 23:32:55 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "sithe/index". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('sithe/index', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 23:32:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '41288'
+    'REDIRECT_URL' => '/sithe/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/sithe/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496089975.166
+    'REQUEST_TIME' => 1496089975
+    'argv' => []
+    'argc' => 0
+]
+2017-05-29 23:33:13 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "dfgdfhg". in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('dfgdfhg', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-29 23:33:13 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cf45104f3ec8a560b23523bc8c249c2cb86c4d4adbeb30538d6847c0a9d89c94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gVy9_0rhN_oMqYrDutOJ9yUId1bxl19o%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '41297'
+    'REDIRECT_URL' => '/dfgdfhg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dfgdfhg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496089993.941
+    'REQUEST_TIME' => 1496089993
+    'argv' => []
+    'argc' => 0
+]

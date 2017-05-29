@@ -1,0 +1,116 @@
+div.auth-login{
+  background: url(../images/login.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	min-height: 720px;
+	display: table;
+	position: relative;
+  text-align: center;
+}
+
+div.auth-login h1{
+  margin: 0;
+  padding-top: 60px;
+}
+
+div.auth-login div.auth-login-form{
+  background-color: #222;
+  margin: 170px auto;
+  border: 3px solid #05bca9;
+  border-radius: 28px;
+  color:#f8f8f8;
+  opacity: 0.9;
+  width: 40%;
+}
+
+div.auth-signup div.auth-login-form{
+  margin: 100px auto;
+}
+
+div.auth-login div.auth-login-form div.auth-login-input{
+  width: 400px;
+  margin: 5px auto;
+}
+
+div.auth-login div.auth-login-form div.remember-left{
+  text-align: center;
+}
+
+div.auth-login div.btn-login{
+  margin-top: 0;
+}
+
+div.auth-login div.btn-login button{
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+div.auth-login div.btn-login div.btn-left{
+  text-align: right;
+}
+
+div.auth-login div.btn-login div.btn-left button{
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  color: #f8f8f8;
+}
+
+div.auth-login div.btn-login div.btn-left button:hover{
+  background-color: #286090;
+  border-color: #204d74;
+  transform: none;
+}
+
+div.auth-login div.btn-login div.btn-right{
+  text-align: left;
+}
+
+div.auth-login div.btn-login div.btn-right button{
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #f8f8f8;
+}
+
+div.auth-login div.btn-login div.btn-right button:hover{
+  background-color: #449d44;
+  border-color: #398439;
+  transform: none;
+}
+
+div.sendpassword{
+  padding-top: 80px;
+}
+
+div.sendpassword button {
+  margin-top: 10px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  div.auth-login div.auth-login-form{
+    width: 80%;
+  }
+
+  div.auth-login div.auth-login-form div.auth-login-input{
+    width: 70%;
+  }
+
+  div.auth-login div.btn-login div.btn-left,
+  div.auth-login div.btn-login div.btn-right {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.auth-login div.auth-login-form{
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  div.auth-login div.auth-login-form{
+    width: 60%;
+  }
+}

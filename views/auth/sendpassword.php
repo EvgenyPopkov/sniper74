@@ -8,6 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Восстановление пароля - Sniper Хоккейный центр';
+$this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset']], 'login');
 ?>
 <div class="auth-login sendpassword">
 

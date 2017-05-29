@@ -23,6 +23,13 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
+<div class="block">
+  <div class="loading">
+    <span class="ball1"></span>
+    <span class="ball2"></span>
+  </div>
+</div>
+
 <div class="wrap">
 
   <header>
@@ -64,12 +71,12 @@ AppAsset::register($this);
       ?>
   </header>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
-    </div>
+  <div class="container">
+      <?= Breadcrumbs::widget([
+          'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+      ]) ?>
+      <?= $content ?>
+  </div>
 </div>
 
 <footer>
@@ -132,7 +139,7 @@ AppAsset::register($this);
         <div class="col-lg-6 col-lg-6 col-md-6 col-sm-6 copy-right">
           <p class="dev">
             Сайт разработан <span class="color-green">Evgeny Popkov</span>
-            <a href="https://vk.com/evgenypopkov" target="_blank"><img class='lazy' data-original="/images/vk.png" alt="vk"></a>
+            <a href="//vk.com/evgenypopkov" target="_blank"><img class='lazy' data-original="/images/vk.png" alt="vk"></a>
           </p>
         </div>
       </div>
