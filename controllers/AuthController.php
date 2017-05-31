@@ -7,6 +7,7 @@ use yii\helpers\Html;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use app\models\Contacts;
 use app\models\LoginForm;
 use app\models\SignupForm;
 use app\models\SendpasswordForm;
@@ -48,6 +49,9 @@ class AuthController extends Controller
 
     public function actionLogin()
     {
+        $model = new Contacts();
+        $this->initParams($model->getContacts());
+
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -70,6 +74,9 @@ class AuthController extends Controller
 
     public function actionSignup()
     {
+        $model = new Contacts();
+        $this->initParams($model->getContacts());
+
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -86,6 +93,9 @@ class AuthController extends Controller
 
     public function actionSendpassword()
     {
+        $model = new Contacts();
+        $this->initParams($model->getContacts());
+        
         $model = new SendpasswordForm();
         $errorMessage = false;
 
@@ -112,6 +122,16 @@ class AuthController extends Controller
             'model' => $model,
             'errorMessage' => $errorMessage,
         ]);
+    }
+
+    public function initParams($model)
+    {
+      $this->view->params['address'] = $model->address;
+      $this->view->params['phone'] = $model->phone;
+      $this->view->params['email'] = $model->email;
+      $this->view->params['vk'] = $model->vk;
+      $this->view->params['instagram'] = $model->instagram;
+      $this->view->params['youtube'] = $model->youtube;
     }
 
 }

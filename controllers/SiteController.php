@@ -6,7 +6,8 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\Contacts;
-use app\models\ContactsForm;
+use app\models\ContactForm;
+use app\models\Address;
 
 class SiteController extends Controller
 {
@@ -26,34 +27,47 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $model = new Contacts();
-        $this->initParams($model);
-        
+        $this->initParams($model->getContacts());
+
         return $this->render('index',[
-            'model' => $model->getContacst(),
+            'model' => $model->getContacts(),
         ]);
     }
 
     public function actionAbout()
     {
         $model = new Contacts();
-        $this->initParams($model);
+        $this->initParams($model->getContacts());
 
         return $this->render('about',[
-            'model' => $model->getContacst(),
+            'model' => $model->getContacts(),
         ]);
+    }
+
+    public function actionMessage()
+    {
+      $model = new ContactForm();
+      if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+          Yii::$app->session->setFlash('contactFormSubmitted');
+
+          return $this->refresh();
+      }
+      return $this->render('message', [
+          'model' => $model,
+      ]);
     }
 
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
+      $model = new Contacts();
+      $address = new Address();
+      $this->initParams($model->getContacts(), $address->getAddressBoss());
 
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
+      return $this->render('contact',[
+          'model' => $model->getContacts(),
+          'address'=> $address->getAddress(),
+          'coordinates'=> $address->getCoordinates(),
+      ]);
     }
 
     public function initParams($model)

@@ -46,7 +46,7 @@ AppAsset::register($this);
       <?php
         $items[] = ['label' => 'ГЛАВНАЯ', 'url' => ['/site/index'], 'id' => 'l'];
         $items[] = ['label' => 'О НАС', 'url' => ['/site/about'], 'id' => 'l'];
-        $items[] = ['label' => 'КОНТАКТЫ', 'url' => ['/pages/contact']];
+        $items[] = ['label' => 'КОНТАКТЫ', 'url' => ['/site/contact']];
 
         if(Yii::$app->user->isGuest){
           $items[]=['label' => 'ВОЙТИ', 'url' => ['/auth/login']];
@@ -90,15 +90,15 @@ AppAsset::register($this);
         <p>Хоккейный центр Sniper</p>
         <p>
           <i class="fa fa-map-marker" aria-hidden="true"></i>
-          &ensp;г.Челябинск ул.Новороссийская д.8
+          &ensp;<?= Html::encode($this->params['address']) ?>
         </p>
         <p>
           <i class="fa fa-phone" aria-hidden="true"></i>
-          &ensp;+7 (919) 336-44-63
+          &ensp;<?= Html::encode($this->params['phone']) ?>
         </p>
         <p>
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          &ensp;popkovsignal18@mail.ru
+          &ensp;<?= Html::encode($this->params['email']) ?>
         </p>
       </div>
       <div class="col-lg-4 col-lg-4 col-md-4">
@@ -106,10 +106,10 @@ AppAsset::register($this);
           <span>Социальные сети</span>
         </h3>
         <hr/>
-        <a href="https://vk.com/sniper174" target="_blank"><p>Вконтаке</p></a>
-        <a href="https://www.instagram.com/sniper.ru" target="_blank"><p>Instagram</p></a>
-        <a href="https://www.instagram.com/sniper.ru" target="_blank"><p>Youtube</p></a>
-        <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>" title="">Напишите нам</a>
+        <a href="<?= Html::encode($this->params['vk']) ?>" target="_blank"><p>Вконтаке</p></a>
+        <a href="<?= Html::encode($this->params['instagram']) ?>" target="_blank"><p>Instagram</p></a>
+        <a href="<?= Html::encode($this->params['youtube']) ?>" target="_blank"><p>Youtube</p></a>
+        <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>" title="">Свяжитесь с нами</a>
       </div>
       <div class="col-lg-4 col-lg-4 col-md-4">
         <h3 class="footer-h">
@@ -119,13 +119,13 @@ AppAsset::register($this);
         <div class="row site-map">
           <div class="col-lg-6 col-lg-6 col-md-6 copy-left">
             <a href="/site/index"><p>Главная</p></a>
-            <a href="/site/index"><p>Главная</p></a>
-            <a href="/site/index"><p>Главная</p></a>
+            <a href="/site/index"><p>Услуги и цены</p></a>
+            <a href="/site/index"><p>Тренировки</p></a>
           </div>
           <div class="col-lg-6 col-lg-6 col-md-6 copy-right">
-            <a href="/site/index"><p>Главная</p></a>
-            <a href="/site/index"><p>Главная</p></a>
-            <a href="/site/index"><p>Главная</p></a>
+            <a href="/site/index"><p>О нас</p></a>
+            <a href="/site/index"><p>Галерея</p></a>
+            <a href="/site/index"><p>Контакты</p></a>
           </div>
         </div>
         <a class="stroke" href="/pages/contact" title="">Записаться на тренировку</a>

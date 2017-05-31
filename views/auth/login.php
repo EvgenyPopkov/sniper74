@@ -7,7 +7,6 @@ $this->title = 'Вход - Sniper Хоккейный центр';
 $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset']],'login');
 ?>
 <div class="auth-login">
-
   <div class="auth-login-form">
     <h1>Вход</h1>
     <hr/>

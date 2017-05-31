@@ -12,13 +12,14 @@ class Contacts extends ActiveRecord
       return 'contact';
   }
 
-  public function getContacst($id = 1)
+  public function getContacts()
   {
-      return Contacts::findOne(['id' => $id]);
+      return Contacts::findOne(['id' => 1]);
   }
 
-  public function updateContacts($newcontact){
-      $contact = Contacts::findOne(['id' => $id]);
+  public function updateContacts($newcontact)
+  {
+      $contact = Contacts::findOne(['id' => 1]);
       $contact = $newcontact;
       return $contact->save();
   }

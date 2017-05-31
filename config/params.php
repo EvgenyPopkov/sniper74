@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'adminEmail' => 'sniper74hockeycenter@gmail.com',
+    'adminEmail' => 'popkov_signal18@mail.ru',
     'supportEmail' => '',
 ];

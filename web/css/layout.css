@@ -114,9 +114,9 @@ nav.navbar-noscroll ul.navbar-nav > li > a{
   margin-top: 10px;
 }
 
-nav.navbar-scroll ul.navbar-nav > .active > a,
-nav.navbar-scroll ul.navbar-nav > .active > a:hover,
-nav.navbar-scroll ul.navbar-nav > .active > a:focus,
+nav.navbar-scroll ul.navbar-nav > li.active > a,
+nav.navbar-scroll ul.navbar-nav > li.active > a:hover,
+nav.navbar-scroll ul.navbar-nav > li.active > a:focus,
 nav.navbar-noscroll a.navbar-brand:hover,
 nav.navbar-noscroll a.navbar-brand:focus,
 nav.navbar-noscroll ul.navbar-nav > li > a:hover,
@@ -277,15 +277,16 @@ footer div.sniper div.site-map{
 /*media query*/
 /*phones*/
 @media (min-width: 0) and (max-width: 767px) {
-  nav.navbar-scroll .navbar-nav > .active > a,
-  nav.navbar-scroll .navbar-nav > .active > a:hover,
-  nav.navbar-scroll .navbar-nav > .active > a:focus {
+  nav.navbar-scroll ul.navbar-nav > li.active > a,
+  nav.navbar-scroll ul.navbar-nav > li.active > a:hover,
+  nav.navbar-scroll ul.navbar-nav > li.active > a:focus {
       border-left: 3px solid #05bca9;
       border-top: none;
       padding-top: 5px;
       padding-left: 10px;
       background-color: transparent;
   }
+
   nav.navbar-noscroll ul.navbar-nav > li.active > a,
   nav.navbar-noscroll ul.navbar-nav > li.active > a:hover,
   nav.navbar-noscroll ul.navbar-nav > li.active > a:focus {
@@ -296,7 +297,8 @@ footer div.sniper div.site-map{
       padding-left: 10px;
       background-color: #222;
   }
-  nav.navbar-noscroll .navbar-nav > li > a{
+
+  nav.navbar-noscroll ul.navbar-nav > li > a{
     margin-top: 0;
     opacity: 0.8;
     background-color: #222;
