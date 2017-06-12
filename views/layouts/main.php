@@ -35,7 +35,7 @@ AppAsset::register($this);
   <header>
       <?php
         NavBar::begin([
-            'brandLabel' => Html::img('@web/images/logo.png', ['alt'=>Yii::$app->name]),
+            'brandLabel' => Html::img('@web/images/backgrounds/logo.png', ['alt'=>Yii::$app->name]),
             'brandUrl' => ['/site/index'],
             'options' => [
                 'class' => 'navbar-inverse navbar-fixed-top navbar-scroll',
@@ -44,14 +44,38 @@ AppAsset::register($this);
       ?>
 
       <?php
-        $items[] = ['label' => 'ГЛАВНАЯ', 'url' => ['/site/index'], 'id' => 'l'];
-        $items[] = ['label' => 'О НАС', 'url' => ['/site/about'], 'id' => 'l'];
+        $items[] = ['label' => 'ГЛАВНАЯ', 'url' => ['/site/index']];
+        $items[] = ['label' => 'О НАС', 'items' => [
+          [
+            'label' => 'О нас', 'url' => ['/site/about']
+          ],
+          [
+            'label' => 'Тренажеры', 'url' => ['/site/trainer']
+          ],
+          [
+            'label' => 'Фотографии', 'url' => ['/site/photo']
+          ],
+          [
+            'label' => 'Видеозаписи', 'url' => ['/site/video']
+          ]
+        ],
+        ];
+        $items[] = ['label' => 'ТРЕНИРОВКИ', 'items' => [
+          [
+            'label' => 'Тренировки', 'url' => ['/site/training']
+          ],
+          [
+            'label' => 'Акции и предложения', 'url' => ['/site/stock']
+          ]
+        ],
+        ];
+        $items[] = ['label' => 'СТАТЬИ', 'url' => ['/site/article']];
         $items[] = ['label' => 'КОНТАКТЫ', 'url' => ['/site/contact']];
 
-        if(Yii::$app->user->isGuest){
+        if(Yii::$app->user->isGuest):
           $items[]=['label' => 'ВОЙТИ', 'url' => ['/auth/login']];
-        }
-        else{
+
+        else:
           $items[]=['label' => Yii::$app->user->identity->email, 'url' => ['/auth/logout']];
           $items[]='<li>'
           . Html::beginForm(['/auth/logout'], 'post')
@@ -61,9 +85,10 @@ AppAsset::register($this);
           )
           . Html::endForm()
           . '</li>';
-        }
+        endif;
 
         echo Nav::widget([
+            'activateParents' => true,
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => $items]
           );
@@ -84,7 +109,7 @@ AppAsset::register($this);
     <div class="row sniper">
       <div class="col-lg-4 col-lg-4 col-md-4">
         <h3>
-          <img class='lazy' data-original="/images/logo.png" alt="logo"/>
+          <img class='lazy' data-original="/images/backgrounds/logo.png" alt="logo"/>
           <span class="color-green">SNIPER</span>
         </h3>
         <p>Хоккейный центр Sniper</p>
@@ -109,7 +134,7 @@ AppAsset::register($this);
         <a href="<?= Html::encode($this->params['vk']) ?>" target="_blank"><p>Вконтаке</p></a>
         <a href="<?= Html::encode($this->params['instagram']) ?>" target="_blank"><p>Instagram</p></a>
         <a href="<?= Html::encode($this->params['youtube']) ?>" target="_blank"><p>Youtube</p></a>
-        <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('pages/contact')?>" title="">Свяжитесь с нами</a>
+        <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/contact')?>" title="">Свяжитесь с нами</a>
       </div>
       <div class="col-lg-4 col-lg-4 col-md-4">
         <h3 class="footer-h">
@@ -119,16 +144,16 @@ AppAsset::register($this);
         <div class="row site-map">
           <div class="col-lg-6 col-lg-6 col-md-6 copy-left">
             <a href="/site/index"><p>Главная</p></a>
-            <a href="/site/index"><p>Услуги и цены</p></a>
             <a href="/site/index"><p>Тренировки</p></a>
+            <a href="/site/index"><p>Акции и предложения</p></a>
           </div>
           <div class="col-lg-6 col-lg-6 col-md-6 copy-right">
             <a href="/site/index"><p>О нас</p></a>
-            <a href="/site/index"><p>Галерея</p></a>
+            <a href="/site/index"><p>Статьи</p></a>
             <a href="/site/index"><p>Контакты</p></a>
           </div>
         </div>
-        <a class="stroke" href="/pages/contact" title="">Записаться на тренировку</a>
+        <a class="stroke" href="/site/contact" title="">Записаться на тренировку</a>
       </div>
     </div>
 
@@ -139,7 +164,7 @@ AppAsset::register($this);
         <div class="col-lg-6 col-lg-6 col-md-6 col-sm-6 copy-right">
           <p class="dev">
             Сайт разработан <span class="color-green">Evgeny Popkov</span>
-            <a href="//vk.com/evgenypopkov" target="_blank"><img class='lazy' data-original="/images/vk.png" alt="vk"></a>
+            <a href="//vk.com/evgenypopkov" target="_blank"><img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"></a>
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
 <div class="auth-login sendpassword">
 
   <div class="auth-login-form">
-    <h1>Восстановление пароля</h1>
+    <h1 class="rep-pass">Восстановление пароля</h1>
     <hr/>
     <p>Ваш адрес электронной почты</p>
 

@@ -8,11 +8,22 @@ use yii\filters\VerbFilter;
 use app\models\Contacts;
 use app\models\ContactForm;
 use app\models\Address;
+use app\models\KeyWordAddress;
+use app\models\IndexPage;
+use app\models\AboutPage;
+use app\models\Coach;
+use app\models\Program;
+use app\models\Training;
+use app\models\Trainer;
+use app\models\Stock;
 
 class SiteController extends Controller
 {
     public function actions()
     {
+        $init = new Contacts();
+        $this->initParams($init->getContacts());
+
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -26,21 +37,27 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $model = new Contacts();
-        $this->initParams($model->getContacts());
+        $model = Contacts::getContacts();
+        $page = IndexPage::getIndexPage();
 
         return $this->render('index',[
-            'model' => $model->getContacts(),
+            'model' => $model,
+            'page' => $page,
         ]);
     }
 
     public function actionAbout()
     {
-        $model = new Contacts();
-        $this->initParams($model->getContacts());
+        $model = Contacts::getContacts();
+        $page = AboutPage::getAboutPage();
+        $coach = Coach::getCoaches();
+        $program = Program::getInfo();
 
         return $this->render('about',[
-            'model' => $model->getContacts(),
+            'model' => $model,
+            'page' => $page,
+            'coaches' => $coach,
+            'program' => $program,
         ]);
     }
 
@@ -59,14 +76,71 @@ class SiteController extends Controller
 
     public function actionContact()
     {
-      $model = new Contacts();
-      $address = new Address();
-      $this->initParams($model->getContacts(), $address->getAddressBoss());
+      $model = Contacts::getContacts();
+      $boss = Address::getAddressBoss();
+      $earth = Address::getAddressEarth();
+      $ice = Address::getAddressIce();
+      $coordinates = Address::getCoordinates();
 
       return $this->render('contact',[
-          'model' => $model->getContacts(),
-          'address'=> $address->getAddress(),
-          'coordinates'=> $address->getCoordinates(),
+          'model' => $model,
+          'boss'=> $boss,
+          'earth' => $earth,
+          'ice' => $ice,
+          'coordinates'=> $coordinates,
+      ]);
+    }
+
+    public function actionTraining()
+    {
+      $model = Contacts::getContacts();
+      $earth = Training::getEarth();
+      $ice = Training::getIce();
+
+      return $this->render('training',[
+          'model' => $model,
+          'earth' => $earth,
+          'ice' => $ice,
+      ]);
+    }
+
+    public function actionPhoto()
+    {
+      $model = Contacts::getContacts();
+
+      return $this->render('photo',[
+          'model' => $model,
+      ]);
+    }
+
+    public function actionTrainer()
+    {
+      $model = Contacts::getContacts();
+      $trainers = Trainer::getAll();
+
+      return $this->render('trainer',[
+          'model' => $model,
+          'trainers' => $trainers,
+      ]);
+    }
+
+    public function actionStock()
+    {
+      $model = Contacts::getContacts();
+      $stockes = Stock::getAll();
+
+      return $this->render('stock',[
+          'model' => $model,
+          'stockes' => $stockes,
+      ]);
+    }
+
+    public function actionVideo()
+    {
+      $model = Contacts::getContacts();
+
+      return $this->render('video',[
+          'model' => $model,
       ]);
     }
 
@@ -79,5 +153,7 @@ class SiteController extends Controller
       $this->view->params['instagram'] = $model->instagram;
       $this->view->params['youtube'] = $model->youtube;
     }
+
+
 
 }

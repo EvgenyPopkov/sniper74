@@ -1,0 +1,80 @@
+.site-training{
+  width: 100vw;
+	height: auto;
+	display: table;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.training-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
+}
+
+.training-block > hr {
+  border:1px solid #f8f8f8;
+}
+
+.training-block > h1{
+  margin: 0;
+  padding-top: 100px;
+  font-size: 3.5em;
+}
+
+.training-nav{
+  background-color: #f8f8f8;
+}
+
+.training-nav a{
+  color: #222;
+	font-size: 2.4em;
+	padding: 15px;
+  border: 3px solid #222;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 30px 5vw 30px 5vw;
+}
+
+.training-nav a:hover{
+	color: #05bca9;
+  border: 3px solid #05bca9;
+}
+
+.training-nav button{
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.site-training .table-bordered{
+  margin: 20px auto;
+}
+
+.site-training h2{
+  margin-top: 0;
+}
+
+.hr-shedule{
+  margin-bottom: 30px;
+}
+
+.earth-ice-none{
+  display: none;
+}
+
+.site-training-contact{
+  padding: 40px 0;
+}
+
+.site-training-contact phone{
+  color: #222;
+  font-size: 28px;
+}
+
+.training-nav .active-type{
+  color: #05bca9;
+  border: 3px solid #05bca9;
+}

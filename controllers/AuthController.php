@@ -39,6 +39,9 @@ class AuthController extends Controller
 
     public function actions()
     {
+        $model = new Contacts();
+        $this->initParams($model->getContacts());
+
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -49,9 +52,6 @@ class AuthController extends Controller
 
     public function actionLogin()
     {
-        $model = new Contacts();
-        $this->initParams($model->getContacts());
-
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -74,9 +74,6 @@ class AuthController extends Controller
 
     public function actionSignup()
     {
-        $model = new Contacts();
-        $this->initParams($model->getContacts());
-
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -93,9 +90,6 @@ class AuthController extends Controller
 
     public function actionSendpassword()
     {
-        $model = new Contacts();
-        $this->initParams($model->getContacts());
-        
         $model = new SendpasswordForm();
         $errorMessage = false;
 

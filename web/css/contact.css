@@ -9,19 +9,19 @@
   text-align: center;
 }
 
-.site-contact .row{
-  text-align: center;
+.contact-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
 }
 
-.site-contact .row h1{
+.contact-block > hr {
+  border:1px solid #f8f8f8;
+}
+
+.contact-block > h1{
   margin: 0;
   padding-top: 100px;
   font-size: 3.5em;
-}
-
-.contact-block{
-  background-color: #d4d4d4;
-  padding-bottom: 20px;
 }
 
 .site-contact h2{
@@ -58,12 +58,53 @@
   margin:20px 5vw 50px 5vw;
 }
 
-.site-contact a.stroke:hover{
+.site-contact .stroke:hover{
 	color: #05bca9;
   border: 3px solid #05bca9;
+}
+
+.contact-social{
+  margin-top: 20px;
+}
+
+.contact-social img{
+  width: 50px;
+  height: 50px;
 }
 
 #googleMap{
     height: 50vw;
     width: 100vw;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .contact-block h1{
+    font-size: 2.5em;
+  }
+
+  .contact-block hr{
+    width: 50vw;
+  }
+
+  .site-contact h2{
+    font-size: 1.5em;
+  }
+
+  .site-contact .name-location{
+    font-size: 1.2em;
+  }
+
+  .site-contact .info-location{
+    font-size: 1.2em;
+  }
+
+  .site-contact .stroke{
+    color: #222;
+  	font-size: 2em;
+  	padding: 10px;
+    border: 3px solid #222;
+    border-radius: 30px;
+    display: inline-block;
+    margin:20px 5vw 50px 5vw;
+  }
 }

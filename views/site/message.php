@@ -1,68 +1,60 @@
 <?php
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\models\ContactForm */
-
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Сообщение - Sniper Хоккейный центр';
+$this->registerCssFile('@web/css/message.css', ['depends' => ['app\assets\AppAsset']]);
 ?>
-<div class="site-contact">
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="site-message">
 
-    <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+    <div class="message-form">
+      <h1>Сообщение</h1>
+      <hr>
 
+      <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
         <div class="alert alert-success">
-            Thank you for contacting us. We will respond to you as soon as possible.
+            Сообщение отправлено
         </div>
 
-        <p>
-            Note that if you turn on the Yii debugger, you should be able
-            to view the mail message on the mail panel of the debugger.
-            <?php if (Yii::$app->mailer->useFileTransport): ?>
-                Because the application is in development mode, the email is not sent but saved as
-                a file under <code><?= Yii::getAlias(Yii::$app->mailer->fileTransportPath) ?></code>.
-                Please configure the <code>useFileTransport</code> property of the <code>mail</code>
-                application component to be false to enable email sending.
-            <?php endif; ?>
-        </p>
+      <?php else: ?>
+        <p>Заполните поля и отправьте нам сообщениие</p>
+        <div>
+          <?php $form = ActiveForm::begin([
+            'id' => 'contact-form',
+            'fieldConfig' => [
+                'template' => "<div class=\"message-input\">{input}</div>\n<div class=\"message-error\">{error}</div>",
+            ],
+          ]); ?>
 
-    <?php else: ?>
+          <?php if(Yii::$app->user->isGuest):?>
+                  <?=$form->field($model, 'name')->textInput(['autofocus' => true, 'placeholder' => 'Ваше имя'])?>
+                  <?=$form->field($model, 'email') ->textInput(['placeholder' => 'Ваш email'])?>
 
-        <p>
-            If you have business inquiries or other questions, please fill out the following form to contact us.
-            Thank you.
-        </p>
+          <?php else :?>
+                  <?=$form->field($model, 'name')->textInput(['autofocus' => true, 'value' => Yii::$app->user->identity->firstName, 'disabled' => true])?>
+                  <?=$form->field($model, 'email') ->textInput(['value' => Yii::$app->user->identity->email, 'disabled' => true])?>
 
-        <div class="row">
-            <div class="col-lg-5">
+          <?php endif;?>
 
-                <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+          <?= $form->field($model, 'subject') ->textInput(['placeholder' => 'Тема сообщения'])?>
 
-                    <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+          <?= $form->field($model, 'body')->textarea(['rows' => 6, 'placeholder' => 'Текст сообщения']) ?>
 
-                    <?= $form->field($model, 'email') ?>
+          <p>Введите код с картинки</p>
 
-                    <?= $form->field($model, 'subject') ?>
+          <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+              'template' => '<div><div>{image}</div><br><div class="verify">{input}</div></div>',
+          ])?>
 
-                    <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+          <div class="form-group">
+              <?= Html::submitButton('Отправить сообщение', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+          </div>
 
-                    <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                        'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-                    ]) ?>
-
-                    <div class="form-group">
-                        <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
-                    </div>
-
-                <?php ActiveForm::end(); ?>
-
-            </div>
+          <?php ActiveForm::end(); ?>
         </div>
+      <?php endif; ?>
 
-    <?php endif; ?>
+    </div>
 </div>

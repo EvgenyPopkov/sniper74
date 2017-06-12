@@ -1,5 +1,5 @@
-div.pages-error{
-  background: url(../images/404.jpg) no-repeat center;
+.pages-error{
+  background: url(../images/backgrounds/404.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -11,34 +11,34 @@ div.pages-error{
   text-align: center;
 }
 
-div.pages-error > h1{
-  color: #f8f8f8;
+.pages-error > h1{
+  color: #222;
   font-size: 8rem;
   font-family: 'Neucha', cursive;
   line-height: 1.334;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 450px;
+  margin-top: 500px;
 }
 
-div.pages-error button.btn-error{
-  margin-top: 25px;
+.pages-error button.btn-error{
+  margin: 25px 0;
   padding: 15px;
   background-color: transparent;
-  color: #f8f8f8;
+  color: #222;
   font-size: 20px;
-  border: 2px solid #f8f8f8;
+  border: 2px solid #222;
   border-radius: 30px;
 }
 
-div.pages-error button.btn-error:hover{
-  color: #05bca9;
-  border: 2px solid #05bca9;
+.pages-error button.btn-error:hover{
+  color: #f8f8f8;
+  border: 2px solid #f8f8f8;
 }
 
 @media (min-width: 0) and (max-width: 767px) {
-  div.pages-error > h1{
+  .pages-error > h1{
     font-size: 5rem;
   }
 }

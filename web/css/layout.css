@@ -9,11 +9,46 @@ body {
   background-color: #222;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+
 a, a:hover, phone{
   text-decoration: none;
 }
 
-div.block{
+.navbar-inverse .navbar-collapse{
+  width: 100%;
+  padding:0 5vw;
+}
+
+.navbar-toggle{
+  margin-right: 40px;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover{
+  background-color: transparent;
+}
+
+.navbar-nav > li > .dropdown-menu,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a,
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a{
+  background-color: #222;
+  color: #f8f8f8;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover{
+  background-color: #222;
+  color: #05bca9;
+}
+
+.block{
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -22,7 +57,7 @@ div.block{
   text-align: center;
 }
 
-div.loading{
+.loading{
   width: 100vw;
 	height: 100px;
   padding-top: 50vh;
@@ -70,70 +105,70 @@ div.loading{
   }
 }
 
-div.wrap, footer{
+.wrap, footer{
   display: none;
 }
 
-div.wrap > div.container {
+.container {
     padding: 0;
     margin: 0;
     width: 100vw;
 }
 
-nav.navbar-noscroll{
+.navbar-noscroll{
   background-color: transparent;
   border: none;
 }
 
-nav.navbar-scroll{
+.navbar-scroll{
   opacity: 0.85;
 }
 
-nav.navbar-scroll ul.navbar-nav > li.active > a,
-nav.navbar-scroll ul.navbar-nav > li.active > a:hover,
-nav.navbar-scroll ul.navbar-nav > li.active > a:focus {
+.navbar-scroll .navbar-nav > .active > a,
+.navbar-scroll .navbar-nav > .active > a:hover,
+.navbar-scroll .navbar-nav > .active > a:focus {
     border-top: 3px solid #05bca9;
     padding-top: 12px;
     background-color: transparent;
 }
 
-span.color-green, i{
+.color-green, i{
   color: #05bca9;
 }
 
-nav.navbar-noscroll ul.navbar-nav > li > a {
+.navbar-noscroll .navbar-nav > li > a {
   color: #f8f8f8;
   margin-right: 10px;
 }
 
-nav.navbar-noscroll ul.navbar-nav > li > a{
+.navbar-noscroll .navbar-nav > li > a{
   margin-top: 25px;
 }
 
-.navbar-scroll ul.navbar-nav > li > a{
+.navbar-scroll .navbar-nav > li > a{
   margin-top: 10px;
 }
 
-nav.navbar-scroll ul.navbar-nav > li.active > a,
-nav.navbar-scroll ul.navbar-nav > li.active > a:hover,
-nav.navbar-scroll ul.navbar-nav > li.active > a:focus,
-nav.navbar-noscroll a.navbar-brand:hover,
-nav.navbar-noscroll a.navbar-brand:focus,
-nav.navbar-noscroll ul.navbar-nav > li > a:hover,
-nav.navbar-noscroll ul.navbar-nav > li > a:focus {
+.navbar-scroll .navbar-nav > .active > a,
+.navbar-scroll .navbar-nav > .active > a:hover,
+.navbar-scroll .navbar-nav > .active > a:focus,
+.navbar-noscroll.navbar-brand:hover,
+.navbar-noscroll.navbar-brand:focus,
+.navbar-noscroll .navbar-nav > li > a:hover,
+.navbar-noscroll .navbar-nav > li > a:focus {
   color: #05bca9;
 }
 
-nav.navbar-noscroll ul.navbar-nav > li.active > a,
-nav.navbar-noscroll ul.navbar-nav > li.active > a:hover,
-nav.navbar-noscroll ul.navbar-nav > li.active > a:focus {
+.navbar-noscroll .navbar-nav > .active > a,
+.navbar-noscroll .navbar-nav > .active > a:hover,
+.navbar-noscroll .navbar-nav > .active > a:focus {
     color: #05bca9;
     border-top: 3px solid #05bca9;
     padding-top: 12px;
     background-color: transparent;
 }
 
-nav button.logout-noscroll{
+.logout-noscroll{
   padding-top: 12px;
   color: #f8f8f8;
   margin-right: 10px;
@@ -141,12 +176,12 @@ nav button.logout-noscroll{
   background-color: transparent;
 }
 
-nav button.logout-noscroll:hover,
-nav button.logout-scroll:hover {
+.logout-noscroll:hover,
+.logout-scroll:hover {
   color: #c9302c;
 }
 
-nav button.logout-scroll{
+.logout-scroll{
   padding-top: 12px;
   color: #9d9d9d;
   margin-top: 13px;
@@ -163,26 +198,29 @@ header, .btn{
   font-size: 14px;
 }
 
-a.navbar-brand{
+.navbar-brand{
   margin: 0;
   padding: 0;
 }
 
-nav.navbar-noscroll a.navbar-brand > img{
+.navbar-noscroll .navbar-brand > img{
   width: 100px;
   height: 80px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
-nav.navbar-scroll a.navbar-brand > img{
+.navbar-scroll .navbar-brand > img{
   width: 70px;
   height: 50px;
+  margin-left: 30px;
 }
 
-button.logout{
+.logout{
   margin-top: 20px;
 }
 
-footer > div.container-fluid{
+footer > .container-fluid{
   background-color: #222;
   color: #465166;
   padding-left: 0;
@@ -190,54 +228,54 @@ footer > div.container-fluid{
   padding-top: 30px;
 }
 
-footer div.copy {
+.copy {
   font-size: 16px;
   margin: 0;
   padding: 3px;
   background-color: #14181E;
 }
 
-footer div.copy-left{
+.copy-left{
   text-align: right;
 }
 
-footer div.copy-right{
+.copy-right{
   text-align: left;
 }
 
-footer div.sniper {
+.sniper {
   font-size: 16px;
   text-align: center;
   margin: 0;
   padding: 3px;
 }
 
-footer div.sniper h3.footer-h{
+.sniper .footer-h{
   color: #f8f8f8;
 }
 
-footer div.copy p{
+.copy p{
   margin-top: 10px;
 }
 
-footer div.copy p.dev img{
+.copy .dev img{
   width: 24px;
   height: 24px;
 }
 
-footer div.copy p.dev::before{
+.copy .dev::before{
   content: "|";
   display: inline-block;
   padding-right: 26px;
 }
 
-footer div.sniper img{
+.sniper img{
   width: 63px;
   height: 50px;
   margin-bottom: 10px;
 }
 
-footer div.sniper h3{
+.sniper h3{
   font-size: 26px;
   letter-spacing: .3rem;
 }
@@ -247,11 +285,11 @@ hr{
   width: 300px;
 }
 
-footer div.sniper a{
+.sniper a{
   color: #465166;
 }
 
-footer div.sniper a.stroke{
+.sniper a.stroke{
   color: #f8f8f8;
   font-size: 1.6rem;
   padding: 15px;
@@ -261,25 +299,25 @@ footer div.sniper a.stroke{
   margin: 20px;
 }
 
-footer div.sniper a:hover{
+.sniper a:hover{
   color: #f8f8f8;
 }
 
-footer div.sniper a.stroke:hover{
+.sniper .stroke:hover{
   color: #05bca9;
   border: 3px solid #05bca9;
 }
 
-footer div.sniper div.site-map{
+.sniper .site-map{
   margin: 0;
 }
 
 /*media query*/
 /*phones*/
 @media (min-width: 0) and (max-width: 767px) {
-  nav.navbar-scroll ul.navbar-nav > li.active > a,
-  nav.navbar-scroll ul.navbar-nav > li.active > a:hover,
-  nav.navbar-scroll ul.navbar-nav > li.active > a:focus {
+  .navbar-scroll .navbar-nav > .active > a,
+  .navbar-scroll .navbar-nav > .active > a:hover,
+  .navbar-scroll .navbar-nav > .active > a:focus {
       border-left: 3px solid #05bca9;
       border-top: none;
       padding-top: 5px;
@@ -287,9 +325,19 @@ footer div.sniper div.site-map{
       background-color: transparent;
   }
 
-  nav.navbar-noscroll ul.navbar-nav > li.active > a,
-  nav.navbar-noscroll ul.navbar-nav > li.active > a:hover,
-  nav.navbar-noscroll ul.navbar-nav > li.active > a:focus {
+  .navbar-inverse .navbar-nav > li{
+    margin-left: 10px;
+  }
+
+  .navbar-inverse .navbar-nav > li > a:focus,
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-nav .open .dropdown-menu{
+    background-color: #222;
+  }
+
+  .navbar-noscroll .navbar-nav > .active > a,
+  .navbar-noscroll .navbar-nav > .active > a:hover,
+  .navbar-noscroll .navbar-nav > .active > a:focus {
       color: #05bca9;
       border-left: 3px solid #05bca9;
       border-top: none;
@@ -298,50 +346,52 @@ footer div.sniper div.site-map{
       background-color: #222;
   }
 
-  nav.navbar-noscroll ul.navbar-nav > li > a{
+  .navbar-noscroll .navbar-nav > li > a{
     margin-top: 0;
     opacity: 0.8;
     background-color: #222;
     font-size: italic;
     font-size: 16px;
+    margin-left: 10px;
   }
 
-  nav.navbar-scroll ul.navbar-nav > li > a{
+  .navbar-scroll .navbar-nav > li > a{
     margin-top: 0;
     font-size: 16px;
+    margin-left: 10px;
   }
-  nav.navbar-noscroll a.navbar-brand > img{
+  .navbar-noscroll .navbar-brand > img{
     width: 70px;
     height: 50px;
   }
 
-  footer div.copy-left, footer div.copy-right{
+  .copy-left, .copy-right{
     text-align: center;
   }
 
-  footer div.copy p.dev::before{
+  .copy .dev::before{
     content: "";
     display: inline-block;
     padding-right: 0;
   }
 
-  footer a.stroke{
+  .stroke{
     font-size: 14px;
   }
 }
 
 /*tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-  nav.navbar-noscroll ul.navbar-nav > li > a,
-  nav.navbar-scroll ul.navbar-nav > li > a {
+  .navbar-noscroll ul.navbar-nav > li > a,
+  .navbar-scroll ul.navbar-nav > li > a {
     font-size: 12px;
   }
 
-  footer div.copy-left, footer div.copy-right{
+  .copy-left, .copy-right{
     text-align: center;
   }
 
-  footer div.copy p.dev::before{
+.copy .dev::before{
     content: "";
     display: inline-block;
     padding-right: 0;
@@ -350,7 +400,7 @@ footer div.sniper div.site-map{
 
 /*small desktop*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  footer a.stroke{
+  .stroke{
     font-size: 14px;
   }
 }

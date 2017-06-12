@@ -1,18 +1,18 @@
-div.site-about{
+.site-about{
 	width: 100vw;
 	height: auto;
 	display: table;
 	position: relative;
 }
 
-img.nhl{
+.nhl{
 	position: absolute;
 	width: 100vw;
 	height: 160vh;
 	z-index: -1;
 }
 
-div.about-head{
+.about-head{
   text-align: center;
   color: #f8f8f8;
   margin: 0;
@@ -22,7 +22,7 @@ div.about-head{
   padding-bottom: 160px;
 }
 
-div.about-head > h1{
+.about-head > h1{
   color: #f8f8f8;
   font-size: 8rem;
   font-family: 'Neucha', cursive;
@@ -30,36 +30,36 @@ div.about-head > h1{
   margin: 0 auto;
 }
 
-div.about-we{
+.about-we{
   text-align: center;
   color: #222;
   margin: 0;
   background-color: #f8f8f8;
 }
 
-div.about-we > div.row{
+.about-we > .row{
   margin-top: 0;
   padding-top: 70px;
   text-align: center;
 }
 
-div.about-we > div.row > h2{
+.about-we > .row > h2{
   font-size: 38px;
 }
 
-div.about-info{
+.about-info{
   margin: 50px 0 90px 0;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-div.about-info > p{
+.about-info > p{
   color: rgba(0, 0, 0, 0.6);
   padding: 30px 7vw;
   font-size: 24px;
 }
 
-div.about-contact{
+.about-contact{
   background-color: #222;
   border: 2px solid #05bca9;
   border-radius: 30px;
@@ -68,23 +68,23 @@ div.about-contact{
   padding-bottom: 30px;
 }
 
-div.about-contact button{
+.about-contact button{
   margin: 30px auto;
   background-color: #05bca9;
   color: #222;
 }
 
-div.about-contact button:hover{
+.about-contact button:hover{
   transform: none;
   color: #f8f8f8;
 }
 
-div.about-contact phone{
+.about-contact phone{
   font-size: 1.8em;
   color: #f8f8f8;
 }
 
-div.about-training{
+.about-training{
   color: #222;
   background-color: #d4d4d4;
   margin: 0;
@@ -92,44 +92,44 @@ div.about-training{
   padding-top: 70px;
 }
 
-div.about-training > h2{
+.about-training > h2{
   margin: 0;
   font-size: 2.8em;
 }
 
-div.about-training h3{
+.about-training h3{
   font-size: 2em;
   color: #05bca9;
   padding: 20px 0;
 }
 
-div.about-training h4{
+.about-training h4{
   color: rgba(0, 0, 0, 0.5);
   padding: 10px 50vh;
 }
 
-div.about-training img{
+.about-training img{
   width: 20vw;
   height: 19vw;
   margin-top: 30px;
 }
 
-div.about-training h3:hover{
+.about-training h3:hover{
   text-decoration: underline;
 }
 
-div.about-training p{
+.about-training p{
   padding: 0 2vw;
   text-align: center;
 	font-size: 1.31em;
 }
 
-div.training-two{
+.training-two{
 	background-color: #222;
 	color: #f8f8f8;
 }
 
-div.training-two .rounded li {
+.training-two .rounded li {
 	color: rgba(255,255,255,.5);
 }
 
@@ -166,12 +166,12 @@ div.training-two .rounded li {
   transition: all .3s ease-out;
 }
 
-hr.hr-training{
+.hr-training{
   border: 1px solid #05bca9;
   width: 80%;
 }
 
-p.about-training-head{
+.about-training-head{
   font-size: 1.2em;
   margin: 1vw;
 }
@@ -182,11 +182,11 @@ h5{
   margin-top: 30px;
 }
 
-div.about-video{
+.about-video{
 	background-color: #222;
 }
 
-div.about-video a.stroke{
+.about-video a.stroke{
 	color: #f8f8f8;
 	font-size: 2.4em;
 	padding: 15px;
@@ -197,28 +197,28 @@ div.about-video a.stroke{
 	margin-bottom: 90px;
 }
 
-div.about-video a.stroke:hover{
+.about-video a.stroke:hover{
 	color: #05bca9;
   border: 3px solid #05bca9;
 }
 
-h1.age{
+.age{
 	color: #05bca9;
 	padding: 40px 4vw;
 	margin: 0;
 }
 
-div.equipment{
+.equipment{
 	background-color: #f8f8f8;
 	text-align: center;
 }
 
-div.equipment h2{
+.equipment h2{
 	padding: 50px 2vw 5px 2vw;
 	font-size: 2.8em;
 }
 
-div.equipment a.stroke{
+.equipment a.stroke{
 	color: #222;
 	font-size: 2.4em;
 	padding: 15px;
@@ -228,12 +228,12 @@ div.equipment a.stroke{
   margin: 2vw;
 }
 
-div.equipment a.stroke:hover{
+.equipment a.stroke:hover{
 	color: #05bca9;
   border: 3px solid #05bca9;
 }
 
-div.coaches{
+.coaches{
 	color: #222;
   background-color: #d4d4d4;
   margin: 0;
@@ -241,39 +241,39 @@ div.coaches{
   padding: 50px 0;
 }
 
-div.coaches-info{
+.coaches-info{
 	text-align: left;
 	padding: 0 10vw 0 0;
 }
 
-div.coaches-info > h3{
+.coaches-info > h3{
 	font-size: 2.5em;
 	padding-bottom: 20px;
 	padding-top: 50px;
 }
 
-div.coaches-info > h4{
+.coaches-info > h4{
 	font-size: 2em;
 	padding-bottom: 15px;
 	color: #05bca9;
 }
 
-div.coaches-info > p{
+.coaches-info > p{
 	font-size: 1.5em;
 	color: rgba(0,0,0,.5);
 }
 
-div.coaches img.coach{
+.coaches .coach{
 	width: 20vw;
 	height: 18vw;
 }
 
-hr.hr-black{
+.hr-black{
 	border: 1px solid #222;
 	width: 85vw;
 }
 
-div.about-photo{
+.about-photo{
 	background-color: #05bca9;
 	margin: 0;
 	padding: 0;
@@ -281,23 +281,23 @@ div.about-photo{
 	text-align: center;
 }
 
-div.about-photo h2{
+.about-photo h2{
 	padding-bottom: 10px;
 }
 
-div.about-photo hr{
+.about-photo hr{
 	border: 1px solid #f8f8f8;
 	margin-bottom: 70px;
 }
 
-div.about-photo div#myCarousel img{
+.about-photo #myCarousel img{
   width: 45vw;
   height: 30vw;
   opacity:1;
 	margin: 0 auto;
 }
 
-div.about-photo a.stroke{
+.about-photo .stroke{
 	color: #222;
 	font-size: 2.4em;
 	padding: 15px;
@@ -307,7 +307,7 @@ div.about-photo a.stroke{
   margin: 70px 2vw;
 }
 
-div.about-photo a.stroke:hover{
+.about-photo .stroke:hover{
 	color: #f8f8f8;
   border: 3px solid #f8f8f8;
 }
@@ -443,32 +443,32 @@ div.about-photo a.stroke:hover{
 .popup p {margin: 0; padding: 5px 0}
 
 @media (min-width: 0) and (max-width: 767px) {
-	div.site-about{
+	.site-about{
 		padding-right: 1vw;
 	}
 
-  div.about-head > h1{
+  .about-head > h1{
     font-size: 3.5rem;
   }
 
-	div.about-we > div.row > h2{
+	.about-we > .row > h2{
 	  font-size: 26px;
 	}
 
-  div.about-info > p{
+  .about-info > p{
     font-size: 18px;
   }
 
-  div.about-contact phone{
+  .about-contact phone{
     font-size: 20px;
   }
 
-  div.about-contact{
+  .about-contact{
     border-radius: 0;
     margin-bottom: 0;
   }
 
-  div.about-we > div.row > div.about-info > p{
+  .about-we > .row > .about-info > p{
     padding-bottom: 5px;
   }
 
@@ -481,30 +481,30 @@ div.about-photo a.stroke:hover{
     left: 18vw;
   }
 
-  div.about-training img{
+  .about-training img{
     width: 300px;
     height: 270px;
   }
 
-	div.about-training h4{
+	.about-training h4{
 	  padding: 10px;
 	}
 
-	h1.age{
+	.age{
 		font-size: 18px;
 	}
 
-	div.coaches-info{
+	.coaches-info{
 		text-align: center;
 		padding: 0 5vw;
 	}
 
-	div.coaches img.coach{
+	.coaches .coach{
 		width: 70vw;
 		height: 65vw;
 	}
 
-	img.nhl{
+	.nhl{
 		height: 80vh;
 	}
 
@@ -515,24 +515,24 @@ div.about-photo a.stroke:hover{
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  div.about-head > h1{
+  .about-head > h1{
     font-size: 5rem;
   }
 
-	div.about-we > div.row > div.about-info > p{
+	.about-we > .row > .about-info > p{
     font-size: 18px;
   }
 
-  div.about-contact phone{
+  .about-contact phone{
     font-size: 20px;
   }
 
-  div.about-contact{
+  .about-contact{
     border-radius: 0;
     margin-bottom: 0;
   }
 
-  div.about-we > div.row > div.about-info > p{
+  .about-we > .row > .about-info > p{
     padding-bottom: 5px;
   }
 
@@ -545,30 +545,30 @@ div.about-photo a.stroke:hover{
     left: 33vw;
   }
 
-  div.about-training img{
+  .about-training img{
     width: 400px;
     height: 360px;
   }
 
-	div.about-training h4{
+	.about-training h4{
 	  padding: 10px 20vh;
 	}
 
-	h1.age{
+	.age{
 		font-size: 20px;
 	}
 
-	div.coaches-info{
+	.coaches-info{
 		text-align: center;
 		padding: 0 5vw;
 	}
 
-	div.coaches img.coach{
+	.coaches .coach{
 		width: 60vw;
 		height: 55vw;
 	}
 
-	img.nhl{
+	.nhl{
 		height: 100vh;
 	}
 
@@ -579,24 +579,24 @@ div.about-photo a.stroke:hover{
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  div.about-head > h1{
+  .about-head > h1{
     font-size: 6rem;
   }
 
-  div.about-we > div.row > div.about-info > p{
+  .about-we > .row > .about-info > p{
     font-size: 18px;
   }
 
-  div.about-contact phone{
+  .about-contact phone{
     font-size: 20px;
   }
 
-  div.about-contact img{
+  .about-contact img{
     width: 32px;
     height: 32px;
   }
 
-  div.about-contact button{
+  .about-contact button{
     font-size: 14px;
   }
 
@@ -609,34 +609,34 @@ div.about-photo a.stroke:hover{
     left: 35vw;
   }
 
-  div.about-training img{
+  .about-training img{
     width: 400px;
     height: 360px;
   }
 
-	div.about-training h4{
+	.about-training h4{
 	  padding: 10px 20vh;
 	}
 
-	h1.age{
+	.age{
 		font-size: 22px;
 	}
 
-	img.nhl{
+	.nhl{
 		height: 120vh;
 	}
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
-  div.about-we > div.row > div.about-info > p{
+  .about-we > .row > .about-info > p{
     font-size: 20px;
   }
 
-	img.nhl{
+	.nhl{
 		height: 140vh;
 	}
 
-  div.about-contact phone{
+  .about-contact phone{
     font-size: 24px;
   }
 }

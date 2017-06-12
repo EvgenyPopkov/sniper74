@@ -17,9 +17,29 @@ class Address extends ActiveRecord
       return Address::find()->all();
   }
 
+  public function getAddressName($id)
+  {
+      return Address::findOne(['id' => $id])->address;
+  }
+
   public function getAddressBoss()
   {
-    return Address::findOne(['id' => '1']);
+    return Address::findAll(['idKeyWord' => KeyWordAddress::getBoss()]);
+  }
+
+  public function getAddressEarth()
+  {
+    return Address::findAll(['idKeyWord' => KeyWordAddress::getEarth()]);
+  }
+
+  public function getAddressIce()
+  {
+    return Address::findAll(['idKeyWord' => KeyWordAddress::getIce()]);
+  }
+
+  public function getAddressSbor()
+  {
+    return Address::findAll(['idKeyWord' => KeyWordAddress::getSbor()]);
   }
 
   public function getCoordinates()

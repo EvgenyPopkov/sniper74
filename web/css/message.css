@@ -1,0 +1,64 @@
+.site-message{
+  background: url(../images/backgrounds/message.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: auto;
+  min-height: 720px;
+  display: table;
+  position: relative;
+  text-align: center;
+}
+
+.site-message h1{
+  margin: 0;
+  padding-top: 40px;
+}
+
+.site-message .message-form{
+  background-color: #222;
+  margin: 100px auto;
+  border: 3px solid #05bca9;
+  border-radius: 28px;
+  color:#f8f8f8;
+  opacity: 0.9;
+  width: 40vw;
+}
+
+.message-input{
+  width: 400px;
+  margin: 5px auto;
+}
+
+.verify{
+  width: 120px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .site-message .message-form{
+    width: 80vw;
+  }
+
+  .site-message hr{
+    width: 50vw;
+  }
+
+  .site-message .message-form .message-input{
+    width: 70vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-message .message-form{
+    width: 70vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .site-message .message-form{
+    width: 60vw;
+  }
+}

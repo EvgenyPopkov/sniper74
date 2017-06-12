@@ -1,0 +1,25 @@
+.site-photo{
+  width: 100vw;
+	height: auto;
+	display: table;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.photo-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
+}
+
+.photo-block > hr {
+  border:1px solid #f8f8f8;
+}
+
+.photo-block > h1{
+  margin: 0;
+  padding-top: 100px;
+  font-size: 3.5em;
+}

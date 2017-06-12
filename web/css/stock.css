@@ -1,0 +1,60 @@
+.site-stock{
+  width: 100vw;
+	height: auto;
+	display: table;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.stock-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
+}
+
+.stock-block > hr {
+  border:1px solid #f8f8f8;
+}
+
+.stock-block > h1{
+  margin: 0;
+  padding-top: 100px;
+  font-size: 3.5em;
+}
+
+.stock-gray,
+.stock-white{
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.stock-gray p,
+.stock-white p{
+  padding-top: 20px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.stock-gray{
+  background-color: #d4d4d4;
+}
+
+.site-stock h2{
+  margin: 0;
+  padding-top: 50px;
+}
+
+.site-stock hr{
+  margin-bottom: 20px;
+}
+
+.site-stock-contact{
+  padding: 40px 0;
+}
+
+.site-stock-contact phone{
+  color: #222;
+  font-size: 28px;
+}
