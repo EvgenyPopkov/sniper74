@@ -22,7 +22,7 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
       <phone>&emsp;<?= Html::encode($model->phone) ?></phone>
     </div>
     <div class="col-lg-4 col-md-4">
-      <a href="<?=Yii::$app->urlManager->createUrl('site/contact')?>"><button class="btn">Записаться на тренировку</button></a>
+      <a href="<?=Yii::$app->urlManager->createUrl('site/training')?>"><button class="btn">Записаться на тренировку</button></a>
     </div>
     <div class="col-lg-4 col-md-4 social">
       <a href="<?= Html::encode($model->vk) ?>" target="_blank">
@@ -54,7 +54,7 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
       </div>
       <hr>
       <p> <?= Html::encode($page->we) ?> </p>
-      <a class="stroke" href="/site/about" title="">Узнать больше</a>
+      <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/about')?>" title="">Узнать больше</a>
     </div>
 
     <div class="col-lg-3 col-md-3">
@@ -70,21 +70,21 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
 
       <div class="dribbling">
         <img class='lazy' data-original="/images/index/<?= Html::encode($page->imageDribbling) ?> " alt="владение шайбой">
-          <a href="#"><h3>Дриблинг</h3></a>
+          <a href="<?=Yii::$app->urlManager->createUrl('site/process')?>"><h3>Дриблинг</h3></a>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4">
       <div class="skating">
           <img class='lazy' data-original="/images/index/<?= Html::encode($page->imageScating) ?> " alt="владение шайбой">
-        <a href="#"><h3>Катание</h3></a>
+        <a href="<?=Yii::$app->urlManager->createUrl('site/process')?>"><h3>Катание</h3></a>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4">
       <div class="shot">
           <img class='lazy' data-original="/images/index/<?= Html::encode($page->imageShot) ?> " alt="владение шайбой">
-        <a href="#"><h3>Броски</h3></a>
+        <a href="<?=Yii::$app->urlManager->createUrl('site/process')?>"><h3>Броски</h3></a>
       </div>
     </div>
 
@@ -96,7 +96,7 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
         <phone>&emsp;<?= Html::encode( $model->phone) ?></phone>
       </div>
       <div class="col-lg-6 col-md-6">
-         <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/about')?>" title="">Расписание тренировок</a>
+         <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/training')?>" title="">Расписание тренировок</a>
       </div>
       <div class="col-lg-3 col-md-3 training-contact-social">
         <a href="<?= Html::encode( $model->vk) ?>" target="_blank">
@@ -121,7 +121,45 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
   <div class="articles">
     <h1>Статьи и обучающие материалы</h1>
     <hr>
-    <a class="stroke" href="#">Раздел статей</a>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="#win0" class="">
+            <img src="/images/carouselAbout/carousel-1.jpg" alt="катание на коньках">
+          </a>
+        </div>
+        <div class="item">
+          <a href="#win1" class="">
+            <img src="/images/carouselAbout/carousel-2.jpg" alt="Chania">
+            <h3></h3>
+            <a href="#"><h2></h2></a>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#win2" class="">
+            <img src="/images/carouselAbout/carousel-3.jpg" alt="Chicago">
+          </a>
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/article')?>">Раздел статей</a>
   </div>
 
   <div class="row news">

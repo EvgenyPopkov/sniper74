@@ -62,8 +62,6 @@ class Training extends ActiveRecord
           ];
       }
 
-
-
       return $result;
   }
 

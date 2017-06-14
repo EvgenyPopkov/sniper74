@@ -22,24 +22,4 @@ class Task extends ActiveRecord
       return $task->name;
   }
 
-  public function updateTask($uptask, $id)
-  {
-      $task = Task::findOne(['id' => $id]);
-      $task = $uptask;
-      return $task->save();
-  }
-
-  public function createTask($crtask)
-  {
-      $task = new Task();
-      $task = $crtask;
-      return $task->save();
-  }
-
-  public function deleteTask($id)
-  {
-      $task = Task::findOne(['id' => $id]);
-      return $task->delete();
-  }
-
 }

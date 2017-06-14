@@ -1,0 +1,85 @@
+.site-recent{
+  width: 100vw;
+	height: auto;
+	display: table;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #d4d4d4;
+  text-align: center;
+}
+
+.recent-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
+}
+
+.recent-block > hr {
+  border:1px solid #222;
+}
+
+.recent-block > h1{
+  margin: 0;
+  padding-top: 100px;
+  font-size: 3.5em;
+  color: #f8f8f8;
+}
+
+.recent{
+  background-color: #f8f8f8;
+  margin: 7%;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+.recent h2{
+  color: #05bca9;
+  margin: 30px auto;
+}
+
+.recent h3, .recent p{
+  color: rgba(0,0,0,0.5);
+}
+
+.recent img{
+  margin-top: 5%;
+  width: 90%;
+  height: 30%;
+}
+
+.hr-black{
+  border: 1px solid #222;
+}
+
+.recent p{
+  font-size: 1.5em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.recent a:hover{
+	color: #05bca9;
+  border: 3px solid #05bca9;
+}
+
+.more{
+  margin: 50px auto;
+}
+
+.recent a{
+  color: #222;
+	font-size: 2.4em;
+	padding: 15px;
+  border: 3px solid #222;
+  border-radius: 30px;
+}
+
+.stat, .stat i{
+  color: rgba(0,0,0,0.5);
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover{
+  background-color: #05bca9;
+  border: none;
+}

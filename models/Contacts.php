@@ -16,11 +16,4 @@ class Contacts extends ActiveRecord
   {
       return Contacts::findOne(['id' => 1]);
   }
-
-  public function updateContacts($newcontact)
-  {
-      $contact = Contacts::findOne(['id' => 1]);
-      $contact = $newcontact;
-      return $contact->save();
-  }
 }

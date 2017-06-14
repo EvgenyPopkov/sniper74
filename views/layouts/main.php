@@ -50,6 +50,12 @@ AppAsset::register($this);
             'label' => 'О нас', 'url' => ['/site/about']
           ],
           [
+            'label' => 'Тренировочный процесс', 'url' => ['/site/process']
+          ],
+          [
+            'label' => 'Новости', 'url' => ['/site/news']
+          ],
+          [
             'label' => 'Тренажеры', 'url' => ['/site/trainer']
           ],
           [
@@ -57,6 +63,9 @@ AppAsset::register($this);
           ],
           [
             'label' => 'Видеозаписи', 'url' => ['/site/video']
+          ],
+          [
+            'label' => 'Live-трансляция', 'url' => ['/site/live']
           ]
         ],
         ];
@@ -76,7 +85,7 @@ AppAsset::register($this);
           $items[]=['label' => 'ВОЙТИ', 'url' => ['/auth/login']];
 
         else:
-          $items[]=['label' => Yii::$app->user->identity->email, 'url' => ['/auth/logout']];
+          $items[]=['label' => Yii::$app->user->identity->firstName, 'url' => ['/auth/logout']];
           $items[]='<li>'
           . Html::beginForm(['/auth/logout'], 'post')
           . Html::submitButton(
@@ -143,17 +152,17 @@ AppAsset::register($this);
         <hr/>
         <div class="row site-map">
           <div class="col-lg-6 col-lg-6 col-md-6 copy-left">
-            <a href="/site/index"><p>Главная</p></a>
-            <a href="/site/index"><p>Тренировки</p></a>
-            <a href="/site/index"><p>Акции и предложения</p></a>
+            <a href="<?=Yii::$app->urlManager->createUrl('site/index')?>"><p>Главная</p></a>
+            <a href="<?=Yii::$app->urlManager->createUrl('site/news')?>"><p>Новости</p></a>
+            <a href="<?=Yii::$app->urlManager->createUrl('site/process')?>"><p>Тренировки</p></a>
           </div>
           <div class="col-lg-6 col-lg-6 col-md-6 copy-right">
-            <a href="/site/index"><p>О нас</p></a>
-            <a href="/site/index"><p>Статьи</p></a>
-            <a href="/site/index"><p>Контакты</p></a>
+            <a href="<?=Yii::$app->urlManager->createUrl('site/about')?>"><p>О нас</p></a>
+            <a href="<?=Yii::$app->urlManager->createUrl('site/article')?>"><p>Статьи</p></a>
+            <a href="<?=Yii::$app->urlManager->createUrl('site/contact')?>"><p>Контакты</p></a>
           </div>
         </div>
-        <a class="stroke" href="/site/contact" title="">Записаться на тренировку</a>
+        <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/training')?>" title="">Записаться на тренировку</a>
       </div>
     </div>
 

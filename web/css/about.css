@@ -62,150 +62,27 @@
 .about-contact{
   background-color: #222;
   border: 2px solid #05bca9;
-  border-radius: 30px;
-  margin: 80px 1vw;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 80px;
+	margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .about-contact button{
-  margin: 30px auto;
+  margin: 0 auto;
   background-color: #05bca9;
-  color: #222;
+  color: #f8f8f8;
+	font-size: 1.7em;
 }
 
 .about-contact button:hover{
   transform: none;
-  color: #f8f8f8;
+  color: #222;
 }
 
 .about-contact phone{
-  font-size: 1.8em;
-  color: #f8f8f8;
-}
-
-.about-training{
-  color: #222;
-  background-color: #d4d4d4;
-  margin: 0;
-  text-align: center;
-  padding-top: 70px;
-}
-
-.about-training > h2{
-  margin: 0;
-  font-size: 2.8em;
-}
-
-.about-training h3{
   font-size: 2em;
-  color: #05bca9;
-  padding: 20px 0;
-}
-
-.about-training h4{
-  color: rgba(0, 0, 0, 0.5);
-  padding: 10px 50vh;
-}
-
-.about-training img{
-  width: 20vw;
-  height: 19vw;
-  margin-top: 30px;
-}
-
-.about-training h3:hover{
-  text-decoration: underline;
-}
-
-.about-training p{
-  padding: 0 2vw;
-  text-align: center;
-	font-size: 1.31em;
-}
-
-.training-two{
-	background-color: #222;
-	color: #f8f8f8;
-}
-
-.training-two .rounded li {
-	color: rgba(255,255,255,.5);
-}
-
-.rounded {
-  counter-reset: li;
-  list-style: none;
-  padding: 0;
-  text-align: left;
-}
-
-.rounded li {
-  position: relative;
-  display: block;
-  padding: .4em .4em .6em 9em;
-  margin: .5em 0;
-  color: rgba(0,0,0,.5);
-  text-decoration: none;
-  border-radius: .3em;
-  font-size: 16px;
-}
-
-.rounded li:before {
-  content: "";
-  position: absolute;
-  left: 5.5em;
-  top: 50%;
-  margin-top: -1.3em;
-  background: #05bca9;
-  height: 2em;
-  width: 2em;
-  line-height: 2em;
-  border: .3em solid #f8f8f8;
-  border-radius: 2em;
-  transition: all .3s ease-out;
-}
-
-.hr-training{
-  border: 1px solid #05bca9;
-  width: 80%;
-}
-
-.about-training-head{
-  font-size: 1.2em;
-  margin: 1vw;
-}
-
-h5{
-  font-size: 1.2em;
-  padding-top: 10px;
-  margin-top: 30px;
-}
-
-.about-video{
-	background-color: #222;
-}
-
-.about-video a.stroke{
-	color: #f8f8f8;
-	font-size: 2.4em;
-	padding: 15px;
-  border: 3px solid #f8f8f8;
-  border-radius: 30px;
-  display: inline-block;
-  margin:0 5vw;
-	margin-bottom: 90px;
-}
-
-.about-video a.stroke:hover{
-	color: #05bca9;
-  border: 3px solid #05bca9;
-}
-
-.age{
-	color: #05bca9;
-	padding: 40px 4vw;
-	margin: 0;
+  color: #f8f8f8;
 }
 
 .equipment{
@@ -472,28 +349,6 @@ h5{
     padding-bottom: 5px;
   }
 
-	.rounded li {
-    padding: .4em .4em .6em 30vw;
-    font-size: 16px;
-  }
-
-  .rounded li:before {
-    left: 18vw;
-  }
-
-  .about-training img{
-    width: 300px;
-    height: 270px;
-  }
-
-	.about-training h4{
-	  padding: 10px;
-	}
-
-	.age{
-		font-size: 18px;
-	}
-
 	.coaches-info{
 		text-align: center;
 		padding: 0 5vw;
@@ -536,28 +391,6 @@ h5{
     padding-bottom: 5px;
   }
 
-	.rounded li {
-    padding: .4em .4em .6em 40vw;
-    font-size: 20px;
-  }
-
-  .rounded li:before {
-    left: 33vw;
-  }
-
-  .about-training img{
-    width: 400px;
-    height: 360px;
-  }
-
-	.about-training h4{
-	  padding: 10px 20vh;
-	}
-
-	.age{
-		font-size: 20px;
-	}
-
 	.coaches-info{
 		text-align: center;
 		padding: 0 5vw;
@@ -599,28 +432,6 @@ h5{
   .about-contact button{
     font-size: 14px;
   }
-
-  .rounded li {
-    padding: .4em .4em .6em 40vw;
-    font-size: 20px;
-  }
-
-  .rounded li:before {
-    left: 35vw;
-  }
-
-  .about-training img{
-    width: 400px;
-    height: 360px;
-  }
-
-	.about-training h4{
-	  padding: 10px 20vh;
-	}
-
-	.age{
-		font-size: 22px;
-	}
 
 	.nhl{
 		height: 120vh;

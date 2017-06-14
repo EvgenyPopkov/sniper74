@@ -17,24 +17,4 @@ class Coach extends ActiveRecord
       return Coach::find()->all();
   }
 
-  public function updateCoach($upcoach, $id)
-  {
-      $coach = Address::findOne(['id' => $id]);
-      $coach = $upcoach;
-      return $coach->save();
-  }
-
-  public function createAddress($crcoach)
-  {
-      $coach = new Address();
-      $coach = $crcoach;
-      return $coach->save();
-  }
-
-  public function deleteAddress($id)
-  {
-      $coach = Address::findOne(['id' => $id]);
-      return $coach->delete();
-  }
-
 }

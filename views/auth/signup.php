@@ -1,9 +1,5 @@
 <?php
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\models\LoginForm */
-
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
@@ -29,7 +25,7 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
         <?= $form->field($model, 'lastName')->textInput(['placeholder' => 'Фамилия']) ?>
         <?= $form->field($model, 'phone')->textInput(['placeholder' => 'Номер телефона']) ?>
         <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'placeholder' => 'Email']) ?>
-        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Паролль не менее 5 символов']) ?>
+        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Пароль не менее 5 символов']) ?>
         <?= $form->field($model, 'confirmPassword')->passwordInput(['placeholder' => 'Подтвердите пароль']) ?>
 
         <div class="form-group">

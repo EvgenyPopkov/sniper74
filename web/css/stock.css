@@ -9,36 +9,38 @@
   text-align: center;
 }
 
+.hr-white{
+  border: 1px solid #222;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .stock-block{
   background-color: #05bca9;
   padding-bottom: 20px;
 }
 
 .stock-block > hr {
-  border:1px solid #f8f8f8;
+  border:1px solid #222;
 }
 
 .stock-block > h1{
   margin: 0;
   padding-top: 100px;
   font-size: 3.5em;
+  color: #f8f8f8;
 }
 
-.stock-gray,
 .stock-white{
   padding-bottom: 50px;
   text-align: center;
 }
 
-.stock-gray p,
 .stock-white p{
   padding-top: 20px;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.5)
-}
-
-.stock-gray{
-  background-color: #d4d4d4;
 }
 
 .site-stock h2{
@@ -47,11 +49,12 @@
 }
 
 .site-stock hr{
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .site-stock-contact{
   padding: 40px 0;
+  background-color: #d4d4d4;
 }
 
 .site-stock-contact phone{

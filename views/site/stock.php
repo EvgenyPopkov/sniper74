@@ -13,31 +13,15 @@ $this->registerCssFile('@web/css/stock.css', ['depends' => ['app\assets\AppAsset
     <hr>
   </div>
 
-  <?php
-  $flag = true;
-  foreach ($stockes as $stock) {
-    if ($flag) { ?>
+  <?php foreach ($stockes as $stock) { ?>
       <div class="stock-white">
         <h2><?= Html::encode($stock->header) ?></h2>
-        <hr>
         <p>
           <?= Html::encode($stock->description) ?>
         </p>
       </div>
-    <?php  $flag = false;
-    }
-
-    else { ?>
-      <div class="stock-gray">
-        <h2><?= Html::encode($stock->header) ?></h2>
-        <hr>
-        <p>
-          <?= Html::encode($stock->description) ?>
-        </p>
-      </div>
-    <?php  $flag = true;
-    }
-  } ?>
+      <hr class="hr-white">
+  <?php } ?>
 
   <div class="row site-stock-contact">
     <div class="col-lg-6 col-md-6">

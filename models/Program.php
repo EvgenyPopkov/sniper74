@@ -43,31 +43,4 @@ class Program extends ActiveRecord
       return Program::find()->all();
   }
 
-  public function updatetask($upprogram, $id)
-  {
-      $program = Program::findOne(['id' => $id]);
-      $program = $upprogram;
-      return $program->save();
-  }
-
-  public function createtask($crprogram)
-  {
-      $program = new Program();
-      $program = $crprogram;
-      return $program->save();
-  }
-
-  public function deletetask($id)
-  {
-      $program = Program::findOne(['id' => $id]);
-      return $program->delete();
-  }
-
-}
-
-class Result{
-  public $name;
-  public $description;
-  public $image;
-  public $task;
 }

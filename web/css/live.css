@@ -1,0 +1,53 @@
+.site-live{
+  width: 100vw;
+	height: auto;
+	display: table;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.live-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
+}
+
+.live-block > hr {
+  border:1px solid #222;
+}
+
+.live-block > h1{
+  margin: 0;
+  padding-top: 100px;
+  font-size: 3.5em;
+  color: #f8f8f8;
+}
+
+.iv-embed{
+  margin:30px auto;
+  padding:0;
+  border:0;
+  width:60vw;
+  background:#222;
+}
+
+.iv-v{
+  display:block;
+  margin:0 auto;
+  padding:1px;
+  border:0;
+  background:#222;
+  width: 60vw;
+}
+
+.iv-i{
+   background:#222;
+   display:block;
+   margin:0 auto;
+   padding:0;
+   border:0;
+   width: 60vw;
+   height: 40vw;
+}

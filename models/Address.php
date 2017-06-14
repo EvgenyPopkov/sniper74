@@ -47,24 +47,4 @@ class Address extends ActiveRecord
     return Address::find()->select(['address','width', 'height'], 'DISTINCT')->all();;
   }
 
-  public function updateAddress($upaddress, $id)
-  {
-      $address = Address::findOne(['id' => $id]);
-      $address = $upaddress;
-      return $address->save();
-  }
-
-  public function createAddress($craddress)
-  {
-      $address = new Address();
-      $address = $craddress;
-      return $address->save();
-  }
-
-  public function deleteAddress($id)
-  {
-      $address = Address::findOne(['id' => $id]);
-      return $address->delete();
-  }
-
 }
