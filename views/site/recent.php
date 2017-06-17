@@ -11,7 +11,6 @@ $this->registerCssFile('@web/css/recent.css', ['depends' => ['app\assets\AppAsse
 <div class="site-recent">
   <div class="recent-block">
     <h1>Последние опубликованные статьи</h1>
-    <hr>
   </div>
   <?php foreach($recent as $rec){?>
     <div class="recent">

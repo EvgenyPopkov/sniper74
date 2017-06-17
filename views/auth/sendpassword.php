@@ -1,9 +1,5 @@
 <?php
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\models\LoginForm */
-
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
@@ -26,10 +22,6 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
     ]); ?>
 
         <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'placeholder' => 'Email']) ?>
-
-        <?php if($errorMessage) {?>
-          <span class="text-danger">Указанный адрес электронной почты не найден</span>
-        <?php  }?>
 
         <div class="form-group">
             <?= Html::submitButton('Восстановить пароль', ['class' => 'btn btn-primary', 'name' => 'sendpassword-button']) ?>

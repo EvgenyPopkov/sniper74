@@ -11,6 +11,7 @@ use app\models\Contacts;
 use app\models\LoginForm;
 use app\models\SignupForm;
 use app\models\SendpasswordForm;
+use app\models\RepairPasswordForm;
 
 class AuthController extends Controller
 {
@@ -39,12 +40,15 @@ class AuthController extends Controller
 
     public function actions()
     {
-        $model = new Contacts();
-        $this->initParams($model->getContacts());
+        $this->initParams(Contacts::getContacts());
 
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
+            ],
+            'captcha' => [
+                'class' => 'yii\captcha\CaptchaAction',
+                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
     }
@@ -91,41 +95,48 @@ class AuthController extends Controller
     public function actionSendpassword()
     {
         $model = new SendpasswordForm();
-        $errorMessage = false;
 
         if($model->load(Yii::$app->request->post())) {
             if(!$model->validate()){
                 return $this->render('sendpassword', [
-                    'model' => $model,
-                    'errorMessage' => $errorMessage,
+                    'model' => $model
                 ]);
             }
             if ($model->repairPassword()){
-                return $this->goHome();
+                Yii::$app->getSession()->setFlash('repair', 'Пароль успешно восстановлен');
+                return $this->redirect(['auth/login']);
             }
-
-            $errorMessage = true;
-            return $this->render('sendpassword', [
-                'model' => $model,
-                'errorMessage' => $errorMessage,
-            ]);
-
         }
 
         return $this->render('sendpassword', [
-            'model' => $model,
-            'errorMessage' => $errorMessage,
+            'model' => $model
         ]);
+    }
+
+    public function actionRoom()
+    {
+      if(Yii::$app->user->isGuest) {
+          return $this->goHome();
+      }
+
+      $model = new RepairPasswordForm();
+      if ($model->load(Yii::$app->request->post())) {
+          return $this->goBack();
+      }
+
+      return $this->render('room', [
+          'model' => $model
+      ]);
     }
 
     public function initParams($model)
     {
-      $this->view->params['address'] = $model->address;
-      $this->view->params['phone'] = $model->phone;
-      $this->view->params['email'] = $model->email;
-      $this->view->params['vk'] = $model->vk;
-      $this->view->params['instagram'] = $model->instagram;
-      $this->view->params['youtube'] = $model->youtube;
+      $this->view->params['address'] = $model['address'];
+      $this->view->params['phone'] = $model['phone'];
+      $this->view->params['email'] = $model['email'];
+      $this->view->params['vk'] = $model['vk'];
+      $this->view->params['instagram'] = $model['instagram'];
+      $this->view->params['youtube'] = $model['youtube'];
     }
 
 }

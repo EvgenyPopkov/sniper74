@@ -8,6 +8,11 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
 ?>
 <div class="auth-login">
   <div class="auth-login-form">
+    <?php if(Yii::$app->session->getFlash('repair')):?>
+            <div class="alert alert-success repair-session">
+                <?= Yii::$app->session->getFlash('repair'); ?>
+            </div>
+    <?php endif;?>
     <h1>Вход</h1>
     <hr/>
     <p>Введите email и пароль</p>

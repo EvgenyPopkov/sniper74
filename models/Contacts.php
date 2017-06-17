@@ -3,17 +3,27 @@
 namespace app\models;
 
 use Yii;
-use yii\db\ActiveRecord;
+use yii\base\Model;
 
-class Contacts extends ActiveRecord
+class Contacts extends Model
 {
-  public static function tableName()
+  public $address;
+  public $phone;
+  public $email;
+  public $vk;
+  public $instagram;
+  public $youtube;
+  public $name;
+
+  public function rules()
   {
-      return 'contact';
+      return [
+          [['name', 'email', 'address', 'phone', 'vk', 'instagram', 'youtube'], 'required', 'message' => 'Обязательное поле'],
+      ];
   }
 
   public function getContacts()
   {
-      return Contacts::findOne(['id' => 1]);
+      return json_decode(file_get_contents("../web/information/contact.json"), true);;
   }
 }

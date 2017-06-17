@@ -19,22 +19,22 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
       <h2>Чем мы занимаемся</h2>
       <hr/>
       <div class="about-info">
-        <p><?= Html::encode($page->we) ?></p>
+        <p><?= Html::encode($page['we']) ?></p>
       </div>
       <div class="row about-contact">
         <div class="col-lg-4 col-md-4 col-sm-4">
           <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-          <phone>&emsp;<?= Html::encode($model->phone) ?></phone>
+          <phone>&emsp;<?= Html::encode($model['phone']) ?></phone>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
           <a href="<?=Yii::$app->urlManager->createUrl('site/training')?>"><button class="btn">Записаться на тренировку</button></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
-          <a href="<?= Html::encode($model->vk) ?>" target="_blank">
+          <a href="<?= Html::encode($model['vk']) ?>" target="_blank">
             <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
           </a>
           <b>&emsp;</b>
-          <a href="<?= Html::encode($model->instagram) ?>" target="_blank">
+          <a href="<?= Html::encode($model['instagram']) ?>" target="_blank">
             <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
           </a>
           <b>&emsp;</b>
@@ -77,23 +77,23 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
       <h2>Тренажеры и оборудование</h2>
       <hr/>
       <div class="about-info">
-        <p><?= Html::encode($page->gym) ?></p>
+        <p><?= Html::encode($page['gym']) ?></p>
         <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/trainer')?>">Подробнее</a>
       </div>
       <div class="row about-contact">
         <div class="col-lg-4 col-md-4 col-sm-4">
           <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-          <phone>&emsp;<?= Html::encode($model->phone) ?></phone>
+          <phone>&emsp;<?= Html::encode($model['phone']) ?></phone>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
           <a href="<?=Yii::$app->urlManager->createUrl('site/training')?>"><button class="btn">Записаться на тренировку</button></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
-          <a href="<?= Html::encode($model->vk) ?>" target="_blank">
+          <a href="<?= Html::encode($model['vk']) ?>" target="_blank">
             <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
           </a>
           <b>&emsp;</b>
-          <a href="<?= Html::encode($model->instagram) ?>" target="_blank">
+          <a href="<?= Html::encode($model['instagram']) ?>" target="_blank">
             <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
           </a>
           <b>&emsp;</b>
@@ -117,33 +117,24 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
           <li data-target="#myCarousel" data-slide-to="3"></li>
           <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
-
         <div class="carousel-inner">
-          <div class="item active">
-            <a href="#win0" class="">
-              <img src="/images/carouselAbout/carousel-1.jpg" alt="катание на коньках">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#win1" class="">
-              <img src="/images/carouselAbout/carousel-2.jpg" alt="Chania">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#win2" class="">
-              <img src="/images/carouselAbout/carousel-3.jpg" alt="Chicago">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#win3" class="">
-              <img src="/images/carouselAbout/carousel-4.jpg" alt="New York">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#win4" class="">
-              <img src="/images/carouselAbout/carousel-5.jpg" alt="Chania">
-            </a>
-          </div>
+          <?php
+          $count = 0;
+          foreach ($photos as $photo) {
+            if($count == 0):?>
+              <div class="item active">
+                <a href="#win<?=$count?>" class="">
+                  <img src="/images/photo/<?= Html::encode($photo->name) ?>" alt="">
+                </a>
+              </div>
+            <?php else:?>
+              <div class="item">
+                <a href="#win<?=$count?>" class="">
+                  <img src="/images/photo/<?= Html::encode($photo->name) ?>" alt="">
+                </a>
+              </div>
+            <?php endif?>
+          <?php $count++; } ?>
         </div>
 
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -155,42 +146,17 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <a class="stroke" href="#">Больше фотографий</a>
-
+      <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/photo')?>">Больше фотографий</a>
     </div>
 
-    <a class="overlay" id="win0"></a>
-    <div class="popup">
-      <img src="/images/carouselAbout/carousel-1.jpg" alt="Chania">
-      <a class="close"title="Закрыть" href="#close"></a>
-    </div>
-
-    <a class="overlay" id="win1"></a>
-    <div class="popup">
-      <img src="/images/carouselAbout/carousel-2.jpg" alt="Chania">
-      <a class="close"title="Закрыть" href="#close"></a>
-    </div>
-
-    <a class="overlay" id="win2"></a>
-    <div class="popup">
-      <img src="/images/carouselAbout/carousel-3.jpg" alt="Chania">
-      <a class="close"title="Закрыть" href="#close"></a>
-    </div>
-
-    <a class="overlay" id="win3"></a>
-    <div class="popup">
-      <img src="/images/carouselAbout/carousel-4.jpg" alt="Chania">
-      <a class="close"title="Закрыть" href="#close"></a>
-    </div>
-
-    <a class="overlay" id="win4"></a>
-    <div class="popup">
-      <img src="/images/carouselAbout/carousel-5.jpg" alt="Chania">
-      <a class="close"title="Закрыть" href="#close"></a>
-    </div>
-
+    <?php
+    $count = 0;
+    foreach ($photos as $photo) {?>
+      <a class="overlay" id="win<?=$count?>"></a>
+      <div class="popup">
+        <img src="/images/photo/<?= Html::encode($photo->name) ?>" alt="">
+        <a class="close"title="Закрыть" href="#close"></a>
+      </div>
+    <?php $count++; } ?>
   </div>
-
-  </div>
-
 </div>

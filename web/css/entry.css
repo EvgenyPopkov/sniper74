@@ -1,0 +1,85 @@
+.site-entry{
+  width: 100vw;
+	height: auto;
+	display: table;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #d4d4d4;
+  text-align: center;
+}
+
+.entry-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
+}
+
+.entry-block > h1{
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-family: 'Neucha', cursive;
+  font-size: 4em;
+  color: #f8f8f8;
+}
+
+.site-entry > .entry{
+  background-color: #f8f8f8;
+  margin:40px 20%;
+}
+
+.entry-training{
+  padding: 40px 15% 20px 15%;
+}
+
+.entry-training > .row{
+  border: 1px solid rgba(0,0,0,0.3);
+  padding: 20px 5%;
+  border-radius: 30px;
+}
+
+.entry-training b{
+  color: rgba(0,0,0,0.5);
+  font-size: 1.5em;
+  display: block;
+  margin: 5px 0;
+  padding:  0;
+  font-weight: normal;
+}
+
+.entry-training .control-label{
+  font-size: 1.5em;
+  display: block;
+  margin: 5px 0;
+  padding:  0;
+  text-align: left;
+  font-weight: normal;
+}
+
+.entry-left{
+  text-align: right;
+  padding-right: 0;
+}
+
+.entry-right{
+  padding-left: 0;
+}
+
+.entry-record{
+  padding:5px 5%;
+}
+
+.entry-record > p{
+  font-size: 1.5em;
+}
+
+.entry-record > span{
+  font-size: 1.2em;
+  color: rgba(0,0,0,0.5);
+}
+
+#datepicker{
+  margin: 15px auto 0 auto;
+  width: 150px;
+
+}

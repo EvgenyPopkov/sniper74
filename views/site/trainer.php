@@ -9,7 +9,6 @@ $this->registerCssFile('@web/css/trainer.css', ['depends' => ['app\assets\AppAss
 <div class="site-trainer">
   <div class="trainer-block">
     <h1>Тренажеры и оборудование</h1>
-    <hr>
   </div>
 
   <?php

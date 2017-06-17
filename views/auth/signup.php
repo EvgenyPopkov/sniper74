@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
 
 $this->title = 'Регистрация - Sniper Хоккейный центр';
 $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset']], 'login');
@@ -27,6 +28,11 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
         <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'placeholder' => 'Email']) ?>
         <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Пароль не менее 5 символов']) ?>
         <?= $form->field($model, 'confirmPassword')->passwordInput(['placeholder' => 'Подтвердите пароль']) ?>
+        <p>Введите код с картинки</p>
+
+        <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+            'template' => '<div><div>{image}</div><br><div class="verify">{input}</div></div>',
+        ])?>
 
         <div class="form-group">
             <?= Html::submitButton('Зарегистрироваться', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>

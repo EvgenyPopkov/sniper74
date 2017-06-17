@@ -11,7 +11,6 @@ $this->registerCssFile('@web/css/category.css', ['depends' => ['app\assets\AppAs
 <div class="site-category">
   <div class="category-block">
     <h1><?= Html::encode($articles[0]->category->name) ?></h1>
-    <hr>
   </div>
   <?php foreach($articles as $article){?>
     <div class="category">

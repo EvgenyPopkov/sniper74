@@ -9,9 +9,17 @@ class CommentForm extends Model
     public function rules()
     {
         return [
-            [['comment'], 'required', 'message' => 'Обязательное поле']
+            [['comment'], 'required']
         ];
     }
+
+    public function attributeLabels()
+    {
+        return [
+            'comment' => 'Комментарий',
+        ];
+    }
+
     public function saveComment($article_id)
     {
         $comment = new Comment;

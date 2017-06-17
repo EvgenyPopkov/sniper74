@@ -1,24 +1,33 @@
 <?php
+
 namespace app\models;
 
 use Yii;
-use yii\db\ActiveRecord;
 
-class TypeTraining extends ActiveRecord
+class TypeTraining extends \yii\db\ActiveRecord
 {
-  public static function tableName()
-  {
-      return 'type_training';
-  }
+    public static function tableName()
+    {
+        return 'type_training';
+    }
 
-  public function getIdEarth()
-  {
-      return TypeTraining::findOne(['name' => 'earth']);
-  }
+    public function rules()
+    {
+        return [
+            [['name'], 'string', 'max' => 255],
+        ];
+    }
 
-  public function getIdIce()
-  {
-      return TypeTraining::findOne(['name' => 'ice']);
-  }
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'name' => 'Назание',
+        ];
+    }
 
+    public function getType($type)
+    {
+        return TypeTraining::findOne(['name' => $type]);
+    }
 }

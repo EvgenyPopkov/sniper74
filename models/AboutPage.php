@@ -3,17 +3,24 @@
 namespace app\models;
 
 use Yii;
-use yii\db\ActiveRecord;
+use yii\base\Model;
 
-class AboutPage extends ActiveRecord
+class AboutPage extends Model
 {
-  public static function tableName()
+  public $we;
+  public $training;
+  public $footer;
+  public $gym;
+
+  public function rules()
   {
-      return 'about_page';
+      return [
+          [['gym', 'footer', 'we', 'training'], 'required', 'message' => 'Обязательное поле'],
+      ];
   }
 
   public function getAboutPage()
   {
-      return AboutPage::findOne(['id' => 1]);
+        return json_decode(file_get_contents("../web/information/about.json"), true);
   }
 }

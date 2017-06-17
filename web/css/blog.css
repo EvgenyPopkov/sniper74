@@ -6,7 +6,7 @@
 }
 
 .site-blog img{
-  width: 50%;
+  width: 80%;
   height: auto;
 }
 
@@ -19,8 +19,9 @@
 .blog{
   background-color: #f8f8f8;
   margin-bottom: 30px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding: 0 5vw;
 }
 
 .comment{
@@ -52,11 +53,12 @@
 .cont{
   padding: 30px 7%;
   font-size: 1.5em;
+  text-align: left;
 }
 
 iframe{
-  width: 35%;
-  height: 25vw;
+  width: 70%;
+  height: 50vw;
   margin-bottom: 30px;
 }
 
@@ -94,4 +96,10 @@ iframe{
 
 .btn-com:hover{
   color: #222;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover{
+  background-color: #05bca9;
+  border: none;
 }

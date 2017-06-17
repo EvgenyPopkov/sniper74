@@ -10,7 +10,6 @@ $this->registerJsFile('//maps.googleapis.com/maps/api/js?key=AIzaSyB9HSouo1F_fT-
 <div class="site-contact">
   <div class=" contact-block">
     <h1>Контакты</h1>
-    <hr>
   </div>
   <div class="row">
     <div class="col-lg-6 col-md-6">
@@ -28,31 +27,31 @@ $this->registerJsFile('//maps.googleapis.com/maps/api/js?key=AIzaSyB9HSouo1F_fT-
       <p class='location'>
         <span class="name-location">Телефон: </span>
         <span class="info-location">
-          <?=  Html::encode($model->phone) ?>, <?=  Html::encode($model->name) ?>
+          <?=  Html::encode($model['phone']) ?>, <?=  Html::encode($model['name']) ?>
         </span>
       </p>
       <p class='location'>
         <span class="name-location">Почта: </span>
         <span class="info-location">
-          <?=  Html::encode($model->email) ?>
+          <?=  Html::encode($model['email']) ?>
         </span>
       </p>
       <div class="contact-social">
-        <a href="<?= Html::encode( $model->vk) ?>" target="_blank">
+        <a href="<?= Html::encode( $model['vk']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
         </a>
         <b>&emsp;</b>
-        <a href="<?= Html::encode( $model->instagram) ?>" target="_blank">
+        <a href="<?= Html::encode( $model['instagram']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
         </a>
         <b>&emsp;</b>
-        <a href="<?= Html::encode( $model->youtube) ?>" target="_blank">
+        <a href="<?= Html::encode( $model['youtube']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
         </a>
         <b>&emsp;</b>
         </div>
     </div>
-    <div class="col-lg-6 col-md-6">
+    <div class="col-lg-6 col-md-6 loc">
       <h2>Места проведения тренировок</h2>
       <hr class='hr-black'>
       <p class='location'>
@@ -77,7 +76,6 @@ $this->registerJsFile('//maps.googleapis.com/maps/api/js?key=AIzaSyB9HSouo1F_fT-
     </div>
 
 </div>
-<a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/message')?>">Напишите нам</a>
 
 <div id="googleMap">
 

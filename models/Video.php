@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\data\Pagination;
 
 class Video extends \yii\db\ActiveRecord
 {
@@ -28,5 +29,20 @@ class Video extends \yii\db\ActiveRecord
             'proirity' => 'Приоритет',
             'date' => 'Дата',
         ];
+    }
+
+    public function getAll()
+    {
+        $query = Video::find()->orderBy('priority desc, date desc');
+        $count = $query->count();
+        $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>9]);
+        $videos = $query->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+
+        $data['videos'] = $videos;
+        $data['pagination'] = $pagination;
+
+        return $data;
     }
 }

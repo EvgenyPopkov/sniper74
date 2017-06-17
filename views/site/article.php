@@ -11,7 +11,6 @@ $this->registerCssFile('@web/css/article.css', ['depends' => ['app\assets\AppAss
 <div class="site-article">
   <div class="article-block">
     <h1>Статьи и обучающие материалы</h1>
-    <hr>
   </div>
   <div class="row">
 

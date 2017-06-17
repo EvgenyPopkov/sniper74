@@ -1,44 +1,41 @@
 <?php
+
 namespace app\models;
 
 use Yii;
-use yii\db\ActiveRecord;
 
-class TaskProgram extends ActiveRecord
+class TaskProgram extends \yii\db\ActiveRecord
 {
-  public static function tableName()
-  {
-      return 'task_program';
-  }
+    public static function tableName()
+    {
+        return 'task_program';
+    }
 
-  public function getAll()
-  {
-      return TaskProgram::find()->all();
-  }
+    public function rules()
+    {
+        return [
+            [['idTask', 'idProgram'], 'required'],
+            [['idTask', 'idProgram'], 'integer'],
+            [['idProgram'], 'exist', 'skipOnError' => true, 'targetClass' => Program::className(), 'targetAttribute' => ['idProgram' => 'id']],
+            [['idTask'], 'exist', 'skipOnError' => true, 'targetClass' => Task::className(), 'targetAttribute' => ['idTask' => 'id']],
+        ];
+    }
 
-  public function getTask($id)
-  {
-      return TaskProgram::find()->select('idTask')->where(['idProgram' => $id])->all();
-  }
+    public function attributeLabels()
+    {
+        return [
+            'idTask' => 'Упражнение',
+            'idProgram' => 'Программа',
+        ];
+    }
 
-  public function updateTaskProgram($uptaskprogram, $id)
-  {
-      $taskprogram = TaskProgram::findOne(['id' => $id]);
-      $taskprogram = $uptaskprogram;
-      return $taskprogram->save();
-  }
+    public function getProgram()
+    {
+        return $this->hasOne(Program::className(), ['id' => 'idProgram']);
+    }
 
-  public function createTaskProgram($crtaskprogram)
-  {
-      $taskprogram = new TaskProgram();
-      $taskprogram = $crtaskprogram;
-      return $taskprogram->save();
-  }
-
-  public function deleteTaskProgram($id)
-  {
-      $taskprogram = TaskProgram::findOne(['id' => $id]);
-      return $taskprogram->delete();
-  }
-
+    public function getTask()
+    {
+        return $this->hasOne(Task::className(), ['id' => 'idTask']);
+    }
 }

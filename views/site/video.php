@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\widgets\LinkPager;
 
 $this->title = 'Видеозаписи - Sniper Хоккейный центр';
 $this->registerCssFile('@web/css/video.css', ['depends' => ['app\assets\AppAsset']]);
@@ -10,9 +11,18 @@ $this->registerCssFile('@web/css/video.css', ['depends' => ['app\assets\AppAsset
 <div class="site-video">
   <div class="video-block">
     <h1>Видеозаписи</h1>
-    <hr>
   </div>
-  <div class="">
+  <?php for($i = 0 ; $i < count($videos); $i += 3){?>
+    <div class="video">
+        <iframe src="<?= Html::encode($videos[$i]->name)?>" frameborder="0" allowfullscreen></iframe>
+        <iframe src="<?= Html::encode($videos[$i + 1]->name)?>" frameborder="0" allowfullscreen></iframe>
+        <iframe src="<?= Html::encode($videos[$i + 2]->name)?>" frameborder="0" allowfullscreen></iframe>
+    </div>
+  <?php } ?>
 
-  </div>
+  <?php
+      echo LinkPager::widget([
+          'pagination' => $pagination,
+      ]);
+  ?>
 </div>

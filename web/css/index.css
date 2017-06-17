@@ -179,14 +179,14 @@ a, a:hover, phone{
 }
 
 .site-index .we .img-left{
-  height: 550px;
-  width: 400px;
+  height: 30vw;
+  width: 20vw;
   padding-top: 150px;
 }
 
 .site-index .we .img-right{
-  height: 550px;
-  width: 400px;
+  height: 30vw;
+  width: 20vw;
   padding-top: 150px;
 }
 
@@ -195,6 +195,8 @@ a, a:hover, phone{
   margin: 0;
   padding-top: 60px;
   text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .site-index .training hr{
@@ -204,8 +206,8 @@ a, a:hover, phone{
 .site-index .training .dribbling,
 .site-index .training .shot,
 .site-index .training .skating{
-  height: 350px;
-  width: 483px;
+  height: 17vw;
+  width: 25vw;
 	position: relative;
   margin: 10px auto;
 }
@@ -213,22 +215,8 @@ a, a:hover, phone{
 .site-index .training .dribbling img,
 .site-index .training .shot img,
 .site-index .training .skating img{
-  height: 350px;
-  width: 483px;
-}
-
-.site-index .training .shot{
-  height: 350px;
-  width: 483px;
-	position: relative;
-  margin: 10px auto;
-}
-
-.site-index .training .skating{
-  height: 350px;
-  width: 483px;
-	position: relative;
-  margin: 10px auto;
+  height: 17vw;
+  width: 25vw;
 }
 
 .site-index .training h3{
@@ -248,9 +236,10 @@ a, a:hover, phone{
   font-size: 32px;
 }
 
+.site-index .training > .training-contact,
 .site-index .training > .training-contact > div{
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  padding: 0 1vw;
 }
 
 .site-index .training p{
@@ -269,7 +258,7 @@ a, a:hover, phone{
 
 .training > p{
   font-size: 2em;
-  padding-top: 400px;
+  padding-top: 320px;
 }
 
 .site-index > .news{
@@ -337,6 +326,9 @@ a, a:hover, phone{
 
 .articles{
   text-align: center;
+  margin: 0;
+	padding: 0;
+	padding: 30px 5vw;
 }
 
 .articles > h1{
@@ -352,6 +344,49 @@ a, a:hover, phone{
 .articles > .stroke:hover{
   color: #05bca9;
   border: 3px solid #05bca9;
+}
+
+.articles h2{
+	margin: 0 auto;
+  background-color: #222;
+  width: 45vw;
+  padding: 20px 0;
+}
+
+.articles hr{
+	border: 1px solid #f8f8f8;
+	margin-bottom: 70px;
+}
+
+.articles #myCarousel img{
+  width: 45vw;
+  height: 28vw;
+  opacity:1;
+	margin: 0 auto;
+}
+
+.articles #myCarousel li{
+  border: 1px solid #222;
+}
+
+.articles #myCarousel li.active{
+  background-color: #222;
+  border: 1px solid #222;
+}
+
+.article{
+  margin-bottom: 80px;
+}
+
+.article > a{
+  display: block;
+  color: #f8f8f8;
+  margin: 0 auto;
+  width: 45vw;
+}
+
+.article > a:hover{
+  color: #05bca9;
 }
 
 @media (min-width: 0) and (max-width: 767px) {

@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use yii\helpers\Url;
 
 $this->title = 'Тренировки - Sniper Хоккейный центр';
 $this->registerCssFile('@web/css/training.css', ['depends' => ['app\assets\AppAsset']]);
@@ -10,7 +10,6 @@ $this->registerJsFile('@web/js/training.js', ['depends' => ['app\assets\AppAsset
 <div class="site-training">
   <div class="training-block">
     <h1>Тренировки</h1>
-    <hr>
   </div>
 
   <div class="row training-nav">
@@ -49,6 +48,12 @@ $this->registerJsFile('@web/js/training.js', ['depends' => ['app\assets\AppAsset
     }
   } ?>
 
+  <?php if(Yii::$app->session->getFlash('guestentry')):?>
+          <div class="alert alert-danger">
+              <?= Yii::$app->session->getFlash('guestentry'); ?>
+          </div>
+  <?php endif ?>
+
   <div class="row earth">
     <h2>Спортивный зал</h2>
     <hr class='hr-shedule'>
@@ -62,14 +67,14 @@ $this->registerJsFile('@web/js/training.js', ['depends' => ['app\assets\AppAsset
           <td>Запись</td>
       </tr>
       <?php foreach ($earth as $value) {?>
-        <?php foreach ($value['time'] as $timeValue) { ?>
+        <?php foreach ($value->times as $time) { ?>
           <tr>
-            <td><?= Html::encode(getDateName($value['day']))?></td>
-            <td><?= Html::encode($value['description'])?></td>
-            <td><?= Html::encode($timeValue['begin'])?> - <?= Html::encode($timeValue['end'])?></td>
-            <td><?= Html::encode($value['price'])?></td>
-            <td><?= Html::encode($timeValue['address'])?></td>
-            <td><a href="#"><button class="btn btn-primary">Записаться</button></a></td>
+            <td><?= Html::encode(getDateName($value->day))?></td>
+            <td><?= Html::encode($value->description)?></td>
+            <td><?= Html::encode($time->begin)?> - <?= Html::encode($time->end)?></td>
+            <td><?= Html::encode($value->price)?></td>
+            <td><?= Html::encode($time->address->address)?></td>
+            <td><a href="<?=Url::toRoute(['site/entry','id'=> $time->id])?>"><button class="btn btn-primary">Записаться</button></a></td>
           </tr>
           <?php } ?>
       <?php } ?>
@@ -88,15 +93,15 @@ $this->registerJsFile('@web/js/training.js', ['depends' => ['app\assets\AppAsset
           <td>Адрес</td>
           <td>Запись</td>
       </tr>
-      <?php foreach ($ice as $value) {?>
-        <?php foreach ($value['time'] as $timeValue) { ?>
+      <?php  foreach ($ice as $value) {?>
+        <?php foreach ($value->times as $time) { ?>
           <tr>
-            <td><?= Html::encode(getDateName($value['day']))?></td>
-            <td><?= Html::encode($value['description'])?></td>
-            <td><?= Html::encode($timeValue['begin'])?> - <?= Html::encode($timeValue['end'])?></td>
-            <td><?= Html::encode($value['price'])?></td>
-            <td><?= Html::encode($timeValue['address'])?></td>
-            <td><a href="#"><button class="btn btn-primary">Записаться</button></a></td>
+            <td><?= Html::encode(getDateName($value->day))?></td>
+            <td><?= Html::encode($value->description)?></td>
+            <td><?= Html::encode($time->begin)?> - <?= Html::encode($time->end)?></td>
+            <td><?= Html::encode($value->price)?></td>
+            <td><?= Html::encode($time->address->address)?></td>
+            <td><a href="<?=Url::toRoute(['site/entry','id'=> $time->id])?>"><button class="btn btn-primary">Записаться</button></a></td>
           </tr>
           <?php } ?>
       <?php } ?>
@@ -106,18 +111,18 @@ $this->registerJsFile('@web/js/training.js', ['depends' => ['app\assets\AppAsset
   <div class="row site-training-contact">
     <div class="col-lg-6 col-md-6">
       <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-      <phone>&emsp;<?= Html::encode( $model->phone) ?></phone>
+      <phone>&emsp;<?= Html::encode( $model['phone']) ?></phone>
     </div>
     <div class="col-lg-6 col-md-6">
-      <a href="<?= Html::encode( $model->vk) ?>" target="_blank">
+      <a href="<?= Html::encode( $model['vk']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
       </a>
       <b>&emsp;</b>
-      <a href="<?= Html::encode( $model->instagram) ?>" target="_blank">
+      <a href="<?= Html::encode( $model['instagram']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
       </a>
       <b>&emsp;</b>
-      <a href="<?= Html::encode( $model->youtube) ?>" target="_blank">
+      <a href="<?= Html::encode( $model['youtube']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
       </a>
       <b>&emsp;</b>

@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 $this->title = 'Sniper Хоккейный центр';
 $this->registerCssFile('@web/css/index.css', ['depends' => ['app\assets\AppAsset']]);
@@ -13,27 +14,27 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
     <h5>В центр подготовки хоккеистов <span class="color-green">Sniper</span></h5><br/>
     <h1><span>Мы подготавливаем хоккеистов</span></h1>
     <h1><span class="color-green">любого</span> возраста и уровня подготовки</h1>
-    <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/contact')?>" title="">Свяжитесь с нами</a>
+    <a class="stroke" href="<?=Url::toRoute('site/contact')?>" title="">Свяжитесь с нами</a>
   </div>
 
   <div class="row">
     <div class="col-lg-4 col-md-4">
       <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-      <phone>&emsp;<?= Html::encode($model->phone) ?></phone>
+      <phone>&emsp;<?= Html::encode($model['phone']) ?></phone>
     </div>
     <div class="col-lg-4 col-md-4">
-      <a href="<?=Yii::$app->urlManager->createUrl('site/training')?>"><button class="btn">Записаться на тренировку</button></a>
+      <a href="<?=Url::toRoute('site/training')?>"><button class="btn">Записаться на тренировку</button></a>
     </div>
     <div class="col-lg-4 col-md-4 social">
-      <a href="<?= Html::encode($model->vk) ?>" target="_blank">
+      <a href="<?= Html::encode($model['vk']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
       </a>
       <b>&emsp;</b>
-      <a href="<?= Html::encode($model->instagram) ?>" target="_blank">
+      <a href="<?= Html::encode($model['instagram']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
       </a>
       <b>&emsp;</b>
-      <a href="<?=Yii::$app->urlManager->createUrl('site/contact')?>">
+      <a href="<?=Url::toRoute('site/contact')?>">
         <img class='lazy' data-original="/images/backgrounds/message.png" alt="message"/>
       </a>
     </div>
@@ -53,8 +54,8 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
         <h1>Хоккейный центр Sniper</h1>
       </div>
       <hr>
-      <p> <?= Html::encode($page->we) ?> </p>
-      <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/about')?>" title="">Узнать больше</a>
+      <p> <?= Html::encode($page['we']) ?> </p>
+      <a class="stroke" href="<?=Url::toRoute('site/about')?>" title="">Узнать больше</a>
     </div>
 
     <div class="col-lg-3 col-md-3">
@@ -69,22 +70,22 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
     <div class="col-lg-4 col-md-4">
 
       <div class="dribbling">
-        <img class='lazy' data-original="/images/index/<?= Html::encode($page->imageDribbling) ?> " alt="владение шайбой">
-          <a href="<?=Yii::$app->urlManager->createUrl('site/process')?>"><h3>Дриблинг</h3></a>
+        <img class='lazy' data-original="/images/index/<?= Html::encode($page['imageDribbling']) ?> " alt="владение шайбой">
+          <a href="<?=Url::toRoute('site/process')?>"><h3>Дриблинг</h3></a>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4">
       <div class="skating">
-          <img class='lazy' data-original="/images/index/<?= Html::encode($page->imageScating) ?> " alt="владение шайбой">
-        <a href="<?=Yii::$app->urlManager->createUrl('site/process')?>"><h3>Катание</h3></a>
+          <img class='lazy' data-original="/images/index/<?= Html::encode($page['imageScating']) ?> " alt="владение шайбой">
+        <a href="<?=Url::toRoute('site/process')?>"><h3>Катание</h3></a>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4">
       <div class="shot">
-          <img class='lazy' data-original="/images/index/<?= Html::encode($page->imageShot) ?> " alt="владение шайбой">
-        <a href="<?=Yii::$app->urlManager->createUrl('site/process')?>"><h3>Броски</h3></a>
+          <img class='lazy' data-original="/images/index/<?= Html::encode($page['imageShot']) ?> " alt="владение шайбой">
+        <a href="<?=Url::toRoute('site/process')?>"><h3>Броски</h3></a>
       </div>
     </div>
 
@@ -93,25 +94,25 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
     <div class="row training-contact">
       <div class="col-lg-3 col-md-3 training-contact-phone">
         <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-        <phone>&emsp;<?= Html::encode( $model->phone) ?></phone>
+        <phone>&emsp;<?= Html::encode( $model['phone']) ?></phone>
       </div>
       <div class="col-lg-6 col-md-6">
-         <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/training')?>" title="">Расписание тренировок</a>
+         <a class="stroke" href="<?=Url::toRoute('site/training')?>" title="">Расписание тренировок</a>
       </div>
       <div class="col-lg-3 col-md-3 training-contact-social">
-        <a href="<?= Html::encode( $model->vk) ?>" target="_blank">
+        <a href="<?= Html::encode( $model['vk']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
         </a>
         <b>&emsp;</b>
-        <a href="<?= Html::encode( $model->instagram) ?>" target="_blank">
+        <a href="<?= Html::encode( $model['instagram']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
         </a>
         <b>&emsp;</b>
-        <a href="<?= Html::encode( $model->youtube) ?>" target="_blank">
+        <a href="<?= Html::encode( $model['youtube']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
         </a>
         <b>&emsp;</b>
-        <a href="<?=Yii::$app->urlManager->createUrl('site/contact')?>">
+        <a href="<?=Url::toRoute('site/contact')?>">
           <img class='lazy' data-original="/images/backgrounds/message.png" alt="message"/>
         </a>
       </div>
@@ -130,23 +131,29 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
       </ol>
 
       <div class="carousel-inner">
-        <div class="item active">
-          <a href="#win0" class="">
-            <img src="/images/carouselAbout/carousel-1.jpg" alt="катание на коньках">
-          </a>
-        </div>
-        <div class="item">
-          <a href="#win1" class="">
-            <img src="/images/carouselAbout/carousel-2.jpg" alt="Chania">
-            <h3></h3>
-            <a href="#"><h2></h2></a>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#win2" class="">
-            <img src="/images/carouselAbout/carousel-3.jpg" alt="Chicago">
-          </a>
-        </div>
+        <?php
+        $i = 0;
+        foreach ($articles as $article) {
+          if($i == 0):?>
+          <div class="item active">
+            <a href="#win<?=$i?>" class="">
+              <div class="article">
+                <img src="/images/articles/<?= Html::encode($article->image) ?>" alt="<?= Html::encode($article->title) ?>">
+                <a href="<?= Url::toRoute(['site/blog', 'id'=> $article->id]);?>"><h2><?= Html::encode($article->title) ?></h2></a>
+              </div>
+            </a>
+          </div>
+          <?php else:?>
+            <div class="item">
+              <a href="#win<?=$i?>" class="">
+                <div class="article">
+                  <img src="/images/articles/<?= Html::encode($article->image) ?>" alt="<?= Html::encode($article->title) ?>">
+                  <a href="<?= Url::toRoute(['site/blog', 'id'=> $article->id]);?>"><h2><?= Html::encode($article->title) ?></h2></a>
+                </div>
+              </a>
+            </div>
+          <?php endif?>
+        <?php  $i++; } ?>
       </div>
 
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -159,7 +166,7 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
       </a>
     </div>
 
-    <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/article')?>">Раздел статей</a>
+    <a class="stroke" href="<?=Url::toRoute('site/article')?>">Раздел статей</a>
   </div>
 
   <div class="row news">

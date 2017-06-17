@@ -13,6 +13,6 @@ class Stock extends ActiveRecord
 
   public function getAll()
   {
-      return Stock::find()->orderBy('priority DESC, date DESC')->all();
+      return Stock::find()->orderBy('priority desc, date desc')->all();
   }
 }

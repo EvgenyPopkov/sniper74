@@ -15,9 +15,16 @@ class SendpasswordForm extends Model
     {
         return [
             ['email', 'filter', 'filter' => 'trim'],
-            ['email', 'required', 'message' => 'Обязательное поле'],
-            ['email', 'email', 'message' => 'Некорректный email'],
+            ['email', 'required'],
+            ['email', 'email'],
             ['email', 'validateEmail'],
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'email' => 'Email'
         ];
     }
 
@@ -32,23 +39,21 @@ class SendpasswordForm extends Model
         }
     }
 
-    public function sendPassword($user, $password){
-        return Yii::$app->mailer->compose()
-          ->setFrom('sniper74hockeycenter@gmail.com')
+    public function sendPassword($user, $pass){
+        return Yii::$app->mailer->compose('repairPassword', ['user' => $user, 'pass' => $pass])
+          ->setFrom([Yii::$app->params['adminEmail'] => 'Хоккейный центр Sniper'])
           ->setTo($user->email)
-          ->setSubject('Тема сообщения')
-          ->setTextBody('Текст сообщения')
-          ->setHtmlBody('<b><?=$password?></b>')
+          ->setSubject('Восстановление пароля')
           ->send();
     }
 
     public function repairPassword(){
         if ($user = $this->getUser()){
 
+            $pass = $this->genPassword();
+            $user->password = Yii::$app->getSecurity()->generatePasswordHash($pass);
 
-            $user->password = Yii::$app->getSecurity()->generatePasswordHash($this->genPassword());
-
-            if ($this->sendPassword($user, $user->password)){
+            if ($this->sendPassword($user, $pass)){
 
                 return $user->save();
             }
@@ -67,12 +72,13 @@ class SendpasswordForm extends Model
         return $this->_user;
     }
 
-    public function genPassword ($length = 8) {
-       $chars="qazxswedcvfrtgbnhyujmkiolp1234567890QAZXSWEDCVFRTGBNHYUJMKIOLP123456789@$#";
+    public function genPassword ($length = 6) {
+       $chars="qazxswedcvfrtgbnhyujmkiolp1234567890QAZXSWEDCVFRTGBNHYUJMKIOLP";
        $length = intval($length);
        $size = strlen($chars)-1;
        $password = "";
        while($length--) $password.=$chars[rand(0,$size)];
+       $pass = $password;
        return $password;
    }
 }

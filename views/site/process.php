@@ -10,53 +10,123 @@ $this->registerCssFile('@web/css/process.css', ['depends' => ['app\assets\AppAss
   <div class="process-block">
     <h1>Тренировочный процесс</h1>
     <hr>
-    <h4><?= Html::encode($page->training) ?></h4>
+    <h4><?= Html::encode($page['training']) ?></h4>
   </div>
 
-  <div class="row training-one">
-    <?php for ($count = 0; $count < 3; ++$count) {?>
-      <div class="col-lg-4">
-        <img class='lazy' data-original="/images/training/<?= Html::encode($program[$count]['image']) ?>" alt="владение шайбой">
-        <h3><?= Html::encode($program[$count]['name']) ?></h3>
-        <p class="process-training-head">
-          <?= Html::encode($program[$count]['description']) ?>
-        </p>
-        <p>
-          <h5>Упражнения:</h5>
-          <ul class="rounded">
-            <?php foreach ($program[$count]['task'] as $task) {?>
-              <li><?= Html::encode($task['task']) ?></li>
-            <?php } ?>
-          </ul>
-        </p>
-        <hr class='hr-training'/>
-      </div>
-    <?php } ?>
-  </div>
+  <?php
+  $flag = true;
 
-  <div class="row training-two">
-    <?php for ($count = 3; $count < 6; ++$count) {?>
-      <div class="col-lg-4">
-        <img class='lazy' data-original="/images/training/<?= Html::encode($program[$count]['image']) ?>" alt="владение шайбой">
-        <h3><?= Html::encode($program[$count]['name']) ?></h3>
-        <p class="process-training-head">
-          <?= Html::encode($program[$count]['description']) ?>
-        </p>
-        <p>
-          <h5>Упражнения:</h5>
-          <ul class="rounded">
-            <?php foreach ($program[$count]['task'] as $task) {?>
-              <li><?= Html::encode($task['task']) ?></li>
-            <?php } ?>
-          </ul>
-        </p>
-        <hr class='hr-training'/>
-      </div>
-    <?php } ?>
-  </div>
+  for ($i = 0; $i < count($programs); $i+=3) {
+    if ($flag):?>
+    <div class="row training-one">
+        <div class="col-lg-4">
+          <img class='lazy' data-original="/images/training/<?= Html::encode($programs[$i]->image) ?>" alt="владение шайбой">
+          <h3><?= Html::encode($programs[$i]->name) ?></h3>
+          <p class="process-training-head">
+            <?= Html::encode($programs[$i]->description) ?>
+          </p>
+          <p>
+            <h5>Упражнения:</h5>
+            <ul class="rounded">
+              <?php foreach ($programs[$i]->tasks as $task) {?>
+                <li><?= Html::encode($task->name) ?></li>
+              <?php } ?>
+            </ul>
+          </p>
+          <hr class='hr-training'/>
+        </div>
+        <div class="col-lg-4">
+          <img class='lazy' data-original="/images/training/<?= Html::encode($programs[$i + 1]->image) ?>" alt="владение шайбой">
+          <h3><?= Html::encode($programs[$i + 1]->name) ?></h3>
+          <p class="process-training-head">
+            <?= Html::encode($programs[$i + 1]->description) ?>
+          </p>
+          <p>
+            <h5>Упражнения:</h5>
+            <ul class="rounded">
+              <?php foreach ($programs[$i + 1]->tasks as $task) {?>
+                <li><?= Html::encode($task->name) ?></li>
+              <?php } ?>
+            </ul>
+          </p>
+          <hr class='hr-training'/>
+        </div>
+        <div class="col-lg-4">
+          <img class='lazy' data-original="/images/training/<?= Html::encode($programs[$i + 2]->image) ?>" alt="владение шайбой">
+          <h3><?= Html::encode($programs[$i + 2]->name) ?></h3>
+          <p class="process-training-head">
+            <?= Html::encode($programs[$i + 2]->description) ?>
+          </p>
+          <p>
+            <h5>Упражнения:</h5>
+            <ul class="rounded">
+              <?php foreach ($programs[$i + 2]->tasks as $task) {?>
+                <li><?= Html::encode($task->name) ?></li>
+              <?php } ?>
+            </ul>
+          </p>
+          <hr class='hr-training'/>
+        </div>
+    </div>
+    <?php $flag = false;
+
+    else: ?>
+    <div class="row training-two">
+        <div class="col-lg-4">
+          <img class='lazy' data-original="/images/training/<?= Html::encode($programs[$i]->image) ?>" alt="владение шайбой">
+          <h3><?= Html::encode($programs[$i]->name) ?></h3>
+          <p class="process-training-head">
+            <?= Html::encode($programs[$i]->description) ?>
+          </p>
+          <p>
+            <h5>Упражнения:</h5>
+            <ul class="rounded">
+              <?php foreach ($programs[$i]->tasks as $task) {?>
+                <li><?= Html::encode($task->name) ?></li>
+              <?php } ?>
+            </ul>
+          </p>
+          <hr class='hr-training'/>
+        </div>
+        <div class="col-lg-4">
+          <img class='lazy' data-original="/images/training/<?= Html::encode($programs[$i + 1]->image) ?>" alt="владение шайбой">
+          <h3><?= Html::encode($programs[$i + 1]->name) ?></h3>
+          <p class="process-training-head">
+            <?= Html::encode($programs[$i + 1]->description) ?>
+          </p>
+          <p>
+            <h5>Упражнения:</h5>
+            <ul class="rounded">
+              <?php foreach ($programs[$i + 1]->tasks as $task) {?>
+                <li><?= Html::encode($task->name) ?></li>
+              <?php } ?>
+            </ul>
+          </p>
+          <hr class='hr-training'/>
+        </div>
+        <div class="col-lg-4">
+          <img class='lazy' data-original="/images/training/<?= Html::encode($programs[$i + 2]->image) ?>" alt="владение шайбой">
+          <h3><?= Html::encode($programs[$i + 2]->name) ?></h3>
+          <p class="process-training-head">
+            <?= Html::encode($programs[$i + 2]->description) ?>
+          </p>
+          <p>
+            <h5>Упражнения:</h5>
+            <ul class="rounded">
+              <?php foreach ($programs[$i + 2]->tasks as $task) {?>
+                <li><?= Html::encode($task->name) ?></li>
+              <?php } ?>
+            </ul>
+          </p>
+          <hr class='hr-training'/>
+        </div>
+    </div>
+    <?php $flag = true;
+  endif;
+  } ?>
 
   <div class="process-video">
-    <h1 class="age"><?= Html::encode($page->footer) ?></h1>
+    <h1 class="age"><?= Html::encode($page['footer']) ?></h1>
     <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/video')?>">Видео с тренировок</a>
   </div>
 </div>

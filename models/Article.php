@@ -16,10 +16,10 @@ class Article extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idCategory'], 'required'],
+            [['title','description','content'], 'required', 'message' => 'Обязательное поле'],
             [['idCategory', 'viewed'], 'integer'],
             [['description', 'content'], 'string'],
-            [['date'], 'safe'],
+            [['date'], 'default', 'value' => date('Y-m-d')],
             [['title', 'image', 'video'], 'string', 'max' => 255],
             [['idCategory'], 'exist', 'skipOnError' => true, 'targetClass' => Category::className(), 'targetAttribute' => ['idCategory' => 'id']],
         ];
@@ -36,7 +36,7 @@ class Article extends \yii\db\ActiveRecord
             'date' => 'Дата',
             'image' => 'Изображение',
             'video' => 'Видео',
-            'viewed' => 'Viewed',
+            'viewed' => 'Просмотры',
         ];
     }
 
@@ -54,7 +54,7 @@ class Article extends \yii\db\ActiveRecord
 
     public function getImage()
     {
-       return ($this->image) ? '/uploads/' . $this->image : '/no-image.png';
+       return ($this->image) ? '@web/images/articles/' . $this->image : 'no-image.png';
     }
 
     public function deleteImage()
@@ -82,6 +82,8 @@ class Article extends \yii\db\ActiveRecord
             $this->link('category', $category);
             return true;
         }
+
+        return false;
     }
 
     public function getDate()
@@ -89,7 +91,12 @@ class Article extends \yii\db\ActiveRecord
         return Yii::$app->formatter->asDate($this->date);
     }
 
-    public static function getAll($pageSize = 3)
+    public function getForIndex()
+    {
+        return Article::find()->orderBy('viewed desc')->limit(3)->all();
+    }
+
+    public function getAll($pageSize = 3)
     {
         $query = Article::find()->orderBy('viewed desc');
         $count = $query->count();

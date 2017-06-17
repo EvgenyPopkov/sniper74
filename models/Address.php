@@ -3,48 +3,64 @@
 namespace app\models;
 
 use Yii;
-use yii\db\ActiveRecord;
 
-class Address extends ActiveRecord
+class Address extends \yii\db\ActiveRecord
 {
-  public static function tableName()
-  {
-      return 'address';
-  }
+    public static function tableName()
+    {
+        return 'address';
+    }
 
-  public function getAddress()
-  {
-      return Address::find()->all();
-  }
+    public function rules()
+    {
+        return [
+            [['idTag'], 'required'],
+            [['idTag'], 'integer'],
+            [['width', 'height'], 'number'],
+            [['address', 'description'], 'string', 'max' => 255],
+            [['idTag'], 'exist', 'skipOnError' => true, 'targetClass' => TagAddress::className(), 'targetAttribute' => ['idTag' => 'id']],
+        ];
+    }
 
-  public function getAddressName($id)
-  {
-      return Address::findOne(['id' => $id])->address;
-  }
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'idTag' => 'Тэг',
+            'address' => 'Адрес',
+            'description' => 'Описание',
+            'width' => 'Широта',
+            'height' => 'Долгота',
+        ];
+    }
 
-  public function getAddressBoss()
-  {
-    return Address::findAll(['idKeyWord' => KeyWordAddress::getBoss()]);
-  }
+    public function getAddress()
+    {
+        return Address::find()->all();
+    }
 
-  public function getAddressEarth()
-  {
-    return Address::findAll(['idKeyWord' => KeyWordAddress::getEarth()]);
-  }
+    public function getAddressName($id)
+    {
+        return Address::findOne(['id' => $id])->address;
+    }
 
-  public function getAddressIce()
-  {
-    return Address::findAll(['idKeyWord' => KeyWordAddress::getIce()]);
-  }
+    public function getAddressTag($tag)
+    {
+        return Address::findAll(['idTag' => TagAddress::getTag($tag)]);
+    }
 
-  public function getAddressSbor()
-  {
-    return Address::findAll(['idKeyWord' => KeyWordAddress::getSbor()]);
-  }
+    public function getCoordinates()
+    {
+        return Address::find()->select(['address','width', 'height'], 'DISTINCT')->all();;
+    }
 
-  public function getCoordinates()
-  {
-    return Address::find()->select(['address','width', 'height'], 'DISTINCT')->all();;
-  }
+    public function getTag()
+    {
+        return $this->hasOne(TagAddress::className(), ['id' => 'idTag']);
+    }
 
+    public function getTimeTrainings()
+    {
+        return $this->hasMany(TimeTraining::className(), ['idAddress' => 'id']);
+    }
 }

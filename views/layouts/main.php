@@ -85,7 +85,7 @@ AppAsset::register($this);
           $items[]=['label' => 'ВОЙТИ', 'url' => ['/auth/login']];
 
         else:
-          $items[]=['label' => Yii::$app->user->identity->firstName, 'url' => ['/auth/logout']];
+          $items[]=['label' => Yii::$app->user->identity->firstName, 'url' => ['/auth/room']];
           $items[]='<li>'
           . Html::beginForm(['/auth/logout'], 'post')
           . Html::submitButton(
@@ -179,7 +179,6 @@ AppAsset::register($this);
       </div>
     </div>
 </footer>
-
 <?php $this->endBody() ?>
 </body>
 </html>

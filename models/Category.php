@@ -24,6 +24,7 @@ class Category extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Название',
+            'count' => 'Количество статей',
         ];
     }
 
@@ -32,12 +33,26 @@ class Category extends \yii\db\ActiveRecord
         return $this->hasMany(Article::className(), ['idCategory' => 'id']);
     }
 
-    public static function getAll()
+    public function getAll()
     {
         return Category::find()->where('count > 0')->orderBy('count desc')->all();
     }
 
-    public static function getArticlesByCategory($id)
+    public function CountAdd($id)
+    {
+        $value = Category::findOne(['id' => $id]);
+        $value->count++;
+        $value->save(false);
+    }
+
+    public function CountRemove($id)
+    {
+        $value = Category::findOne(['id' => $id]);
+        $value->count--;
+        $value->save(false);
+    }
+
+    public function getArticlesByCategory($id)
     {
         $query = Article::find()->where(['idCategory'=>$id]);
         $count = $query->count();

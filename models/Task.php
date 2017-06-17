@@ -1,25 +1,38 @@
 <?php
+
 namespace app\models;
 
 use Yii;
-use yii\db\ActiveRecord;
 
-class Task extends ActiveRecord
+class Task extends \yii\db\ActiveRecord
 {
-  public static function tableName()
-  {
-      return 'task';
-  }
+    public static function tableName()
+    {
+        return 'task';
+    }
 
-  public function getTask()
-  {
-      return Task::find()->all();
-  }
+    public function rules()
+    {
+        return [
+            [['name'], 'string', 'max' => 255],
+        ];
+    }
 
-  public function getTaskForIndex($id)
-  {
-      $task = Task::findOne(['id' => $id]);
-      return $task->name;
-  }
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'name' => 'Название',
+        ];
+    }
 
+    public function getTaskPrograms()
+    {
+        return $this->hasMany(TaskProgram::className(), ['idTask' => 'id']);
+    }
+
+    public function getPrograms()
+    {
+        return $this->hasMany(Program::className(), ['id' => 'idProgram'])->viaTable('task_program', ['idTask' => 'id']);
+    }
 }

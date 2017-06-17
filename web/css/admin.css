@@ -1,0 +1,20 @@
+header{
+  margin-bottom: 70px;
+}
+
+.admin-default-index{
+  text-align: center;
+  padding-top: 200px;
+}
+
+.admin-default-index h2{
+  color: rgba(0,0,0,0.5);
+}
+
+.admin-default-index hr{
+  border: 1px solid rgba(0,0,0,0.5);
+}
+
+.article-form select{
+  margin-bottom: 20px;
+}

@@ -1,46 +1,46 @@
 <?php
+
 namespace app\models;
 
 use Yii;
-use yii\db\ActiveRecord;
 
-class Program extends ActiveRecord
+class Program extends \yii\db\ActiveRecord
 {
-  public static function tableName()
-  {
-      return 'program';
-  }
+    public static function tableName()
+    {
+        return 'program';
+    }
 
-  public function getInfo()
-  {
-      $listprogram = Program::find()->all();
-
-      foreach ($listprogram as $program) {
-        $arrId = TaskProgram::getTask($program->id);
-
-        $arr = null;
-        $i = 0;
-        foreach ($arrId as $id) {
-          $arr[$i] = [
-            'task' => Task::getTaskForIndex($id->idTask),
-          ];
-          $i++;
-        }
-
-        $result[]= [
-          'name' => $program->name,
-          'description' => $program->description,
-          'image' => $program->image,
-          'task' => $arr,
+    public function rules()
+    {
+        return [
+            [['description'], 'string'],
+            [['name', 'image'], 'string', 'max' => 255],
         ];
-      }
+    }
 
-      return $result;
-  }
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'name' => 'Название',
+            'description' => 'Описание',
+            'image' => 'Изображение',
+        ];
+    }
 
-  public function getPrograms()
-  {
-      return Program::find()->all();
-  }
+    public function getAll()
+    {
+        return Program::find()->all();
+    }
 
+    public function getTaskPrograms()
+    {
+        return $this->hasMany(TaskProgram::className(), ['idProgram' => 'id']);
+    }
+
+    public function getTasks()
+    {
+        return $this->hasMany(Task::className(), ['id' => 'idTask'])->viaTable('task_program', ['idProgram' => 'id']);
+    }
 }

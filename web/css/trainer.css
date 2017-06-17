@@ -14,14 +14,13 @@
   padding-bottom: 20px;
 }
 
-.trainer-block > hr {
-  border:1px solid #222;
-}
 
 .trainer-block > h1{
   margin: 0;
   padding-top: 100px;
-  font-size: 3.5em;
+  padding-bottom: 20px;
+  font-family: 'Neucha', cursive;
+  font-size: 4em;
   color: #f8f8f8;
 }
 
@@ -29,12 +28,14 @@
 .trainer-white{
   padding-bottom: 50px;
   text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .trainer-gray p,
 .trainer-white p{
   padding-right: 100px;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.5)
 }

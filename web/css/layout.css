@@ -5,7 +5,7 @@ body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  overflow-x:hidden;
+  overflow-x: hidden;
   background-color: #222;
 }
 
@@ -18,7 +18,7 @@ a, a:hover, phone{
 }
 
 .navbar-inverse .navbar-collapse{
-  width: 100%;
+
   padding:0 5vw;
 }
 

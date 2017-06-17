@@ -1,68 +1,43 @@
 <?php
+
 namespace app\models;
 
 use Yii;
-use yii\db\ActiveRecord;
 
-class Training extends ActiveRecord
+class Training extends \yii\db\ActiveRecord
 {
-  public static function tableName()
-  {
-      return 'training';
-  }
+    public static function tableName()
+    {
+        return 'training';
+    }
 
-  public function getEarth()
-  {
-      $listtraining = Training::findAll(['idType' => TypeTraining::getIdEarth()]);
+    public function rules()
+    {
+        return [
+            [['idType', 'description'], 'required'],
+            [['idType', 'day', 'price'], 'integer'],
+            [['description'], 'string'],
+        ];
+    }
 
-      foreach ($listtraining as $training){
-          $times = TimeTraining::getTime($training->id);
-          $arr = null;
-          $i = 0;
-          foreach ($times as $time) {
-            $arr[$i] = [
-              'begin' => $time->begin,
-              'end' => $time->end,
-              'address' => Address::getAddressName($time->idAddress),
-            ];
-            $i++;
-          }
-          $result[]= [
-            'description' => $training->description,
-            'day' => $training->day,
-            'price' => $training->price,
-            'time' => $arr,
-          ];
-      }
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'idType' => 'Тип',
+            'description' => 'Описание',
+            'day' => 'День недели',
+            'price' => 'Цена',
+        ];
+    }
 
-      return $result;
-  }
+    public function getTimes()
+    {
+        return $this->hasMany(TimeTraining::className(), ['idTraining' => 'id']);
+    }
 
-  public function getIce()
-  {
-      $listtraining = Training::findAll(['idType' => TypeTraining::getIdIce()]);
-
-      foreach ($listtraining as $training){
-          $times = TimeTraining::getTime($training->id);
-          $arr = null;
-          $i = 0;
-          foreach ($times as $time) {
-            $arr[$i] = [
-              'begin' => $time->begin,
-              'end' => $time->end,
-              'address' => Address::getAddressName($time->idAddress),
-            ];
-            $i++;
-          }
-          $result[]= [
-            'description' => $training->description,
-            'day' => $training->day,
-            'price' => $training->price,
-            'time' => $arr,
-          ];
-      }
-
-      return $result;
-  }
-
+    public function getTraining($type)
+    {
+      return Training::findAll(['idType' => TypeTraining::getType($type)]);
+    }
 }

@@ -9,7 +9,6 @@ $this->registerCssFile('@web/css/live.css', ['depends' => ['app\assets\AppAsset'
 <div class="site-live">
   <div class="live-block">
     <h1>Live - трансляция</h1>
-    <hr>
   </div>
   <div class="iv-embed">
     <div class="iv-v">

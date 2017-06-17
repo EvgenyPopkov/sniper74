@@ -1,0 +1,24 @@
+.site-room{
+  width: 100vw;
+	height: auto;
+	display: table;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.room-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
+}
+
+.room-block > h1{
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-family: 'Neucha', cursive;
+  font-size: 4em;
+  color: #f8f8f8;
+}

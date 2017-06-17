@@ -1,0 +1,52 @@
+.form-open{
+  display: inline;
+  border: 1px solid #f8f8f8;
+  border-radius: 30px;
+  padding: 40px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+input{
+  border: 3px solid #d4d4d4;
+  padding-left: 10px;
+  border-radius: 20px;
+  height: 40px;
+  width: 15vw;
+}
+
+.btn-success{
+  margin-top: 10px;
+  width: 15vw;
+  height: 40px;
+  border-radius: 20px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  input, .btn-success{
+    width: 50vw;
+  }
+
+  .form-open{
+    left: 15%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  input, .btn-success{
+    width:30vw;
+  }
+
+  .form-open{
+    left: 35%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  input, .btn-success{
+    width: 20vw;
+  }
+
+}

@@ -17,10 +17,18 @@ class LoginForm extends Model
     {
         return [
             [['email', 'password'], 'filter', 'filter' => 'trim'],
-            [['email', 'password'], 'required', 'message' => 'Обязательное поле'],
-            ['email', 'email', 'message' => 'Некорректный email'],
+            [['email', 'password'], 'required'],
+            ['email', 'email'],
             ['password', 'validatePassword'],
             ['rememberMe', 'boolean'],
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'email' => 'Email',
+            'password' => 'Пароль'
         ];
     }
 
