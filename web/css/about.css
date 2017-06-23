@@ -39,7 +39,7 @@
 
 .about-we > .row{
   margin-top: 0;
-  padding-top: 70px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .about-info{
-  margin: 50px 0 90px 0;
+  margin: 50px 0;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -62,8 +62,7 @@
 .about-contact{
   background-color: #222;
   border: 2px solid #05bca9;
-  margin-top: 80px;
-	margin-bottom: 0;
+	margin: 0 Sauto;
 	padding: 50px 15vw;
 }
 
@@ -101,7 +100,6 @@
   border: 3px solid #222;
   border-radius: 30px;
   display: inline-block;
-  margin: 2vw;
 }
 
 .equipment a.stroke:hover{
@@ -114,7 +112,18 @@
   background-color: #d4d4d4;
   margin: 0;
   text-align: center;
-  padding: 50px 5vw 50px 10vw;
+	padding: 40px 7vw 60px 7vw;
+}
+
+.coaches > .row{
+	background-color: #f8f8f8;
+	margin-top: 30px;
+	padding: 40px 2vw;
+}
+
+.coaches > h2{
+	margin-top: 0;
+	padding-top: 30px;
 }
 
 .coaches-info{
@@ -125,7 +134,7 @@
 .coaches-info > h3{
 	font-size: 2.5em;
 	padding-bottom: 20px;
-	padding-top: 50px;
+	padding-top: 0;
 }
 
 .coaches-info > h4{
@@ -159,10 +168,11 @@
 
 .about-photo h2{
 	padding-bottom: 10px;
+	color: #f8f8f8;
 }
 
 .about-photo hr{
-	border: 1px solid #f8f8f8;
+	border: 1px solid #222;
 	margin-bottom: 70px;
 }
 
@@ -174,18 +184,18 @@
 }
 
 .about-photo .stroke{
-	color: #222;
+	color: #f8f8f8;
 	font-size: 2.4em;
 	padding: 15px;
-  border: 3px solid #222;
+  border: 3px solid #f8f8f8;
   border-radius: 30px;
   display: inline-block;
   margin: 70px 2vw;
 }
 
 .about-photo .stroke:hover{
-	color: #f8f8f8;
-  border: 3px solid #f8f8f8;
+	color: #222;
+  border: 3px solid #222;
 }
 
 .overlay {
@@ -309,11 +319,38 @@
 		padding-right: 1vw;
 	}
 
+	.coaches-info > h3{
+		font-size: 2.2rem;
+	}
+
+	.coaches-info > h4{
+		font-size: 2rem;
+	}
+
+	.coaches-info > p{
+		font-size: 1.8rem;
+	}
+
+	.about-info{
+	  padding-left: 2vw;
+	  padding-right: 2vw;
+	}
+
+	.about-contact {
+    padding: 50px 3vw;
+	}
+
+	.about-contact button {
+    font-size: 1.8rem;
+		margin: 20px auto;
+	}
+
   .about-head > h1{
     font-size: 3.5rem;
   }
 
-	.about-we > .row > h2{
+	.about-we > .row > h2,
+	.coaches h2, .equipment h2{
 	  font-size: 26px;
 	}
 
@@ -340,8 +377,12 @@
 	}
 
 	.coaches .coach{
-		width: 70vw;
-		height: 65vw;
+		width: 50vw;
+		height: 45vw;
+	}
+
+	.about-photo .stroke{
+		font-size: 1.5em;
 	}
 
 	.nhl{
@@ -363,14 +404,19 @@
     font-size: 18px;
   }
 
-  .about-contact phone{
-    font-size: 20px;
-  }
-
   .about-contact{
     border-radius: 0;
     margin-bottom: 0;
   }
+
+	.about-contact button {
+		margin: 20px auto;
+	}
+
+	.about-info{
+	  padding-left: 5vw;
+	  padding-right: 5vw;
+	}
 
   .about-we > .row > .about-info > p{
     padding-bottom: 5px;
@@ -382,8 +428,8 @@
 	}
 
 	.coaches .coach{
-		width: 60vw;
-		height: 55vw;
+		width: 40vw;
+		height: 35vw;
 	}
 
 	.nhl{
@@ -406,16 +452,28 @@
   }
 
   .about-contact phone{
-    font-size: 20px;
+    font-size: 18px;
   }
 
+	.coaches-info > h3{
+		font-size: 2.2rem;
+	}
+
+	.coaches-info > h4{
+		font-size: 2rem;
+	}
+
+	.coaches-info > p{
+		font-size: 2rem;
+	}
+
   .about-contact img{
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
   }
 
   .about-contact button{
-    font-size: 14px;
+    font-size: 16px;
   }
 
 	.nhl{
@@ -432,7 +490,16 @@
 		height: 140vh;
 	}
 
+	.about-contact img{
+    width: 60px;
+    height: 60px;
+  }
+
+	.about-contact button{
+		font-size: 20px;
+	}
+
   .about-contact phone{
-    font-size: 24px;
+    font-size: 22px;
   }
 }

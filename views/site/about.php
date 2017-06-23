@@ -22,24 +22,24 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
         <p><?= Html::encode($page['we']) ?></p>
       </div>
       <div class="row about-contact">
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-4 col-md-4">
           <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-          <phone>&emsp;<?= Html::encode($model['phone']) ?></phone>
+          <phone>&emsp;<?= Html::encode($this->params['phone']) ?></phone>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-4 col-md-4">
           <a href="<?=Yii::$app->urlManager->createUrl('site/training')?>"><button class="btn">Записаться на тренировку</button></a>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <a href="<?= Html::encode($model['vk']) ?>" target="_blank">
+        <div class="col-lg-4 col-md-4">
+          <a href="<?= Html::encode($this->params['vk']) ?>" target="_blank">
             <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
           </a>
-          <b>&emsp;</b>
-          <a href="<?= Html::encode($model['instagram']) ?>" target="_blank">
+          &emsp;
+          <a href="<?= Html::encode($this->params['instagram']) ?>" target="_blank">
             <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
           </a>
-          <b>&emsp;</b>
-          <a href="<?=Yii::$app->urlManager->createUrl('site/contact')?>">
-            <img class='lazy' data-original="/images/backgrounds/message.png" alt="message"/>
+          &emsp;
+          <a href="<?= Html::encode( $this->params['youtube']) ?>" target="_blank">
+            <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
           </a>
         </div>
       </div>
@@ -52,22 +52,25 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
       <?php foreach ($coaches as $coach){ ?>
 
         <div class="row">
-          <div class="col-lg-4 col-md-4">
-            <img class='lazy coach' data-original="/images/coaches/<?= Html::encode($coach->image) ?>" alt="тренер sniper">
+          <div class="col-lg-5 col-md-5">
+            <?php if ($coach->image !== null && $coach->image !== '') :?>
+              <img class='lazy coach' data-original="/images/coaches/<?= Html::encode($coach->image) ?>" alt="тренер sniper">
+            <?php endif ?>
+            <?php if ($coach->vk !== null && $coach->vk !== '') :?>
             <div >
               <a href="<?= Html::encode($coach->vk) ?>" target="_blank">
                 <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
               </a>
             </div>
+            <?php endif ?>
           </div>
 
-          <div class="col-lg-8 col-md-8 coaches-info">
+          <div class="col-lg-7 col-md-7 coaches-info">
             <h3><?= Html::encode($coach->firstName) ?>&emsp;<?= Html::encode($coach->lastName) ?></h3>
             <h4><?= Html::encode($coach->place) ?></h4>
             <p><?= Html::encode($coach->description) ?></p>
           </div>
         </div>
-        <hr class='hr-black' />
 
       <?php } ?>
   </div>
@@ -81,24 +84,24 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
         <a class="stroke" href="<?=Yii::$app->urlManager->createUrl('site/trainer')?>">Подробнее</a>
       </div>
       <div class="row about-contact">
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-4 col-md-4">
           <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-          <phone>&emsp;<?= Html::encode($model['phone']) ?></phone>
+          <phone>&emsp;<?= Html::encode($this->params['phone']) ?></phone>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-4 col-md-4">
           <a href="<?=Yii::$app->urlManager->createUrl('site/training')?>"><button class="btn">Записаться на тренировку</button></a>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <a href="<?= Html::encode($model['vk']) ?>" target="_blank">
+        <div class="col-lg-4 col-md-4">
+          <a href="<?= Html::encode($this->params['vk']) ?>" target="_blank">
             <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
           </a>
-          <b>&emsp;</b>
-          <a href="<?= Html::encode($model['instagram']) ?>" target="_blank">
+          &emsp;
+          <a href="<?= Html::encode($this->params['instagram']) ?>" target="_blank">
             <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
           </a>
-          <b>&emsp;</b>
-          <a href="<?=Yii::$app->urlManager->createUrl('site/contact')?>">
-            <img class='lazy' data-original="/images/backgrounds/message.png" alt="message"/>
+          &emsp;
+          <a href="<?= Html::encode( $this->params['youtube']) ?>" target="_blank">
+            <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
           </a>
         </div>
       </div>

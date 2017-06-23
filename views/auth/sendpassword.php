@@ -10,7 +10,6 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
 
   <div class="auth-login-form">
     <h1 class="rep-pass">Восстановление пароля</h1>
-    <hr/>
     <p>Ваш адрес электронной почты</p>
 
     <?php $form = ActiveForm::begin([
@@ -24,7 +23,7 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
         <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'placeholder' => 'Email']) ?>
 
         <div class="form-group">
-            <?= Html::submitButton('Восстановить пароль', ['class' => 'btn btn-primary', 'name' => 'sendpassword-button']) ?>
+            <?= Html::submitButton('Восстановить пароль', ['class' => 'btn btn-success', 'name' => 'sendpassword-button']) ?>
         </div>
 
     <?php ActiveForm::end(); ?>

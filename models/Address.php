@@ -14,7 +14,7 @@ class Address extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idTag'], 'required'],
+            [['idTag','address', 'width', 'height'], 'required'],
             [['idTag'], 'integer'],
             [['width', 'height'], 'number'],
             [['address', 'description'], 'string', 'max' => 255],
@@ -62,5 +62,17 @@ class Address extends \yii\db\ActiveRecord
     public function getTimeTrainings()
     {
         return $this->hasMany(TimeTraining::className(), ['idAddress' => 'id']);
+    }
+
+    public function saveTag($tagId)
+    {
+        $tag = TagAddress::findOne($tagId);
+        if($tag != null)
+        {
+            $this->link('tag', $tag);
+            return true;
+        }
+
+        return false;
     }
 }

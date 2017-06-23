@@ -15,8 +15,8 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['proirity'], 'integer'],
-            [['date'], 'safe'],
+            [['priority'], 'integer'],
+            [['date'], 'default', 'value' => date('Y-m-d')],
             [['name'], 'string', 'max' => 255],
         ];
     }
@@ -26,7 +26,7 @@ class Photo extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Изображение',
-            'proirity' => 'Приоритет',
+            'priority' => 'Приоритет',
             'date' => 'Дата',
         ];
     }
@@ -51,5 +51,28 @@ class Photo extends \yii\db\ActiveRecord
         return Photo::find()->orderBy('priority desc, date desc')->limit(5)->all();
     }
 
+    public function getImage()
+    {
+       return '@web/images/photo/' . $this->name;
+    }
+
+    public function saveImage($filename)
+    {
+       $this->name = $filename;
+       return $this->save(false);
+    }
+
+    public function deleteImage()
+    {
+       $imageUploadModel = new ImageUpload();
+       $imageUploadModel->dir='photo';
+       $imageUploadModel->deleteCurrentImage($this->name);
+    }
+
+    public function beforeDelete()
+    {
+       $this->deleteImage();
+       return parent::beforeDelete();
+    }
 
 }

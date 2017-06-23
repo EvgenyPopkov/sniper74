@@ -18,20 +18,20 @@ $this->registerCssFile('@web/css/article.css', ['depends' => ['app\assets\AppAss
       <?php foreach($articles as $article){?>
         <div class="article">
           <img class='lazy' data-original="/images/articles/<?= Html::encode($article->image) ?>" alt="<?= Html::encode($article->title) ?>">
-          <h3><?= Html::encode($article->category->name)?></h3>
-          <h2><?= Html::encode($article->title)?></h2>
+          <h3><?= $article->category->name?></h3>
+          <h2><?= $article->title?></h2>
           <hr class="hr-black">
-          <p> <?= Html::encode($article->description)?></p>
+          <p> <?= $article->description?></p>
           <div class="more">
             <a href="<?= Url::toRoute(['site/blog', 'id'=> $article->id]);?>">Подробнее</a>
           </div>
           <div class="row stat">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <?= Html::encode($article->date)?>
+              <?= $article->date?>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
               <i class="fa fa-eye" aria-hidden="true"></i>
-              &#8194;<?= Html::encode($article->viewed)?>
+              &#8194;<?= $article->viewed?>
             </div>
           </div>
         </div>

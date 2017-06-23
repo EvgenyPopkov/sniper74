@@ -12,9 +12,18 @@ use app\models\LoginForm;
 use app\models\SignupForm;
 use app\models\SendpasswordForm;
 use app\models\RepairPasswordForm;
+use app\models\RegisterForm;
+use app\models\RegisterWait;
+use app\models\PhoneForm;
+use app\models\Entry;
+use app\models\EntrySbor;
+use app\models\Sbor;
+use app\models\Subscribe;
 
 class AuthController extends Controller
 {
+    public $layout = 'main';
+
     public function behaviors()
     {
         return [
@@ -40,7 +49,7 @@ class AuthController extends Controller
 
     public function actions()
     {
-        $this->initParams(Contacts::getContacts());
+        $this->initParams(Contacts::getJson(), Sbor::getCount());
 
         return [
             'error' => [
@@ -76,18 +85,42 @@ class AuthController extends Controller
         return $this->goHome();
     }
 
-    public function actionSignup()
+    public function actionSignup($email)
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
+        if(!RegisterWait::findOne(['email'=>$email])) return $this->redirect(['site/error']);
+
         $model = new SignupForm();
-        if($model->load(Yii::$app->request->post()) && $model->signup()){
+        if($model->load(Yii::$app->request->post()) && $model->signup($email)){
+
             return $this->goHome();
         }
 
         return $this->render('signup', [
+            'model' => $model,
+        ]);
+    }
+
+    public function actionRegister()
+    {
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new RegisterForm();
+        if($model->load(Yii::$app->request->post())) {
+            if($model->validate() && $model->Register()){
+                Yii::$app->getSession()->setFlash('register-sendmail', 'Вам на почту выслали письмо для подтверждения регистрации');
+                $wait = new RegisterWait();
+                $wait->AddUser($model);
+                return $this->refresh();
+            }
+        }
+
+        return $this->render('register', [
             'model' => $model,
         ]);
     }
@@ -119,17 +152,68 @@ class AuthController extends Controller
           return $this->goHome();
       }
 
+      $user = Yii::$app->user->identity;
+
       $model = new RepairPasswordForm();
-      if ($model->load(Yii::$app->request->post())) {
+      if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+          $user->password = Yii::$app->getSecurity()->generatePasswordHash($model->new);
+          if($user->save()){
+            Yii::$app->getSession()->setFlash('repair', 'Пароль успешно изменен');
+            return $this->refresh();
+          }
+
           return $this->goBack();
       }
 
+      $phone = new PhoneForm();
+      if ($phone->load(Yii::$app->request->post())) {
+          $user->phone = $phone->phone;
+          if($user->save()){
+            Yii::$app->getSession()->setFlash('phone', 'Номер телефона успешно изменен');
+            return $this->refresh();
+          }
+      }
+
       return $this->render('room', [
-          'model' => $model
+          'model' => $model,
+          'phone' =>$phone
       ]);
     }
 
-    public function initParams($model)
+    public function actionCancel($id)
+    {
+      $entry = Entry::getEntry($id);
+
+      if ($entry->delete()){
+          $entry->SendMailCancel();
+          Yii::$app->getSession()->setFlash('entrydelete', 'Запись на тренировку отменена');
+      }
+
+      return $this->redirect(['auth/room']);
+    }
+
+    public function actionCancelsbor($id)
+    {
+      $entry = EntrySbor::getEntry($id);
+
+      if ($entry->delete()){
+          $entry->SendMailCancel();
+          Yii::$app->getSession()->setFlash('entrysbordelete', 'Запись на сборы отменена');
+      }
+
+      return $this->redirect(['auth/room']);
+    }
+
+    public function actionUnsubscribe($email)
+    {
+        $sub = Subscribe::findOne(['email' => $email]);
+        $sub->status = 0;
+        $sub->save(false);
+
+        return $this->redirect(['site/index']);
+    }
+
+    public function initParams($model, $sbor)
     {
       $this->view->params['address'] = $model['address'];
       $this->view->params['phone'] = $model['phone'];
@@ -137,6 +221,6 @@ class AuthController extends Controller
       $this->view->params['vk'] = $model['vk'];
       $this->view->params['instagram'] = $model['instagram'];
       $this->view->params['youtube'] = $model['youtube'];
+      $this->view->params['sbor'] = $sbor;
     }
-
 }

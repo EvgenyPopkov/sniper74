@@ -20,22 +20,22 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
   <div class="row">
     <div class="col-lg-4 col-md-4">
       <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-      <phone>&emsp;<?= Html::encode($model['phone']) ?></phone>
+      <phone>&emsp;<?= Html::encode($this->params['phone']) ?></phone>
     </div>
     <div class="col-lg-4 col-md-4">
       <a href="<?=Url::toRoute('site/training')?>"><button class="btn">Записаться на тренировку</button></a>
     </div>
     <div class="col-lg-4 col-md-4 social">
-      <a href="<?= Html::encode($model['vk']) ?>" target="_blank">
+      <a href="<?= Html::encode($this->params['vk']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
       </a>
-      <b>&emsp;</b>
-      <a href="<?= Html::encode($model['instagram']) ?>" target="_blank">
+      &emsp;
+      <a href="<?= Html::encode($this->params['instagram']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
       </a>
-      <b>&emsp;</b>
-      <a href="<?=Url::toRoute('site/contact')?>">
-        <img class='lazy' data-original="/images/backgrounds/message.png" alt="message"/>
+      &emsp;
+      <a href="<?= Html::encode( $this->params['youtube']) ?>" target="_blank">
+        <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
       </a>
     </div>
   </div>
@@ -94,27 +94,24 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
     <div class="row training-contact">
       <div class="col-lg-3 col-md-3 training-contact-phone">
         <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-        <phone>&emsp;<?= Html::encode( $model['phone']) ?></phone>
+        <phone>&emsp;<?= Html::encode( $this->params['phone']) ?></phone>
       </div>
       <div class="col-lg-6 col-md-6">
          <a class="stroke" href="<?=Url::toRoute('site/training')?>" title="">Расписание тренировок</a>
       </div>
       <div class="col-lg-3 col-md-3 training-contact-social">
-        <a href="<?= Html::encode( $model['vk']) ?>" target="_blank">
+        <a href="<?= Html::encode( $this->params['vk']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
         </a>
-        <b>&emsp;</b>
-        <a href="<?= Html::encode( $model['instagram']) ?>" target="_blank">
+        &emsp;
+        <a href="<?= Html::encode( $this->params['instagram']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
         </a>
-        <b>&emsp;</b>
-        <a href="<?= Html::encode( $model['youtube']) ?>" target="_blank">
+        &emsp;
+        <a href="<?= Html::encode( $this->params['youtube']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
         </a>
-        <b>&emsp;</b>
-        <a href="<?=Url::toRoute('site/contact')?>">
-          <img class='lazy' data-original="/images/backgrounds/message.png" alt="message"/>
-        </a>
+        &emsp;
       </div>
     </div>
   </div>
@@ -172,15 +169,14 @@ $this->registerJsFile('@web/js/main.js', ['depends' => ['app\assets\AppAsset']],
   <div class="row news">
     <h1>Новости</h1>
     <hr>
-    <div class="row subscribe">
-      <div class="col-lg-8 col-md-8 subscribe-input">
-        <input type="text" placeholder="Введите свой email">
-      </div>
-
-      <div class="col-lg-4 col-md-4 subscribe-btn">
-        <button type="button">Подписаться на обновления</button>
-      </div>
-    </div>
+      <?php foreach ($news as $new) { ?>
+        <div class="index-news">
+          <h3><?=$new->name?></h3>
+          <hr>
+          <p><?=$new->content?></p>
+        </div>
+      <?php } ?>
+    <a class="stroke" href="<?=Url::toRoute('site/news')?>">Больше новостей</a>
   </div>
 
 </div>

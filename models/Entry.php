@@ -15,7 +15,7 @@ class Entry extends \yii\db\ActiveRecord
     {
         return [
             [['idTime', 'idUser','date'], 'required'],
-            [['idTime', 'idUser', 'status'], 'integer'],
+            [['idTime', 'idUser'], 'integer'],
             [['date'], 'safe'],
             ['date', 'smallDate'],
             ['date', 'bigDate'],
@@ -31,8 +31,7 @@ class Entry extends \yii\db\ActiveRecord
             'id' => 'ID',
             'idTime' => 'Время тренировки',
             'idUser' => 'Пользователь',
-            'date' => 'Дата',
-            'status' => 'Статус',
+            'date' => 'Дата'
         ];
     }
 
@@ -119,6 +118,11 @@ class Entry extends \yii\db\ActiveRecord
         }
     }
 
+    public function getEntry($id)
+    {
+        return Entry::findOne(['id' => $id]);
+    }
+
     public function getTime()
     {
         return $this->hasOne(TimeTraining::className(), ['id' => 'idTime']);
@@ -128,4 +132,43 @@ class Entry extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'idUser']);
     }
+
+    public function EqualsModel()
+    {
+        $entrys = Entry::find()->all();
+
+        foreach ($entrys as $entry) {
+          if ($entry->idUser == $this->idUser && $entry->idTime == $this->idTime && $entry->date == $this->date)
+          return false;
+        }
+
+        return true;
+    }
+
+    public function SendMailEntry()
+    {
+      return Yii::$app->mailer->compose('entry', ['entry' => $this])
+        ->setFrom([Yii::$app->params['adminEmail'] => 'Хоккейный центр Sniper'])
+        ->setTo(Yii::$app->params['adminEmail'])
+        ->setSubject('Запись на тренировку')
+        ->send();
+    }
+
+    public function SendMailCancel()
+    {
+      return Yii::$app->mailer->compose('cancel', ['entry' => $this])
+        ->setFrom([Yii::$app->params['adminEmail'] => 'Хоккейный центр Sniper'])
+        ->setTo(Yii::$app->params['adminEmail'])
+        ->setSubject('Отмена записи')
+        ->send();
+    }
+
+    public function delOld()
+    {
+        $entrys = Entry::find()->where('date < :date')->addParams([':date' => date("Y-m-d")])->all();
+        foreach ($entrys as $enttry) {
+          $enttry->delete();
+        }
+    }
+
 }

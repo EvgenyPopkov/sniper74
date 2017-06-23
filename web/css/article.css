@@ -45,8 +45,8 @@
 
 .article img{
   margin-top: 5%;
-  width: 90%;
-  height: 30%;
+  width: 32vw;
+  height: 20vw;
 }
 
 .hr-black{
@@ -87,8 +87,8 @@
 
 .recent img{
   margin-top: 5%;
-  width: 90%;
-  height: 30%;
+  width: 12vw;
+  height: 8vw;
 }
 
 .categ p{
@@ -109,6 +109,10 @@
   border: 1px solid rgba(0,0,0,0.1);
   margin: 0 auto;
   width: 90%;
+}
+
+.category{
+  margin-bottom: 30px;
 }
 
 .category > .row{

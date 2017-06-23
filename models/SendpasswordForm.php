@@ -78,7 +78,6 @@ class SendpasswordForm extends Model
        $size = strlen($chars)-1;
        $password = "";
        while($length--) $password.=$chars[rand(0,$size)];
-       $pass = $password;
        return $password;
    }
 }

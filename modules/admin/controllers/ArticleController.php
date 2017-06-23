@@ -113,7 +113,7 @@ class ArticleController extends Controller
         if (($model = Article::findOne($id)) !== null) {
             return $model;
         } else {
-            throw new NotFoundHttpException('Запрашиваемая страница не найдена');
+            throw new NotFoundHttpException('Страница не найдена');
         }
     }
 

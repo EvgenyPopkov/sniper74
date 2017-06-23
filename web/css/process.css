@@ -5,7 +5,7 @@
 	position: relative;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #d4d4d4;
   text-align: center;
 }
 
@@ -38,30 +38,27 @@
 }
 
 .site-process img{
-  width: 20vw;
-  height: 19vw;
+  width: 15vw;
+  height: 14vw;
   margin-top: 30px;
 }
 
 .site-process p{
   padding: 0 2vw;
   text-align: center;
-	font-size: 1.31em;
+	font-size: 1.2em;
+}
+
+.training-one{
+  margin: 40px 5vw;
+  background-color: #f8f8f8;
+  padding-bottom: 30px;
 }
 
 h5{
   font-size: 1.2em;
   padding-top: 10px;
   margin-top: 30px;
-}
-
-.training-two{
-	background-color: #d4d4d4;
-	color: #222;
-}
-
-.training-two .rounded li {
-	color: rgba(0,0,0,.5);
 }
 
 .rounded {
@@ -99,7 +96,7 @@ h5{
 
 .hr-training{
   border: 1px solid #05bca9;
-  width: 80%;
+  width: 80vw;
 }
 
 .process-training-head{
@@ -129,7 +126,48 @@ h5{
 
 .age{
 	color: #222;
-	padding: 40px 4vw;
 	margin: 0;
   padding: 60px 0;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .process-block > h1{
+    font-size: 3em;
+  }
+
+  .training-one{
+    margin: 40px 0;
+  }
+
+  .site-process img{
+    width: 55vw;
+    height: 50vw;
+  }
+
+  .site-process h4{
+    padding: 10px 5vh;
+  }
+
+  .age{
+  	font-size: 2em;
+  }
+
+  .rounded li:before {
+    left: 1em;
+  }
+
+  .rounded li {
+    position: relative;
+    display: block;
+    padding: .4em 0 .6em 3.5em;
+    margin: .5em 0;
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+    border-radius: .3em;
+    font-size: 16px;
+  }
+
+  .process-video a.stroke{
+  	font-size: 1.5em;
+  }
 }

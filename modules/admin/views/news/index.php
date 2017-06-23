@@ -1,0 +1,45 @@
+<?php
+
+use yii\helpers\Html;
+use yii\grid\GridView;
+
+$this->title = 'Новости';
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="news-index">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <p>
+        <?= Html::a('Создать', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+            'name',
+            'content:ntext',
+            [
+                'format' => 'html',
+                'label' => 'Картинка',
+                'value' => function($data){
+                    return Html::img($data->getImage(), ['width'=>200]);
+                }
+            ],
+            'priority',
+            'date',
+            [
+                'format' => 'html',
+                'label' => 'Отправить',
+                'value' => function($data){
+                    if($data->isAllowed()):
+                        return
+                        Html::a('Отправить подписчикам', ['publish', 'id' => $data->id], ['class' => 'btn btn-success']);
+                    endif;
+                }
+            ],
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
+</div>

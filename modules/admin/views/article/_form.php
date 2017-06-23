@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'content')->textarea(['rows' => 6, 'class' => 'edit']) ?>
 
     <?= $form->field($image, 'image')->fileInput(['maxlength' => true]) ?>
 

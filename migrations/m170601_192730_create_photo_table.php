@@ -9,7 +9,7 @@ class m170601_192730_create_photo_table extends Migration
        $this->createTable('photo', [
            'id' => $this->primaryKey(),
            'name' => $this->string(),
-           'proirity' => $this->integer(),
+           'priority' => $this->integer(),
            'date' => $this->date(),
        ]);
     }

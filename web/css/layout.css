@@ -124,6 +124,11 @@ a, a:hover, phone{
   opacity: 0.85;
 }
 
+.navbar-scroll .navbar-nav > .label-sbor> a,
+.navbar-noscroll .navbar-nav > .label-sbor> a{
+  color: #c9302c;
+}
+
 .navbar-scroll .navbar-nav > .active > a,
 .navbar-scroll .navbar-nav > .active > a:hover,
 .navbar-scroll .navbar-nav > .active > a:focus {
@@ -218,7 +223,7 @@ header, .btn{
 
 footer > .container-fluid{
   background-color: #222;
-  color: #465166;
+  color:rgba(255,255,255, 0.4);
   padding-left: 0;
   padding-right: 0;
   padding-top: 30px;
@@ -278,11 +283,11 @@ footer > .container-fluid{
 
 hr{
   border: 1px solid #05bca9;
-  width: 300px;
+  width: 20vw;
 }
 
 .sniper a{
-  color: #465166;
+  color: rgba(255,255,255, 0.4);;
 }
 
 .sniper a.stroke{
@@ -386,6 +391,14 @@ hr{
   .navbar-noscroll ul.navbar-nav > li > a,
   .navbar-scroll ul.navbar-nav > li > a {
     font-size: 12px;
+    margin-right: 0;
+  }
+
+  .navbar-scroll .navbar-brand > img,
+  .navbar-noscroll .navbar-brand > img{
+    width: 60px;
+    height: 45px;
+    margin-left: 20px;
   }
 
   .copy-left, .copy-right{

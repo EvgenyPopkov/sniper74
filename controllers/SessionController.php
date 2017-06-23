@@ -16,7 +16,7 @@ class SessionController extends Controller
 
   public function actionGet($key)
   {
-      if ($key == "itegavno")
+      if ($key == "@sniper@")
         Yii::$app->session->set('open',true);
       return $this->redirect(['site/index']);
   }

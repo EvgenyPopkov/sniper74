@@ -210,6 +210,7 @@ a, a:hover, phone{
   width: 25vw;
 	position: relative;
   margin: 10px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .site-index .training .dribbling img,
@@ -253,7 +254,7 @@ a, a:hover, phone{
 
 .site-index .training > .training-contact > .training-contact-phone > phone{
   color: #222;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .training > p{
@@ -269,59 +270,17 @@ a, a:hover, phone{
 }
 
 .site-index > .news h1{
-  color: #222;
+  color: #f8f8f8;
   margin-top: 50px;
 }
 
 .site-index > .news hr{
-  border: 1px solid #f8f8f8;
+  border: 1px solid #222;
 }
 
-.site-index > .news > .subscribe{
-  margin: 30px 230px;
-}
-
-.site-index > .news > .subscribe input{
-  display: block;
-  padding: 9px;
-  font-size: 20px;
-  border: 5px solid rgba(255, 255, 255, .5);
-  @include box-shadow(
-  0 2px 10px rgba(0, 0, 0, .25) inset,
-  0 2px 10px rgba(0, 0, 0, .25));
-  @include border-radius(10px);
-  background: rgba(255, 255, 255, .5);
-  @include appearance(none);
-  outline: none;
+.news .stroke:hover{
   color: #222;
-  width: 70%;
-  float:right;
-}
-
-.site-index > .news > .subscribe > .subscribe-input{
-  text-align: right;
-}
-
-.site-index > .news > .subscribe > .subscribe-btn{
-  text-align: left;
-}
-
-.site-index > .news > .subscribe > .subscribe-btn > button{
-  padding: 10px;
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 3px;
-  border: none;
-  border: 2px solid #f8f8f8;
-  background-color: transparent;
-  color: #f8f8f8;
-
-}
-
-.site-index > .news > .subscribe > .subscribe-btn > button:hover{
-  transform: none;
-  color: #222;
-  border: 2px solid #222;
+  border: 3px solid #222;
 }
 
 .articles{
@@ -389,17 +348,52 @@ a, a:hover, phone{
   color: #05bca9;
 }
 
+
+.index-news{
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 30px 5vw;
+  margin: 30px 20vw;
+}
+
+.index-news p{
+  font-size: 1.4em;
+  color: rgba(0,0,0,0.5);
+}
+
+.site-index .news .index-news hr{
+  border: 1px solid #05bca9;
+}
+
 @media (min-width: 0) and (max-width: 767px) {
   .market-landing ,  .site-index{
     padding-right: 1vw;
   }
 
   .landing-info h1{
-    font-size: 4rem;
+    font-size: 2.8rem;
+  }
+
+  .landing-info .stroke, .training .stroke,
+  .articles > .stroke, .news .stroke{
+    font-size: 2.1rem;
+  }
+
+  .news p{
+    font-size: 1.5rem;
   }
 
   .landing-info h5{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+  }
+
+  .market-landing > .row phone{
+    font-size: 2.1rem;
+  }
+
+  .articles h2{
+    font-size: 1.5rem;
+    padding: 5px;
   }
 
   .site-index .we p{
@@ -413,14 +407,23 @@ a, a:hover, phone{
     padding: 0;
   }
 
+  .site-index .we .index-we > h1{
+    font-size: 3.2rem;
+  }
+
   .site-index .training .dribbling,
   .site-index .training .shot,
   .site-index .training .skating,
   .site-index .training .dribbling img,
   .site-index .training .shot img,
   .site-index .training .skating img{
-    height: 290px;
-    width: 90vw;
+    height: 50vw;
+    width: 70vw;
+  }
+
+  .training > p {
+    font-size: 1.6em;
+    padding-top: 30px;
   }
 
   .site-index .training .training-contact {
@@ -431,25 +434,6 @@ a, a:hover, phone{
   .site-index .training > .training-contact > .training-contact-phone,
   .site-index .training > .training-contact > .training-contact-social{
     padding: 5px 0;
-  }
-
-  .site-index > .news > .subscribe{
-    margin: 10px 20px;
-  }
-
-  .site-index > .news > .subscribe > .subscribe-input,
-  .site-index > .news > .subscribe > .subscribe-btn{
-    text-align: center;
-  }
-
-  .site-index > .news > .subscribe > .subscribe-input > input{
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .site-index > .news > .subscribe > .subscribe-btn > button{
-    margin-bottom: 20px;
-    margin-top: 10px;
   }
 
   .site-index .training > .training-contact > .training-contact-phone > phone{
@@ -476,6 +460,20 @@ a, a:hover, phone{
     padding: 10px 30px;
   }
 
+  .site-index .training .dribbling,
+  .site-index .training .shot,
+  .site-index .training .skating,
+  .site-index .training .dribbling img,
+  .site-index .training .shot img,
+  .site-index .training .skating img{
+    height: 40vw;
+    width: 60vw;
+  }
+
+  .training > p {
+    padding-top: 30px;
+  }
+
   .site-index .we .img-left,
   .site-index .we .img-right{
     height: 250px;
@@ -491,31 +489,6 @@ a, a:hover, phone{
   .site-index .training > .training-contact > .training-contact-phone,
   .site-index .training > .training-contact > .training-contact-social{
     padding: 5px 0;
-  }
-
-  .site-index > .news > .subscribe{
-    margin: 10px 20px;
-  }
-
-  .site-index > .news > .subscribe > .subscribe-input,
-  .site-index > .news > .subscribe > .subscribe-btn{
-    text-align: center;
-  }
-
-  .site-index > .news > .subscribe > .subscribe-btn > button{
-    margin-bottom: 20px;
-  }
-
-  .site-index > .news > .subscribe > .subscribe-input > input{
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .site-index > .news > .subscribe > .subscribe-btn > button{
-    margin-bottom: 20px;
-    margin-top: 10px;
-    font-size: 16px;
   }
 
   .site-index .training > .training-contact > .training-contact-phone > phone{
@@ -538,15 +511,12 @@ a, a:hover, phone{
     font-size: 6rem;
   }
 
-  .site-index .we p{
-    padding: 10px 30px;
+  .market-landing > .row phone{
+    font-size: 2.5rem;
   }
 
-  .site-index .we .img-left,
-  .site-index .we .img-right{
-    margin-top: 60px;
-    height: 420px;
-    width: 280px;
+  .site-index .we p{
+    padding: 10px 30px;
   }
 
   .site-index .training .dribbling,
@@ -555,8 +525,15 @@ a, a:hover, phone{
   .site-index .training .dribbling img,
   .site-index .training .shot img,
   .site-index .training .skating img{
-    height: 232px;
-    width: 320px;
+    height: 18vw;
+    width: 25vw;
+  }
+
+  .site-index .we .img-left,
+  .site-index .we .img-right{
+    margin-top: 60px;
+    height: 420px;
+    width: 280px;
   }
 
   .site-index .training .training-contact-social img{
@@ -568,16 +545,7 @@ a, a:hover, phone{
   }
 
   .site-index .training > .training-contact > .training-contact-phone > phone{
-    font-size: 18px;
-  }
-
-  .site-index > .news > .subscribe{
-    margin: 30px 0;
-  }
-
-  .site-index > .news > .subscribe > .subscribe-btn > button{
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 15px;
   }
 }
 
@@ -603,8 +571,8 @@ a, a:hover, phone{
   .site-index .training .dribbling img,
   .site-index .training .shot img,
   .site-index .training .skating img{
-    height: 290px;
-    width: 400px;
+    height: 18vw;
+    width: 25vw;
   }
 
   .site-index .training .training-contact-social img{
@@ -616,15 +584,7 @@ a, a:hover, phone{
   }
 
   .site-index .training > .training-contact > .training-contact-phone > phone{
-    font-size: 22px;
-  }
-
-  .site-index > .news > .subscribe{
-    margin: 30px 100px;
-  }
-
-  .site-index .training > .training-contact > .training-contact-phone > phone{
     color: #222;
-    font-size: 26px;
+    font-size: 20px;
   }
 }

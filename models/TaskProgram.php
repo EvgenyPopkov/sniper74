@@ -29,6 +29,11 @@ class TaskProgram extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getRepeat($taskId, $programId)
+    {
+      return TaskProgram::findOne(['idProgram' => $programId, 'idTask' => $taskId]);
+    }
+
     public function getProgram()
     {
         return $this->hasOne(Program::className(), ['id' => 'idProgram']);
@@ -37,5 +42,19 @@ class TaskProgram extends \yii\db\ActiveRecord
     public function getTask()
     {
         return $this->hasOne(Task::className(), ['id' => 'idTask']);
+    }
+
+    public function saveProgramTask($programId, $taskId)
+    {
+        $program = Program::findOne($programId);
+        $task = Task::findOne($taskId);
+        if($program != null && $task != null)
+        {
+            $this->link('program', $program);
+            $this->link('task', $task);
+            return true;
+        }
+
+        return false;
     }
 }

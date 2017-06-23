@@ -15,33 +15,29 @@ $this->registerCssFile('@web/css/stock.css', ['depends' => ['app\assets\AppAsset
   <?php foreach ($stockes as $stock) { ?>
       <div class="stock-white">
         <h2><?= Html::encode($stock->header) ?></h2>
+        <hr>
         <p>
           <?= Html::encode($stock->description) ?>
         </p>
       </div>
-      <hr class="hr-white">
   <?php } ?>
 
   <div class="row site-stock-contact">
     <div class="col-lg-6 col-md-6">
       <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-      <phone>&emsp;<?= Html::encode( $model['phone']) ?></phone>
+      <phone>&emsp;<?= Html::encode( $this->params['phone']) ?></phone>
     </div>
     <div class="col-lg-6 col-md-6">
-      <a href="<?= Html::encode( $model['vk']) ?>" target="_blank">
+      <a href="<?= Html::encode( $this->params['vk']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
       </a>
-      <b>&emsp;</b>
-      <a href="<?= Html::encode( $model['instagram']) ?>" target="_blank">
+      &emsp;
+      <a href="<?= Html::encode( $this->params['instagram']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
       </a>
-      <b>&emsp;</b>
-      <a href="<?= Html::encode( $model['youtube']) ?>" target="_blank">
+      &emsp;
+      <a href="<?= Html::encode( $this->params['youtube']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
-      </a>
-      <b>&emsp;</b>
-      <a href="<?=Yii::$app->urlManager->createUrl('site/contact')?>">
-        <img class='lazy' data-original="/images/backgrounds/message.png" alt="message"/>
       </a>
     </div>
   </div>

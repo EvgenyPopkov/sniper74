@@ -24,19 +24,19 @@ for($i = 0 ; $i < count($photos); $i += 3){?>
 
   <a class="overlay" id="win<?=$count?>"></a>
   <div class="popup">
-    <img src="/images/photo/<?= Html::encode($photos[$i]->name)?>" alt="">
+    <img class="lazy" data-original="/images/photo/<?= Html::encode($photos[$i]->name)?>" alt="">
     <a class="close"title="Закрыть" href="#close"></a>
   </div>
 
   <a class="overlay" id="win<?=$count + 1?>"></a>
   <div class="popup">
-    <img src="/images/photo/<?= Html::encode($photos[$i + 1]->name)?>" alt="">
+    <img class="lazy" data-original="/images/photo/<?= Html::encode($photos[$i + 1]->name)?>" alt="">
     <a class="close"title="Закрыть" href="#close"></a>
   </div>
 
   <a class="overlay" id="win<?=$count + 2?>"></a>
   <div class="popup">
-    <img src="/images/photo/<?= Html::encode($photos[$i + 2]->name)?>" alt="">
+    <img class="lazy" data-original="/images/photo/<?= Html::encode($photos[$i + 2]->name)?>" alt="">
     <a class="close"title="Закрыть" href="#close"></a>
   </div>
   <?php $count += 3; } ?>

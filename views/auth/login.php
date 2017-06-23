@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Вход - Sniper Хоккейный центр';
@@ -14,7 +15,6 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
             </div>
     <?php endif;?>
     <h1>Вход</h1>
-    <hr/>
     <p>Введите email и пароль</p>
 
     <?php $form = ActiveForm::begin([
@@ -42,7 +42,7 @@ $this->registerCssFile('@web/css/login.css', ['depends' => ['app\assets\AppAsset
             <?= Html::submitButton('Войти', ['class' => 'btn', 'name' => 'login-button']) ?>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 btn-right">
-            <a href='<?=Yii::$app->urlManager->createUrl('auth/signup')?>'>
+            <a href='<?=Url::toRoute(['auth/register'])?>'>
               <button type="button" name="reg-button" class="btn">Регистрация</button>
             </a>
           </div>

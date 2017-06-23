@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 $this->title = 'Главная страница';
-$this->params['breadcrumbs'][] = ['label' => 'Главная страница', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Главная страница'];
 ?>
 <div class="article-view">
 

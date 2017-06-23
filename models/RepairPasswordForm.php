@@ -20,7 +20,7 @@ class RepairPasswordForm extends Model
           [['old', 'new', 'confirm'], 'required'],
           [['old', 'new', 'confirm'], 'string', 'min' => 5],
           ['old', 'validatePassword'],
-          ['confirmP', 'compare', 'compareAttribute' => 'new'],
+          ['confirm', 'compare', 'compareAttribute' => 'new'],
         ];
     }
 
@@ -46,11 +46,11 @@ class RepairPasswordForm extends Model
     public function getUser()
     {
         if ($this->_user === false) {
-            $this->_user = User::findByUsername($this->email);
+            $this->_user = User::findByUsername(Yii::$app->user->identity->email);
         }
 
         return $this->_user;
     }
 
-    
+
 }

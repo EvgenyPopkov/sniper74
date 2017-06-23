@@ -5,7 +5,7 @@
 	position: relative;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #d4d4d4;
   text-align: center;
 }
 
@@ -24,24 +24,20 @@
   color: #f8f8f8;
 }
 
-.trainer-gray,
 .trainer-white{
   padding-bottom: 50px;
   text-align: center;
   padding-left: 5vw;
   padding-right: 5vw;
+  background-color: #f8f8f8;
+  margin: 40px 5vw;
 }
 
-.trainer-gray p,
 .trainer-white p{
   padding-right: 100px;
   padding-top: 10px;
-  font-size: 2em;
+  font-size: 1.8em;
   color: rgba(0, 0, 0, 0.5)
-}
-
-.trainer-gray{
-  background-color: #d4d4d4;
 }
 
 .site-trainer h2{

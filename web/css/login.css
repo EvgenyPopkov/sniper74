@@ -1,7 +1,4 @@
 .auth-login{
-	background: url(../images/backgrounds/login.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	background-size: cover;
 	width: 100vw;
 	height: 100vh;
@@ -9,26 +6,46 @@
 	display: table;
 	position: relative;
   text-align: center;
+	background-color: #d4d4d4;
 }
 
 .auth-login h1{
   margin: 0;
-  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.auth-login p{
+	margin-bottom: 30px;
+}
+
+.auth-login .form-control{
+	border: none;
+	border-radius: 0;
+	background-color: #f8f8f8;
+	color: #222;
+	border-bottom: 2px solid #05bca9;
+	box-shadow: none;
 }
 
 .auth-login .auth-login-form{
-  background-color: #222;
   margin: 170px auto;
-  border: 3px solid #05bca9;
-  border-radius: 28px;
-  color:#f8f8f8;
-  opacity: 0.9;
+  color:#222;
   width: 40%;
+	background-color: #f8f8f8;
+	padding-top: 40px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .repair-session{
   margin: 10px auto;
 	width: 60%;
+}
+
+.register-session{
+  margin: 45vh auto;
+	width: 60%;
+	height: 60px;
+	font-size: 1.5em;
 }
 
 .auth-signup .auth-login-form{
@@ -48,7 +65,7 @@
   margin-top: 0;
 }
 
-.auth-login .btn-login button{
+.auth-login button{
   margin-top: 0;
   margin-bottom: 60px;
 }
@@ -58,14 +75,15 @@
 }
 
 .auth-login .btn-login .btn-left button{
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
   color: #f8f8f8;
+	margin-top: 20px;
 }
 
 .auth-login .btn-login .btn-left button:hover{
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #449d44;
+  border-color: #449d44;
   transform: none;
 }
 
@@ -74,14 +92,15 @@
 }
 
 .auth-login .btn-login .btn-right button{
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #2e6da4;
+  border-color: #2e6da4;
   color: #f8f8f8;
+	margin-top: 20px;
 }
 
 .auth-login .btn-login .btn-right button:hover{
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: #204d74;
+  border-color: #204d74;
   transform: none;
 }
 
@@ -97,6 +116,14 @@
   width: 120px;
   text-align: center;
   margin: 0 auto;
+}
+
+.auth-login .reg-mail{
+	margin-bottom: 20px;
+}
+
+.auth-login .reg-verify{
+	margin: 30px auto 5px auto;
 }
 
 @media (min-width: 0) and (max-width: 767px) {

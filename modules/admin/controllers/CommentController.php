@@ -4,7 +4,6 @@ namespace app\modules\admin\controllers;
 
 use Yii;
 use app\models\Comment;
-use app\models\CommentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -25,33 +24,8 @@ class CommentController extends Controller
 
     public function actionIndex()
     {
-        $searchModel = new CommentSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
-    }
-
-    public function actionView($id)
-    {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
-    }
-
-    public function actionUpdate($id)
-    {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
-        }
+        $comments = Comment::find()->orderBy('status')->all();
+        return $this->render('index',['comments'=>$comments]);
     }
 
     public function actionDelete($id)
@@ -66,7 +40,25 @@ class CommentController extends Controller
         if (($model = Comment::findOne($id)) !== null) {
             return $model;
         } else {
-            throw new NotFoundHttpException('Запрашиваемая страница не найдена');
+            throw new NotFoundHttpException('Страница не найдена');
+        }
+    }
+
+    public function actionAllow($id)
+    {
+        $comment = $this->findModel($id);
+        if($comment->allow())
+        {
+            return $this->redirect(['index']);
+        }
+    }
+
+    public function actionDisallow($id)
+    {
+        $comment = $this->findModel($id);
+        if($comment->disallow())
+        {
+            return $this->redirect(['index']);
         }
     }
 }

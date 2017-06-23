@@ -42,13 +42,19 @@ AdminAsset::register($this);
                 'label' => 'Главная',   'url' => ['/admin/index/view'],
               ],
               [
-                'label' => 'О нас',   'url' => ['/admin/about/index'],
+                'label' => 'О нас',   'url' => ['/admin/about/view'],
               ],
               [
-                'label' => 'Контакты',   'url' => ['/admin/contact/index'],
+                'label' => 'Контакты',   'url' => ['/admin/contact/view'],
+              ],
+              [
+                'label' => 'Новости',   'url' => ['/admin/news/index'],
               ],
               [
                 'label' => 'Тренера',   'url' => ['/admin/coach/index'],
+              ],
+              [
+                'label' => 'Тренажеры',   'url' => ['/admin/trainer/index'],
               ],
               [
                 'label' => 'Фотографии',   'url' => ['/admin/photo/index'],
@@ -58,9 +64,6 @@ AdminAsset::register($this);
               ],
               [
                 'label' => 'Адреса',   'url' => ['/admin/address/index'],
-              ],
-              [
-                'label' => 'Тэги адресов',   'url' => ['/admin/tagaddress/index'],
               ],
               [
                 'label' => 'Акции',   'url' => ['/admin/stock/index'],
@@ -79,6 +82,9 @@ AdminAsset::register($this);
             ]],
             ['label' => 'Тренировочный процесс', 'items' => [
               [
+                'label' => 'Сборы',   'url' => ['/admin/sbor/index'],
+              ],
+              [
                 'label' => 'Упражнения',   'url' => ['/admin/task/index'],
               ],
               [
@@ -88,13 +94,27 @@ AdminAsset::register($this);
                 'label' => 'Программы-Упражнения',   'url' => ['/admin/taskprogram/index'],
               ],
               [
-                'label' => 'Тип тренировки',   'url' => ['/admin/typetraining/index'],
-              ],
-              [
                 'label' => 'Тренировка',   'url' => ['/admin/training/index'],
               ],
               [
                 'label' => 'Время тренировки',   'url' => ['/admin/timetraining/index'],
+              ],
+            ]],
+            ['label' => 'Пользователи', 'items' => [
+              [
+                'label' => 'Незарегистрированные',   'url' => ['/admin/registerwait/index'],
+              ],
+              [
+                'label' => 'Зарегистрированные',   'url' => ['/admin/user/index'],
+              ],
+              [
+                'label' => 'Подписчики',   'url' => ['/admin/subscribe/index'],
+              ],
+              [
+                'label' => 'Записанные на тренировки',   'url' => ['/admin/entry/index'],
+              ],
+              [
+                'label' => 'Записанные на сборы',   'url' => ['/admin/entrysbor/index'],
               ],
             ]],
         ],

@@ -5,7 +5,7 @@
 	position: relative;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #d4d4d4;
   text-align: center;
 }
 
@@ -21,4 +21,21 @@
   font-family: 'Neucha', cursive;
   font-size: 4em;
   color: #f8f8f8;
+}
+
+.news-element{
+  background-color: #f8f8f8;
+  margin: 40px 10vw;
+  padding: 30px 5vw;
+}
+
+.news-element p{
+  font-size: 1.5em;
+}
+
+.news-element img{
+  margin-top: 20px;
+  width: 33vw;
+  height: 20vw;
+
 }

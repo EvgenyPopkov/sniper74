@@ -8,7 +8,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="article-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= $this->title ?></h1>
 
     <p>
         <?= Html::a('Создать', ['create'], ['class' => 'btn btn-success']) ?>
@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
             'idCategory',
             [
-                'format' => 'html',
+                'format' => 'text',
                 'label' => 'Название категории',
                 'value' => function($data){
                     return $data->category->name;
@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'title',
             'description:ntext',
-            'content:ntext',
+            'content:html',
             'date',
             [
                 'format' => 'html',

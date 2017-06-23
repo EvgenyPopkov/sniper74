@@ -10,18 +10,18 @@ $this->registerCssFile('@web/css/blog.css', ['depends' => ['app\assets\AppAsset'
 
 <div class="site-blog">
   <div class="blog">
-  <h3><?= Html::encode($article->category->name) ?></h3>
-  <h1><?= Html::encode($article->title) ?></h1>
+  <h3><?= $article->category->name ?></h3>
+  <h1><?= $article->title ?></h1>
   <hr>
   <p class="desc">
-    <?= Html::encode($article->description) ?>
+    <?= $article->description ?>
   </p>
-  <img class='lazy' data-original="/images/articles/<?= Html::encode($article->image) ?>" alt="">
+  <img class='lazy' data-original="/images/articles/<?=$article->image ?>" alt="">
   <p class="cont">
-    <?= Html::encode($article->content) ?>
+    <?= $article->content ?>
   </p>
-  <?php if ($article->video !== null) {?>
-    <iframe src="<?= Html::encode($article->video) ?>" frameborder="0" allowfullscreen></iframe>
+  <?php if ($article->video !== '') {?>
+    <iframe src="<?= $article->video ?>" frameborder="0" allowfullscreen></iframe>
   <?php } ?>
   </div>
 

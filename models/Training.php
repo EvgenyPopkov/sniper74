@@ -14,7 +14,7 @@ class Training extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idType', 'description'], 'required'],
+            [['idType', 'description','price','day'], 'required'],
             [['idType', 'day', 'price'], 'integer'],
             [['description'], 'string'],
         ];
@@ -36,8 +36,25 @@ class Training extends \yii\db\ActiveRecord
         return $this->hasMany(TimeTraining::className(), ['idTraining' => 'id']);
     }
 
+    public function getType()
+    {
+        return $this->hasOne(TypeTraining::className(), ['id' => 'idType']);
+    }
+
     public function getTraining($type)
     {
       return Training::findAll(['idType' => TypeTraining::getType($type)]);
+    }
+
+    public function saveType($typeId)
+    {
+        $type = TypeTraining::findOne($typeId);
+        if($type != null)
+        {
+            $this->link('type', $type);
+            return true;
+        }
+
+        return false;
     }
 }

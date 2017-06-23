@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Создать статью';
+$this->title = 'Создать';
 $this->params['breadcrumbs'][] = ['label' => 'Статьи', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

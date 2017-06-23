@@ -27,28 +27,28 @@ $this->registerJsFile('//maps.googleapis.com/maps/api/js?key=AIzaSyB9HSouo1F_fT-
       <p class='location'>
         <span class="name-location">Телефон: </span>
         <span class="info-location">
-          <?=  Html::encode($model['phone']) ?>, <?=  Html::encode($model['name']) ?>
+          <?=  Html::encode($this->params['phone']) ?>, <?=  Html::encode($this->params['name']) ?>
         </span>
       </p>
       <p class='location'>
         <span class="name-location">Почта: </span>
         <span class="info-location">
-          <?=  Html::encode($model['email']) ?>
+          <?=  Html::encode($this->params['email']) ?>
         </span>
       </p>
       <div class="contact-social">
-        <a href="<?= Html::encode( $model['vk']) ?>" target="_blank">
+        <a href="<?= Html::encode( $this->params['vk']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
         </a>
-        <b>&emsp;</b>
-        <a href="<?= Html::encode( $model['instagram']) ?>" target="_blank">
+        &emsp;
+        <a href="<?= Html::encode( $this->params['instagram']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
         </a>
-        <b>&emsp;</b>
-        <a href="<?= Html::encode( $model['youtube']) ?>" target="_blank">
+        &emsp;
+        <a href="<?= Html::encode( $this->params['youtube']) ?>" target="_blank">
           <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
         </a>
-        <b>&emsp;</b>
+        &emsp;
         </div>
     </div>
     <div class="col-lg-6 col-md-6 loc">

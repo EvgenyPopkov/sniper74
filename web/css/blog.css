@@ -21,12 +21,12 @@
   margin-bottom: 30px;
   margin-left: 7%;
   margin-right: 7%;
-  padding: 0 5vw;
+  padding: 0 5vw 10px 5vw;
 }
 
 .comment{
   background-color: #f8f8f8;
-  margin:30px 5%;
+  margin:30px 7%;
   text-align: left;
   padding: 30px;
 }
@@ -57,13 +57,13 @@
 }
 
 iframe{
-  width: 70%;
-  height: 50vw;
-  margin-bottom: 30px;
+  width: 45vw;
+  height: 25vw;
+  margin: 30px auto;
 }
 
 .alert-danger, .alert-success{
-  margin:20px 5% 0 5%;
+  margin:20px 7% 0 7%;
 }
 
 .danger{

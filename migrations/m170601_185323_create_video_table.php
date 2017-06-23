@@ -9,7 +9,7 @@ class m170601_185323_create_video_table extends Migration
         $this->createTable('video', [
             'id' => $this->primaryKey(),
             'name' => $this->string(),
-            'proirity' => $this->integer(),
+            'priority' => $this->integer(),
             'date' => $this->date(),
         ]);
     }

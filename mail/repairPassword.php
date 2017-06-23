@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-$this->registerCssFile('@web/css/mail.css', ['depends' => ['app\assets\AppAsset']]);
 
 ?>
 

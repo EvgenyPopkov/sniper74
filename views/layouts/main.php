@@ -16,7 +16,13 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <link href="https://fonts.googleapis.com/css?family=Neucha|Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Neucha|Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
@@ -44,6 +50,9 @@ AppAsset::register($this);
       ?>
 
       <?php
+        if($this->params['sbor']):
+          $items[] = ['label' => 'СБОРЫ', 'options' => ['class' => 'label-sbor'] ,'url' => ['/site/sbor']];
+        endif;
         $items[] = ['label' => 'ГЛАВНАЯ', 'url' => ['/site/index']];
         $items[] = ['label' => 'О НАС', 'items' => [
           [
@@ -80,7 +89,6 @@ AppAsset::register($this);
         ];
         $items[] = ['label' => 'СТАТЬИ', 'url' => ['/site/article']];
         $items[] = ['label' => 'КОНТАКТЫ', 'url' => ['/site/contact']];
-
         if(Yii::$app->user->isGuest):
           $items[]=['label' => 'ВОЙТИ', 'url' => ['/auth/login']];
 
@@ -106,9 +114,6 @@ AppAsset::register($this);
   </header>
 
   <div class="container">
-      <?= Breadcrumbs::widget([
-          'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-      ]) ?>
       <?= $content ?>
   </div>
 </div>

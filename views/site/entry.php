@@ -71,10 +71,16 @@ $this->registerJsFile('@web/js/calendar.js', ['depends' => ['app\assets\AppAsset
 
         <hr>
 
+        <?php if(Yii::$app->session->getFlash('equals')):?>
+                <div class="alert alert-danger equals">
+                    <?= Yii::$app->session->getFlash('equals'); ?>
+                </div>
+        <?php endif;?>
+
         <div class="entry-record">
           <p>Выберите дату</p>
           <span>Дата не должна превышать 30 дней от текущей даты</span>
-          <?= $form->field($model, 'date')->textInput(['id' => 'datepicker', 'placeholder' => 'Дата', 'readonly' => true]) ?>
+          <?= $form->field($model, 'date')->textInput(['class' => 'datepicker', 'placeholder' => 'Дата', 'readonly' => true]) ?>
           <div class="form-group">
               <?= Html::submitButton('Записаться', ['class' => 'btn btn-primary']) ?>
           </div>

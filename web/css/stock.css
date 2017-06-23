@@ -5,7 +5,7 @@
 	position: relative;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #d4d4d4;
   text-align: center;
 }
 
@@ -33,6 +33,8 @@
 .stock-white{
   padding-bottom: 50px;
   text-align: center;
+  background-color: #f8f8f8;
+  margin: 40px 7vw;
 }
 
 .stock-white p{
@@ -51,7 +53,7 @@
 }
 
 .site-stock-contact{
-  padding: 40px 0;
+  padding: 40px 10vw;
   background-color: #d4d4d4;
 }
 

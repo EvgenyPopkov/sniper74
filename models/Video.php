@@ -15,8 +15,9 @@ class Video extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['proirity'], 'integer'],
-            [['date'], 'safe'],
+            ['name', 'required'],
+            [['priority'], 'integer'],
+            [['date'], 'default', 'value' => date('Y-m-d')],
             [['name'], 'string', 'max' => 255],
         ];
     }
@@ -25,8 +26,8 @@ class Video extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Видео',
-            'proirity' => 'Приоритет',
+            'name' => 'Сслыка на видео',
+            'priority' => 'Приоритет',
             'date' => 'Дата',
         ];
     }

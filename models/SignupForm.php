@@ -9,23 +9,20 @@ class SignupForm extends Model
 {
     public $firstName;
     public $lastName;
-    public $email;
     public $phone;
+    public $email;
     public $password;
     public $confirmPassword;
-    public $verifyCode;
 
     public function rules()
     {
         return [
-            [['email', 'password', 'firstName','lastName', 'confirmPassword'], 'filter', 'filter'=>'trim'],
-            [['email', 'password', 'firstName', 'lastName', 'confirmPassword'], 'required'],
-            ['email', 'email'],
-            ['email','unique','targetClass'=>'app\models\User'],
+            [['password', 'firstName','lastName', 'confirmPassword'], 'filter', 'filter'=>'trim'],
+            [['password', 'firstName', 'lastName', 'confirmPassword','phone'], 'required'],
             [['firstName', 'lastName', 'password', 'confirmPassword'], 'string', 'max' => 50],
             [['password', 'confirmPassword'], 'string', 'min' => 5],
             ['confirmPassword', 'compare', 'compareAttribute' => 'password'],
-            ['verifyCode', 'captcha']
+
         ];
     }
 
@@ -34,20 +31,31 @@ class SignupForm extends Model
         return [
             'firstName' => 'Имя',
             'lastName' => 'Фамилия',
-            'email' => 'Email',
-            'phone' => 'Телефон',
+            'phone' => 'Номер телефона',
             'password' => 'Пароль',
             'confirmPassword' => 'Подтвеждение пароля',
-            '$verifyCode' => 'Проверочный код',
         ];
     }
 
-    public function signup()
+    public function signup($email)
     {
-        if ($this->validate() && User::createUser($this)) {
-            return $this->login();
-        }
+        if ($this->validate()){
+          $this->email = $email;
+          if(User::createUser($this)) {
+              if (RegisterWait::findOne(['email' => $email])) {
+                $wait = RegisterWait::findOne(['email' => $email]);
+                $wait->delete();
+              }
 
+              if(!Subscribe::ValidEmail($email)){
+                $sub = new Subscribe();
+                $sub->email = $email;
+                $sub->save();
+              }
+              return $this->login();
+          }
+          return false;
+        }
         return false;
     }
 

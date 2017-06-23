@@ -9,7 +9,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="article-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= $this->title ?></h1>
 
     <p>
         <?= Html::a('Изменить', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
@@ -26,13 +26,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             [
-                'format' => 'html',
+                'format' => 'text',
                 'label' => 'Категория',
                 'value' => $model->category->name
             ],
             'title',
             'description:ntext',
-            'content:ntext',
+            'content:html',
             'date',
             [
                 'format' => 'html',

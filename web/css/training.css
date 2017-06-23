@@ -24,8 +24,9 @@
 }
 
 .training-nav{
-  background-color: #f8f8f8;
+  padding: 0 5vw;
 }
+
 
 .training-nav a{
   color: #222;
@@ -49,12 +50,13 @@
 }
 
 .site-training .table-bordered{
-  margin: 20px 5vw;
-  width: 90vw;
+  margin: 20px 10vw;
+  width: 80vw;
 }
 
 .site-training h2{
   margin-top: 0;
+  padding-top: 30px;
 }
 
 .hr-shedule{

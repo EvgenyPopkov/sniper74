@@ -73,7 +73,7 @@ $this->registerJsFile('@web/js/training.js', ['depends' => ['app\assets\AppAsset
             <td><?= Html::encode($value->description)?></td>
             <td><?= Html::encode($time->begin)?> - <?= Html::encode($time->end)?></td>
             <td><?= Html::encode($value->price)?></td>
-            <td><?= Html::encode($time->address->address)?></td>
+            <td><?= Html::encode($time->address->address)?>, <?= Html::encode($time->address->description)?></td>
             <td><a href="<?=Url::toRoute(['site/entry','id'=> $time->id])?>"><button class="btn btn-primary">Записаться</button></a></td>
           </tr>
           <?php } ?>
@@ -100,7 +100,7 @@ $this->registerJsFile('@web/js/training.js', ['depends' => ['app\assets\AppAsset
             <td><?= Html::encode($value->description)?></td>
             <td><?= Html::encode($time->begin)?> - <?= Html::encode($time->end)?></td>
             <td><?= Html::encode($value->price)?></td>
-            <td><?= Html::encode($time->address->address)?></td>
+            <td><?= Html::encode($time->address->address)?>, <?= Html::encode($time->address->description)?></td>
             <td><a href="<?=Url::toRoute(['site/entry','id'=> $time->id])?>"><button class="btn btn-primary">Записаться</button></a></td>
           </tr>
           <?php } ?>
@@ -111,23 +111,19 @@ $this->registerJsFile('@web/js/training.js', ['depends' => ['app\assets\AppAsset
   <div class="row site-training-contact">
     <div class="col-lg-6 col-md-6">
       <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
-      <phone>&emsp;<?= Html::encode( $model['phone']) ?></phone>
+      <phone>&emsp;<?= Html::encode( $this->params['phone']) ?></phone>
     </div>
     <div class="col-lg-6 col-md-6">
-      <a href="<?= Html::encode( $model['vk']) ?>" target="_blank">
+      <a href="<?= Html::encode( $this->params['vk']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/vk.png" alt="vk"/>
       </a>
-      <b>&emsp;</b>
-      <a href="<?= Html::encode( $model['instagram']) ?>" target="_blank">
+      &emsp;
+      <a href="<?= Html::encode( $this->params['instagram']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/instagram.png" alt="instagram"/>
       </a>
-      <b>&emsp;</b>
-      <a href="<?= Html::encode( $model['youtube']) ?>" target="_blank">
+      &emsp;
+      <a href="<?= Html::encode( $this->params['youtube']) ?>" target="_blank">
         <img class='lazy' data-original="/images/backgrounds/youtube.png" alt="youtube"/>
-      </a>
-      <b>&emsp;</b>
-      <a href="<?=Yii::$app->urlManager->createUrl('site/contact')?>">
-        <img class='lazy' data-original="/images/backgrounds/message.png" alt="message"/>
       </a>
     </div>
   </div>

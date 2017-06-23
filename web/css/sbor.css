@@ -1,0 +1,81 @@
+.site-sbor{
+  width: 100vw;
+	height: auto;
+	display: table;
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #d4d4d4;
+  text-align: center;
+}
+
+.sbor-block{
+  background-color: #05bca9;
+  padding-bottom: 20px;
+}
+
+.sbor-block > h1{
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-family: 'Neucha', cursive;
+  font-size: 4em;
+  color: #f8f8f8;
+}
+
+.sbor-element{
+  background-color: #f8f8f8;
+  margin: 40px 10vw;
+  padding: 30px 10vw;
+}
+
+.sbor-element p{
+  font-size: 1.5em;
+}
+
+.sbor-element img{
+  margin-top: 20px;
+  width: 33vw;
+  height: 20vw;
+}
+
+.sbor-element b{
+  font-weight: normal;
+  color: #05bca9;
+}
+
+.site-sbor a{
+	color: #222;
+	font-size: 2.4em;
+	padding: 15px;
+  border: 3px solid #222;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 30px auto;
+}
+
+.site-sbor a:hover{
+	color: #05bca9;
+  border: 3px solid #05bca9;
+}
+
+.alert-danger{
+  margin: 20px 10vw;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .sbor-block > h1{
+    font-size: 3.6em;
+  }
+
+  .sbor-element{
+    margin: 40px 0;
+    padding: 30px 5vw;
+  }
+
+  .sbor-element img{
+    margin-top: 20px;
+    width: 50vw;
+    height: 30vw;
+  }
+}

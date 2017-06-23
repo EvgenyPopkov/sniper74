@@ -13,6 +13,19 @@ class User extends ActiveRecord implements IdentityInterface
         return 'user';
     }
 
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'firstName' => 'Имя',
+            'lastName' => 'Фамилия',
+            'email' => 'Email',
+            'phone' => 'Телефон',
+            'dateRegister' => 'Дата регистрации',
+        ];
+    }
+
+
     public static function createUser($model)
     {
       $user = new User();
@@ -21,7 +34,7 @@ class User extends ActiveRecord implements IdentityInterface
       $user->email = $model->email;
       $user->phone = $model->phone;
       $user->password = Yii::$app->getSecurity()->generatePasswordHash($model->password);
-      $user->dateRegister = date("Y-m-d H:i:s");
+      $user->dateRegister = date("Y-m-d");
       $user->authKey = Yii::$app->security->generateRandomString();
       return $user->save();
     }
@@ -58,5 +71,30 @@ class User extends ActiveRecord implements IdentityInterface
     public function validatePassword($password)
     {
         return Yii::$app->getSecurity()->validatePassword($password, $this->password);
+    }
+
+    public function getEntrys()
+    {
+        return $this->hasMany(Entry::className(), ['idUser' => 'id'])->where('date > :date')->addParams([':date' => date("Y-m-d")])->orderBy('date');
+    }
+
+    public function getSbores()
+    {
+        return $this->hasMany(EntrySbor::className(), ['idUser' => 'id']);
+    }
+
+    public function isAllowed()
+    {
+        return $this->isAdmin;
+    }
+    public function allow()
+    {
+        $this->isAdmin = 1;
+        return $this->save(false);
+    }
+    public function disallow()
+    {
+        $this->isAdmin = 0;
+        return $this->save(false);
     }
 }

@@ -14,8 +14,10 @@ class Subscribe extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['date'], 'safe'],
+            ['email','required'],
+            [['date'], 'default', 'value' => date('Y-m-d')],
             [['status'], 'integer'],
+            [['email'], 'email'],
             [['email'], 'string', 'max' => 255],
         ];
     }
@@ -28,5 +30,25 @@ class Subscribe extends \yii\db\ActiveRecord
             'date' => 'Дата',
             'status' => 'Статус',
         ];
+    }
+
+    public function ValidEmail($email)
+    {
+      return Subscribe::findOne(['email' => $email]);
+    }
+
+    public function isAllowed()
+    {
+        return $this->status;
+    }
+    public function allow()
+    {
+        $this->status = 1;
+        return $this->save(false);
+    }
+    public function disallow()
+    {
+        $this->status = 0;
+        return $this->save(false);
     }
 }

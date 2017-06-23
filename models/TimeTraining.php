@@ -14,7 +14,7 @@ class TimeTraining extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idTraining', 'idAddress'], 'required'],
+            [['idTraining', 'idAddress', 'begin', 'end'], 'required'],
             [['idTraining', 'idAddress'], 'integer'],
             [['begin', 'end'], 'string', 'max' => 255],
             [['idAddress'], 'exist', 'skipOnError' => true, 'targetClass' => Address::className(), 'targetAttribute' => ['idAddress' => 'id']],
@@ -51,5 +51,19 @@ class TimeTraining extends \yii\db\ActiveRecord
     public function getTraining()
     {
         return $this->hasOne(Training::className(), ['id' => 'idTraining']);
+    }
+
+    public function saveData($trainingId, $addressId)
+    {
+        $training = Training::findOne($trainingId);
+        $address = Address::findOne($addressId);
+        if($training != null && $address != null)
+        {
+            $this->link('training', $training);
+            $this->link('address', $address);
+            return true;
+        }
+
+        return false;
     }
 }

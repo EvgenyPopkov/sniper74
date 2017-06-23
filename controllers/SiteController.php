@@ -16,6 +16,8 @@ use app\models\Training;
 use app\models\TimeTraining;
 use app\models\Trainer;
 use app\models\Stock;
+use app\models\Sbor;
+use app\models\News;
 use app\models\Article;
 use app\models\Category;
 use app\models\Comment;
@@ -23,6 +25,7 @@ use app\models\CommentForm;
 use app\models\Photo;
 use app\models\Video;
 use app\models\Entry;
+use app\models\EntrySbor;
 
 class SiteController extends Controller
 {
@@ -51,41 +54,35 @@ class SiteController extends Controller
 
     public function actions()
     {
-        $this->initParams(Contacts::getContacts());
+        $this->initParams(Contacts::getJson(), Sbor::getCount());
 
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
     }
 
     public function actionIndex()
     {
-        $model = Contacts::getContacts();
         $page = IndexPage::getJson();
         $articles = Article::getForIndex();
+        $news = News::getForIndex();
 
         return $this->render('index',[
-            'model' => $model,
             'page' => $page,
             'articles' => $articles,
+            'news' => $news,
         ]);
     }
 
     public function actionAbout()
     {
-        $model = Contacts::getContacts();
-        $page = AboutPage::getAboutPage();
+        $page = AboutPage::getJson();
         $coach = Coach::getCoaches();
         $photos = Photo::getForAbout();
 
         return $this->render('about',[
-            'model' => $model,
             'page' => $page,
             'coaches' => $coach,
             'photos' => $photos
@@ -95,7 +92,7 @@ class SiteController extends Controller
     public function actionProcess()
     {
         $programs = Program::getAll();
-        $page = AboutPage::getAboutPage();
+        $page = AboutPage::getJson();
 
         return $this->render('process',[
             'page' => $page,
@@ -105,14 +102,12 @@ class SiteController extends Controller
 
     public function actionContact()
     {
-        $model = Contacts::getContacts();
         $boss = Address::getAddressTag('boss');
         $earth = Address::getAddressTag('earth');
         $ice = Address::getAddressTag('ice');
         $coordinates = Address::getCoordinates();
 
         return $this->render('contact',[
-            'model' => $model,
             'boss'=> $boss,
             'earth' => $earth,
             'ice' => $ice,
@@ -122,12 +117,10 @@ class SiteController extends Controller
 
     public function actionTraining()
     {
-        $model = Contacts::getContacts();
         $earth = Training::getTraining('earth');
         $ice = Training::getTraining('ice');
 
         return $this->render('training',[
-            'model' => $model,
             'earth' => $earth,
             'ice' => $ice
         ]);
@@ -154,11 +147,9 @@ class SiteController extends Controller
 
     public function actionStock()
     {
-        $model = Contacts::getContacts();
         $stockes = Stock::getAll();
 
         return $this->render('stock',[
-            'model' => $model,
             'stockes' => $stockes
         ]);
     }
@@ -249,7 +240,33 @@ class SiteController extends Controller
 
     public function actionNews()
     {
-        return $this->render('news');
+        $data = News::getAll(10);
+
+        return $this->render('news',[
+            'news'=>$data['news'],
+            'pagination'=>$data['pagination'],
+        ]);
+
+    }
+
+    public function actionSbor()
+    {
+        $sbores = Sbor::getAll();
+
+        return $this->render('sbor',[
+            'sbores'=> $sbores
+        ]);
+
+    }
+
+    public function actionUnsubscribe($email)
+    {
+        $sbores = Sbor::getAll();
+
+        return $this->render('sbor',[
+            'sbores'=> $sbores
+        ]);
+
     }
 
     public function actionEntry($id)
@@ -269,10 +286,18 @@ class SiteController extends Controller
             $model->idTime = $time->id;
             $model->idUser = Yii::$app->user->id;
 
-            if ($model->save()) {
-                Yii::$app->getSession()->setFlash('room', 'Вы успешно записались на тренировку');
-                return $this->redirect(['auth/room']);
+            if ($model->EqualsModel()) {
+                if ($model->save()) {
+                    $model->SendMailEntry();
+                    Yii::$app->getSession()->setFlash('room', 'Вы успешно записались на тренировку');
+                    return $this->redirect(['auth/room']);
+                }
             }
+            else{
+                Yii::$app->getSession()->setFlash('equals', 'Вы уже записаны на эту тренировку');
+                return $this->refresh();
+            }
+
         }
 
         return $this->render('entry',[
@@ -281,7 +306,38 @@ class SiteController extends Controller
         ]);
     }
 
-    public function initParams($model)
+    public function actionEntrysbor($id)
+    {
+        $model = new EntrySbor();
+
+        if(!$sbor = Sbor::getSbor($id)){
+          return $this->redirect(['site/error']);
+        }
+
+        if(Yii::$app->user->isGuest) {
+            Yii::$app->getSession()->setFlash('guestsbor', 'Записаться может только авторизованный пользователь');
+            return $this->redirect(['site/sbor']);
+        }
+
+        $model->idSbor = $id;
+        $model->idUser = Yii::$app->user->id;
+
+        if ($model->EqualsModel()) {
+            if ($model->save()) {
+                $model->SendMailEntry();
+                Yii::$app->getSession()->setFlash('roomsbor', 'Вы успешно записались на сборы');
+                return $this->redirect(['auth/room']);
+            }
+        }
+        else{
+            Yii::$app->getSession()->setFlash('equalssbor', 'Вы уже записаны на эти сборы');
+            return $this->redirect(['site/sbor']);
+        }
+
+        return $this->render('sbor');
+    }
+
+    public function initParams($model, $sbor)
     {
       $this->view->params['address'] = $model['address'];
       $this->view->params['phone'] = $model['phone'];
@@ -289,6 +345,8 @@ class SiteController extends Controller
       $this->view->params['vk'] = $model['vk'];
       $this->view->params['instagram'] = $model['instagram'];
       $this->view->params['youtube'] = $model['youtube'];
+      $this->view->params['name'] = $model['name'];
+      $this->view->params['sbor'] = $sbor;
     }
 
 }
