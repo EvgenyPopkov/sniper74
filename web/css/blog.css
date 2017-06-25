@@ -6,7 +6,7 @@
 }
 
 .site-blog img{
-  width: 80%;
+  width: 40vw;
   height: auto;
 }
 
@@ -19,14 +19,14 @@
 .blog{
   background-color: #f8f8f8;
   margin-bottom: 30px;
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 10vw;
+  margin-right: 10vw;
   padding: 0 5vw 10px 5vw;
 }
 
 .comment{
   background-color: #f8f8f8;
-  margin:30px 7%;
+  margin:30px 10vw;
   text-align: left;
   padding: 30px;
 }
@@ -46,24 +46,24 @@
 
 .desc{
   color: rgba(0,0,0,0.5);
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 20px 7%;
 }
 
 .cont{
-  padding: 30px 7%;
-  font-size: 1.5em;
+  padding: 30px 7vw;
+  font-size: 1.3em;
   text-align: left;
 }
 
 iframe{
   width: 45vw;
-  height: 25vw;
+  height: 26vw;
   margin: 30px auto;
 }
 
 .alert-danger, .alert-success{
-  margin:20px 7% 0 7%;
+  margin:20px 10vw 0 10vw;
 }
 
 .danger{
@@ -102,4 +102,45 @@ iframe{
 .pagination > .active > a:hover{
   background-color: #05bca9;
   border: none;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .blog{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .site-blog h1{
+    font-size: 2em;
+  }
+
+  .site-blog img{
+    width: 70vw;
+  }
+
+  .comment h4, .desc{
+    font-size: 1.3em;
+  }
+
+  .cont{
+    padding: 30px 3vw;
+    font-size: 1.1em;
+  }
+
+  .comment h2{
+    font-size: 1.8em;
+  }
+
+  .comment p{
+    font-size: 1.1em;
+  }
+
+  iframe{
+    width: 65vw;
+    height: 38vw;
+  }
+
+  .btn-com{
+    font-size: 1.2em;
+  }
 }

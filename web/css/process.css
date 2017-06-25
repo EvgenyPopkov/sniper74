@@ -133,6 +133,8 @@ h5{
 @media (min-width: 0) and (max-width: 767px) {
   .process-block > h1{
     font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
 
   .training-one{
@@ -150,6 +152,8 @@ h5{
 
   .age{
   	font-size: 2em;
+    padding-left: 4vw;
+    padding-right: 4vw;
   }
 
   .rounded li:before {
@@ -169,5 +173,40 @@ h5{
 
   .process-video a.stroke{
   	font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-process img{
+    width: 35vw;
+    height: 30vw;
+  }
+
+  .training-one{
+    margin: 40px 0;
+  }
+
+  .site-process h4{
+    padding: 10px 10vh;
+  }
+
+  .age{
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .site-process img{
+    width: 30vw;
+    height: 25vw;
+  }
+
+  .age{
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .site-process h4{
+    padding: 10px 25vh;
   }
 }

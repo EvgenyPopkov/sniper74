@@ -25,7 +25,7 @@
 
 .category{
   background-color: #f8f8f8;
-  margin: 7%;
+  margin: 7vw 15vw;
   margin-top: 40px;
   padding-bottom: 30px;
 }
@@ -41,8 +41,8 @@
 
 .category img{
   margin-top: 5%;
-  width: 90%;
-  height: 30%;
+  width: 40vw;
+  height: auto;
 }
 
 .hr-black{
@@ -80,4 +80,35 @@
 .pagination > .active > a:hover{
   background-color: #05bca9;
   border: none;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .category-block > h1{
+    font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .category img{
+    width: 60vw;
+  }
+
+  .category{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .category h2{
+    font-size: 1.8em;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .category p{
+    font-size: 1.3em;
+  }
+
+  .category a{
+  	font-size: 2em;
+  }
 }

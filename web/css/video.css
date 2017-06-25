@@ -24,7 +24,7 @@
 }
 
 .video{
-  margin: 40px auto;
+  margin: 40px 10vw;
 }
 
 .video iframe{
@@ -38,4 +38,21 @@
 .pagination > .active > a:hover{
   background-color: #05bca9;
   border: none;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .video iframe{
+    width: 65vw;
+    height: 45vw;
+  }
+
+  .video-block > h1{
+    font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .video{
+    margin: 40px 0;
+  }
 }

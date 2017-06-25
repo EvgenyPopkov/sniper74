@@ -151,16 +151,31 @@
   .auth-login .btn-login .btn-right {
     margin: 0;
   }
+
+	.register-session{
+		width: 90%;
+		height: auto;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .auth-login .auth-login-form{
     width: 70%;
   }
+
+	.register-session{
+		width: 80%;
+		height: auto;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .auth-login .auth-login-form{
     width: 60%;
   }
+
+	.register-session{
+		width: 70%;
+		height: auto;
+	}
 }

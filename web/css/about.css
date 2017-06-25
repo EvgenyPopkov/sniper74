@@ -112,7 +112,7 @@
   background-color: #d4d4d4;
   margin: 0;
   text-align: center;
-	padding: 40px 7vw 60px 7vw;
+	padding: 40px 10vw 60px 10vw;
 }
 
 .coaches > .row{
@@ -317,6 +317,10 @@
 @media (min-width: 0) and (max-width: 767px) {
 	.site-about{
 		padding-right: 1vw;
+	}
+
+	.coaches{
+		padding: 40px 0 60px 0;
 	}
 
 	.coaches-info > h3{

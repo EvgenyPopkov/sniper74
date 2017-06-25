@@ -78,13 +78,62 @@
   color: rgba(0,0,0,0.5);
 }
 
-#datepicker{
+.entry-record input{
   margin: 15px auto 0 auto;
   width: 150px;
-
 }
 
 .equals{
   margin-left: 5vw;
   margin-right: 5vw;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .entry-block > h1{
+    font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .site-entry > .entry{
+    margin:40px 0;
+  }
+
+  .entry-training > .row {
+    padding: 20px 0;
+    border: none;
+  }
+
+  .entry-training .control-label {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .entry-left{
+    display: none;
+  }
+
+  .entry-right{
+    margin: 0 auto;
+    float: none;
+    padding-right: 0;
+  }
+
+  .entry-training {
+    padding: 40px 0 20px 0;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-entry > .entry{
+    margin:40px 5vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .site-entry > .entry{
+    margin:40px 10vw;
+  }
 }

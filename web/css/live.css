@@ -49,3 +49,11 @@
    width: 60vw;
    height: 40vw;
 }
+
+@media (min-width: 0) and (max-width: 767px) {
+  .live-block > h1{
+    font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}

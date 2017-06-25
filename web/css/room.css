@@ -72,3 +72,34 @@
   margin-left: 5vw;
   margin-right: 5vw;
 }
+
+.site-room .stroke{
+  color: #222;
+	font-size: 1.6em;
+	padding: 15px;
+  border: 3px solid #222;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.site-room .stroke:hover{
+	color: #05bca9;
+  border: 3px solid #05bca9;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .site-room > .row{
+    background-color: #f8f8f8;
+    margin: 20px 0;
+    padding: 20px 2vw;
+  }
+
+  .table-bordered > tbody > tr > td{
+    font-size: 0.7em;
+  }
+
+  .btn-danger{
+    font-size: 1em;
+  }
+
+}

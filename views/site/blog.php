@@ -17,9 +17,9 @@ $this->registerCssFile('@web/css/blog.css', ['depends' => ['app\assets\AppAsset'
     <?= $article->description ?>
   </p>
   <img class='lazy' data-original="/images/articles/<?=$article->image ?>" alt="">
-  <p class="cont">
+  <div class="cont">
     <?= $article->content ?>
-  </p>
+  </div>
   <?php if ($article->video !== '') {?>
     <iframe src="<?= $article->video ?>" frameborder="0" allowfullscreen></iframe>
   <?php } ?>

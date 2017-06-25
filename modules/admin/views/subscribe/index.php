@@ -21,17 +21,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'email:email',
             'date',
-            [
-                'format' => 'html',
-                'label' => 'Статус',
-                'value' => function($data){
-                    if($data->isAllowed()):
-                        return Html::a('Отписать', ['disallow', 'id' => $data->id], ['class' => 'btn btn-warning']);
-                    else:
-                        return Html::a('Подписать', ['allow', 'id' => $data->id], ['class' => 'btn btn-success']);
-                    endif;
-                }
-            ],
+            'status',
+
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

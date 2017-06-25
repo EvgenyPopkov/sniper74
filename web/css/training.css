@@ -84,3 +84,63 @@
 .alert-danger{
   margin:20px 20%;
 }
+
+@media (min-width: 0) and (max-width: 767px) {
+  .training-nav a{
+    font-size: 1.4em;
+    margin: 10px 5vw;
+  }
+
+  .training-block > h1{
+    font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .site-training .table-bordered{
+    margin: 20px auto;
+  }
+
+  .site-training-contact{
+    padding: 40px 5vw;
+  }
+
+  .site-training-contact phone{
+    font-size: 1.5em;
+  }
+
+  .btn-primary{
+    font-size: 1em;
+  }
+
+  .table-bordered > tbody > tr > td{
+    font-size: 0.7em;
+  }
+
+  .lazy{
+    margin-top: 20px;
+    height: 10vw;
+    width: 10vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .training-nav a{
+  	font-size: 2em;
+    margin: 10px 5vw;
+  }
+
+  .lazy{
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .training-nav a{
+  	font-size: 2em;
+  }
+
+  .site-training-contact phone{
+    font-size: 1.7em;
+  }
+}

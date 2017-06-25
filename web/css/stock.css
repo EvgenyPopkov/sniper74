@@ -34,7 +34,7 @@
   padding-bottom: 50px;
   text-align: center;
   background-color: #f8f8f8;
-  margin: 40px 7vw;
+  margin: 40px 15vw;
 }
 
 .stock-white p{
@@ -60,4 +60,38 @@
 .site-stock-contact phone{
   color: #222;
   font-size: 28px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .stock-white{
+    margin: 40px 0;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .stock-block > h1{
+    font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .stock-white p{
+    font-size: 1.3em;
+  }
+
+  .site-stock-contact phone{
+    font-size: 1.2em;
+  }
+
+  .lazy{
+    margin-top: 20px;
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .lazy{
+    margin-top: 20px;
+  }
 }

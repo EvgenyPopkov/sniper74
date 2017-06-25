@@ -60494,3 +60494,450 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2017-06-23 17:10:30 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\OpenServer\domains\sniper74.ru\controllers\AuthController.php:157
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(633): class_exists('app\\controllers...')
+#3 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID('auth')
+#4 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController('room')
+#5 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('auth/room', Array)
+#6 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\OpenServer\domains\sniper74.ru\web\index.php(11): yii\base\Application->run()
+#8 {main}
+2017-06-23 17:10:30 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'amjbnbm0k0j93ol1cepnoflr6mrut8s5'
+    '_csrf' => '4889a53dd03872305bbedf825460500a88bd706b77ece0cd69c2579e3f32fafaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"X67IjSkiuIU0dhWARZrPAQJLrZ_zXH7q\";}'
+    '_identity' => 'c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ahFztlqEmJ2F0e9itMBoErdisKeKGJke\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/'
+    'HTTP_COOKIE' => 'PHPSESSID=amjbnbm0k0j93ol1cepnoflr6mrut8s5; _csrf=4889a53dd03872305bbedf825460500a88bd706b77ece0cd69c2579e3f32fafaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22X67IjSkiuIU0dhWARZrPAQJLrZ_zXH7q%22%3B%7D; _identity=c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ahFztlqEmJ2F0e9itMBoErdisKeKGJke%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '18316'
+    'REDIRECT_URL' => '/auth/room'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/room'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498227030.623
+    'REQUEST_TIME' => 1498227030
+    'argv' => []
+    'argc' => 0
+]
+2017-06-23 17:49:38 [127.0.0.1][2][ennmdh41boio5flb8qkrh4ictfboaoit][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\OpenServer\domains\sniper74.ru\views\auth\room.php:25
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\controllers\AuthController))
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('room', Array, Object(app\controllers\AuthController))
+#3 C:\OpenServer\domains\sniper74.ru\controllers\AuthController.php(181): yii\base\Controller->render('room', Array)
+#4 [internal function]: app\controllers\AuthController->actionRoom()
+#5 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('room', Array)
+#8 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('auth/room', Array)
+#9 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OpenServer\domains\sniper74.ru\web\index.php(11): yii\base\Application->run()
+#11 {main}
+2017-06-23 17:49:38 [127.0.0.1][2][ennmdh41boio5flb8qkrh4ictfboaoit][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ennmdh41boio5flb8qkrh4ictfboaoit'
+    '_csrf' => '4889a53dd03872305bbedf825460500a88bd706b77ece0cd69c2579e3f32fafaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"X67IjSkiuIU0dhWARZrPAQJLrZ_zXH7q\";}'
+    '_identity' => 'a10e753e2343ec239dfe208d0d3245b889ec29fabe841d82784fd48f04cb6304a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"JKZi7eX0AAc1S8ac5Hu78iUKEpnYIzoQ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'open' => true
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/'
+    'HTTP_COOKIE' => 'PHPSESSID=ennmdh41boio5flb8qkrh4ictfboaoit; _csrf=4889a53dd03872305bbedf825460500a88bd706b77ece0cd69c2579e3f32fafaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22X67IjSkiuIU0dhWARZrPAQJLrZ_zXH7q%22%3B%7D; _identity=a10e753e2343ec239dfe208d0d3245b889ec29fabe841d82784fd48f04cb6304a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22JKZi7eX0AAc1S8ac5Hu78iUKEpnYIzoQ%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '18608'
+    'REDIRECT_URL' => '/auth/room'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/room'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498229378.793
+    'REQUEST_TIME' => 1498229378
+    'argv' => []
+    'argc' => 0
+]
+2017-06-23 17:54:35 [127.0.0.1][1][s4674o4fjm54v6u25vnnof9g9fsj1mvc][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Отсутствуют обязательные параметры: email in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('subscribe', Array)
+#3 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('auth/subscribe', Array)
+#4 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OpenServer\domains\sniper74.ru\web\index.php(11): yii\base\Application->run()
+#6 {main}
+2017-06-23 17:54:35 [127.0.0.1][1][s4674o4fjm54v6u25vnnof9g9fsj1mvc][info][application] $_COOKIE = [
+    'PHPSESSID' => 's4674o4fjm54v6u25vnnof9g9fsj1mvc'
+    '_csrf' => '4889a53dd03872305bbedf825460500a88bd706b77ece0cd69c2579e3f32fafaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"X67IjSkiuIU0dhWARZrPAQJLrZ_zXH7q\";}'
+    '_identity' => 'c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ahFztlqEmJ2F0e9itMBoErdisKeKGJke\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'open' => true
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/auth/room'
+    'HTTP_COOKIE' => 'PHPSESSID=s4674o4fjm54v6u25vnnof9g9fsj1mvc; _csrf=4889a53dd03872305bbedf825460500a88bd706b77ece0cd69c2579e3f32fafaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22X67IjSkiuIU0dhWARZrPAQJLrZ_zXH7q%22%3B%7D; _identity=c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ahFztlqEmJ2F0e9itMBoErdisKeKGJke%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '18738'
+    'REDIRECT_URL' => '/auth/subscribe'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/subscribe'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498229675.093
+    'REQUEST_TIME' => 1498229675
+    'argv' => []
+    'argc' => 0
+]
+2017-06-25 13:26:57 [127.0.0.1][1][o8g5u039ku0fmqqc5s7vngsbnnd308in][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/bcvb in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('bcvb', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/bcvb', Array)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\sniper74.ru\web\index.php(11): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\sniper74.ru\web\index.php(11): yii\base\Application->run()
+#2 {main}
+2017-06-25 13:26:57 [127.0.0.1][1][o8g5u039ku0fmqqc5s7vngsbnnd308in][info][application] $_COOKIE = [
+    'PHPSESSID' => 'o8g5u039ku0fmqqc5s7vngsbnnd308in'
+    '_csrf' => '60cc71d4d7b7f983e39aafad72341098268506114999f474af5c42645a621c0ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0sff9sbTKFYdgb__VgPxDsMAubs3MpAG\";}'
+    '_identity' => 'c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ahFztlqEmJ2F0e9itMBoErdisKeKGJke\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'open' => true
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=o8g5u039ku0fmqqc5s7vngsbnnd308in; _csrf=60cc71d4d7b7f983e39aafad72341098268506114999f474af5c42645a621c0ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220sff9sbTKFYdgb__VgPxDsMAubs3MpAG%22%3B%7D; _identity=c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ahFztlqEmJ2F0e9itMBoErdisKeKGJke%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '30374'
+    'REDIRECT_URL' => '/site/bcvb'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/bcvb'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498386417.233
+    'REQUEST_TIME' => 1498386417
+    'argv' => []
+    'argc' => 0
+]
+2017-06-25 13:43:27 [127.0.0.1][1][jde6nprjk0toht660v7t0h18k3pievaq][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dateBegin' in 'where clause' in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\Command.php:902
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\Command.php(902): PDOStatement->execute()
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\ActiveRelationTrait.php(158): yii\db\ActiveQuery->all()
+#5 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\db\ActiveQuery->findFor('sbores', Object(app\models\User))
+#6 C:\OpenServer\domains\sniper74.ru\views\auth\room.php(156): yii\db\BaseActiveRecord->__get('sbores')
+#7 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(328): require('C:\\OpenServer\\d...')
+#8 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', '[<span class="s...')
+#9 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\controllers\AuthController))
+#10 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('room', Array, Object(app\controllers\AuthController))
+#11 C:\OpenServer\domains\sniper74.ru\controllers\AuthController.php(181): yii\base\Controller->render('room', Array)
+#12 [internal function]: app\controllers\AuthController->actionRoom()
+#13 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('room', Array)
+#16 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('auth/room', Array)
+#17 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\OpenServer\domains\sniper74.ru\web\index.php(11): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dateBegin' in 'where clause'
+The SQL being executed was: SELECT * FROM `entry_sbor` WHERE (dateBegin >= '2017-06-25') AND (`idUser`=1) in C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\ActiveRelationTrait.php(158): yii\db\ActiveQuery->all()
+#5 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\db\ActiveQuery->findFor('sbores', Object(app\models\User))
+#6 C:\OpenServer\domains\sniper74.ru\views\auth\room.php(156): yii\db\BaseActiveRecord->__get('sbores')
+#7 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(328): require('C:\\OpenServer\\d...')
+#8 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', '[<span class="s...')
+#9 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\controllers\AuthController))
+#10 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('room', Array, Object(app\controllers\AuthController))
+#11 C:\OpenServer\domains\sniper74.ru\controllers\AuthController.php(181): yii\base\Controller->render('room', Array)
+#12 [internal function]: app\controllers\AuthController->actionRoom()
+#13 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('room', Array)
+#16 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('auth/room', Array)
+#17 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\OpenServer\domains\sniper74.ru\web\index.php(11): yii\base\Application->run()
+#19 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'dateBegin' in 'where clause'
+)
+
+2017-06-25 13:43:27 [127.0.0.1][1][jde6nprjk0toht660v7t0h18k3pievaq][info][application] $_COOKIE = [
+    'PHPSESSID' => 'jde6nprjk0toht660v7t0h18k3pievaq'
+    '_csrf' => '60cc71d4d7b7f983e39aafad72341098268506114999f474af5c42645a621c0ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0sff9sbTKFYdgb__VgPxDsMAubs3MpAG\";}'
+    '_identity' => 'c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ahFztlqEmJ2F0e9itMBoErdisKeKGJke\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'open' => true
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/'
+    'HTTP_COOKIE' => 'PHPSESSID=jde6nprjk0toht660v7t0h18k3pievaq; _csrf=60cc71d4d7b7f983e39aafad72341098268506114999f474af5c42645a621c0ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220sff9sbTKFYdgb__VgPxDsMAubs3MpAG%22%3B%7D; _identity=c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ahFztlqEmJ2F0e9itMBoErdisKeKGJke%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '31096'
+    'REDIRECT_URL' => '/auth/room'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/room'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498387407.17
+    'REQUEST_TIME' => 1498387407
+    'argv' => []
+    'argc' => 0
+]
+2017-06-25 13:49:28 [127.0.0.1][1][jde6nprjk0toht660v7t0h18k3pievaq][error][ParseError] ParseError: syntax error, unexpected 'endif' (T_ENDIF) in C:\OpenServer\domains\sniper74.ru\views\auth\room.php:176
+Stack trace:
+#0 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\controllers\AuthController))
+#2 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('room', Array, Object(app\controllers\AuthController))
+#3 C:\OpenServer\domains\sniper74.ru\controllers\AuthController.php(181): yii\base\Controller->render('room', Array)
+#4 [internal function]: app\controllers\AuthController->actionRoom()
+#5 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('room', Array)
+#8 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('auth/room', Array)
+#9 C:\OpenServer\domains\sniper74.ru\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OpenServer\domains\sniper74.ru\web\index.php(11): yii\base\Application->run()
+#11 {main}
+2017-06-25 13:49:28 [127.0.0.1][1][jde6nprjk0toht660v7t0h18k3pievaq][info][application] $_COOKIE = [
+    'PHPSESSID' => 'jde6nprjk0toht660v7t0h18k3pievaq'
+    '_csrf' => '60cc71d4d7b7f983e39aafad72341098268506114999f474af5c42645a621c0ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0sff9sbTKFYdgb__VgPxDsMAubs3MpAG\";}'
+    '_identity' => 'c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"ahFztlqEmJ2F0e9itMBoErdisKeKGJke\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'open' => true
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sniper74.ru'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://sniper74.ru/'
+    'HTTP_COOKIE' => 'PHPSESSID=jde6nprjk0toht660v7t0h18k3pievaq; _csrf=60cc71d4d7b7f983e39aafad72341098268506114999f474af5c42645a621c0ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220sff9sbTKFYdgb__VgPxDsMAubs3MpAG%22%3B%7D; _identity=c4d4a4bb0a119f5bcba5507910b11a4139bcceb01351f3221a2f5aca555830faa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ahFztlqEmJ2F0e9itMBoErdisKeKGJke%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1-x64\\ext;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear;c:\\openserver\\modules\\php\\PHP-7.1-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1-x64;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64;C:\\Users\\popko\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sniper74.ru'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/sniper74.ru/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/sniper74.ru/web/index.php'
+    'REMOTE_PORT' => '31134'
+    'REDIRECT_URL' => '/auth/room'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/room'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498387768.314
+    'REQUEST_TIME' => 1498387768
+    'argv' => []
+    'argc' => 0
+]

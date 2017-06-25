@@ -32,9 +32,11 @@ $this->registerJsFile('//maps.googleapis.com/maps/api/js?key=AIzaSyB9HSouo1F_fT-
       </p>
       <p class='location'>
         <span class="name-location">Почта: </span>
-        <span class="info-location">
-          <?=  Html::encode($this->params['email']) ?>
-        </span>
+        <a href="mailto:<?=  Html::encode($this->params['email']) ?>">
+          <span class="info-location-mail">
+            <?=  Html::encode($this->params['email']) ?>
+          </span>
+        </a>
       </p>
       <div class="contact-social">
         <a href="<?= Html::encode( $this->params['vk']) ?>" target="_blank">

@@ -132,3 +132,40 @@
   background-color: #05bca9;
   border: none;
 }
+
+@media (min-width: 0) and (max-width: 767px) {
+  .article-block > h1{
+    font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .article img{
+    width: 52vw;
+    height: 35vw;
+  }
+
+  .category h2, .recent h2, .article h2{
+    font-size: 1.8em;
+  }
+
+  .recent h3, .article p{
+    font-size: 1.3em;
+  }
+
+  .article a{
+  	font-size: 2em;
+  }
+
+  .recent img{
+    width: 45vw;
+    height: 30vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .recent img{
+    width: 25vw;
+    height: 15vw;
+  }
+}

@@ -20,6 +20,14 @@ $this->registerCssFile('@web/css/room.css', ['depends' => ['app\assets\AppAsset'
                   <?= Yii::$app->session->getFlash('phone'); ?>
               </div>
       <?php endif;?>
+      <?php if(Yii::$app->session->getFlash('sub')):?>
+              <div class="alert alert-success">
+                  <?= Yii::$app->session->getFlash('sub'); ?>
+              </div>
+      <?php endif;?>
+      <?php if (!$status): ?>
+        <a class="stroke" href="<?=Url::toRoute(['auth/subscribe', 'email' => Yii::$app->user->identity->email])?>" title="">Подписаться на обновления</a>
+      <?php endif;?>
 
       <h2>Номер телефон</h2>
       <hr>

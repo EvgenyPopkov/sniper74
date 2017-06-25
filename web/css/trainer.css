@@ -30,13 +30,12 @@
   padding-left: 5vw;
   padding-right: 5vw;
   background-color: #f8f8f8;
-  margin: 40px 5vw;
+  margin: 40px 15vw;
 }
 
 .trainer-white p{
-  padding-right: 100px;
   padding-top: 10px;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: rgba(0, 0, 0, 0.5)
 }
 
@@ -50,6 +49,52 @@
 }
 
 .site-trainer img{
-  width: 350px;
-  height: 200px;
+  width: 20vw;
+  height: 12vw;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .trainer-white{
+    margin: 40px 0;
+  }
+
+  .trainer-block > h1{
+    font-size: 3em;
+  }
+
+  .trainer-white p{
+      font-size: 1.2em;
+  }
+
+  .site-trainer img{
+    width: 50vw;
+    height: 35vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .trainer-white{
+    margin: 40px 10vw;
+  }
+
+  .trainer-white p{
+      font-size: 1.3em;
+  }
+
+  .site-trainer img{
+    width: 30vw;
+    height: 19vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .trainer-white p{
+      font-size: 1.2em;
+  }
+
+  .trainer-white{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
 }

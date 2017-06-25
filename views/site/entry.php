@@ -63,8 +63,7 @@ $this->registerJsFile('@web/js/calendar.js', ['depends' => ['app\assets\AppAsset
                 <label class="control-label"><?= Html::encode($time->begin)?> - <?= Html::encode($time->end)?></label>
                 <label class="control-label"><?= Html::encode(getDateName($time->training->day))?></label>
                 <label class="control-label"><?= Html::encode($time->training->price)?> руб</label>
-                <label class="control-label"><?= Html::encode($time->address->address)?>,</label>
-                <label class="control-label"><?= Html::encode($time->address->description)?></label>
+                <label class="control-label"><?= Html::encode($time->address->address)?>,<?= Html::encode($time->address->description)?></label>
               </div>
             </div>
         </div>

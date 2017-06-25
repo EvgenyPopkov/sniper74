@@ -153,6 +153,7 @@ class AuthController extends Controller
       }
 
       $user = Yii::$app->user->identity;
+      $sub = Subscribe::findOne(['email' => $user->email]);
 
       $model = new RepairPasswordForm();
       if ($model->load(Yii::$app->request->post()) && $model->validate()) {
@@ -176,7 +177,8 @@ class AuthController extends Controller
 
       return $this->render('room', [
           'model' => $model,
-          'phone' =>$phone
+          'phone' =>$phone,
+          'status' =>$sub->status
       ]);
     }
 
@@ -211,6 +213,16 @@ class AuthController extends Controller
         $sub->save(false);
 
         return $this->redirect(['site/index']);
+    }
+
+    public function actionSubscribe($email)
+    {
+        $sub = Subscribe::findOne(['email' => $email]);
+        $sub->status = 1;
+        $sub->save(false);
+
+        Yii::$app->getSession()->setFlash('sub', 'Вы подписались на обновления');
+        return $this->redirect(['auth/room']);
     }
 
     public function initParams($model, $sbor)

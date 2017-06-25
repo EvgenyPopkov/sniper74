@@ -75,7 +75,7 @@ class User extends ActiveRecord implements IdentityInterface
 
     public function getEntrys()
     {
-        return $this->hasMany(Entry::className(), ['idUser' => 'id'])->where('date > :date')->addParams([':date' => date("Y-m-d")])->orderBy('date');
+        return $this->hasMany(Entry::className(), ['idUser' => 'id'])->where('date >= :date')->addParams([':date' => date("Y-m-d")])->orderBy('date');
     }
 
     public function getSbores()

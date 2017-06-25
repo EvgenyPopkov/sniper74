@@ -25,7 +25,7 @@
 
 .sbor-element{
   background-color: #f8f8f8;
-  margin: 40px 10vw;
+  margin: 40px 15vw;
   padding: 30px 10vw;
 }
 
@@ -65,7 +65,9 @@
 
 @media (min-width: 0) and (max-width: 767px) {
   .sbor-block > h1{
-    font-size: 3.6em;
+    font-size: 3em;
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
 
   .sbor-element{
